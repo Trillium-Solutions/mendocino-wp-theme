@@ -1,0 +1,71 @@
+/*  new changes to left alert bar on home page */
+
+.alert-sym {
+background: url("images/alert-sym.png");
+width: 17px;
+height: 15px;
+float: left;
+margin-right: 6px;
+}
+ 
+#home-service-alerts h2 {
+margin-right: 6px;
+}
+
+.left-links-sec ul { 
+float:left;
+clear: left;
+margin-top: 12px;
+}
+ 
+.left-links-sec ul li {
+background: url("images/blue-bullet.png") left top;
+background-repeat: no-repeat;
+background-position: 0 5px;
+margin-bottom: 10px;
+}
+ 
+.left-links-sec ul li a:hover,
+.left-links-sec ul li a {
+
+position: relative;
+left: -10px;
+padding-left: 10px;
+right: -10px;
+padding-right: 10px;
+margin-bottom: 10px;
+
+}
+
+
+
+ 
+.left-link-title {
+float:left;
+font-size: 16px;
+color: #063;
+font-weight: bold;
+text-shadow: 0 0 13px rgba(255, 255, 255, 1);
+}
+ 
+.left-home-link {
+display: block;
+color: #0066FF;
+font-size: 14px;
+clear: left;
+}
+ 
+.left-links-archive-link {
+margin-top: 4px;
+margin-left: 6px;
+float: left;
+font-size: 10px;
+}
+.left-links-archive-link a {
+text-decoration: none;
+}
+ 
+#home-dynamic-space {
+height: 255px;
+}
+ 

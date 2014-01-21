@@ -1,0 +1,79 @@
+body.timetable {
+background: white !important;
+overflow: auto;
+}
+
+.tt-cell-hint {
+width: 55px;
+}
+
+.timetable-left-marg {
+margin-left: 40px;
+}
+
+#timetable-banner {
+width: 100%;
+background: url('images/timetable/timetable-blue-strip.jpg') repeat-x;
+height: 271px; 
+}
+
+#timetable-logo {
+width: 1035px;
+height: 270px;
+background: url('images/logo-motto.png') no-repeat;
+}
+
+#timetable-route-name {
+width: 100%;
+background-color: #E3E3E3;
+height: 75px;
+background-image: url('images/timetable/timetable-grey-shadow.jpg');
+background-position: bottom;
+background-repeat: repeat-x;
+}
+
+#timetable-center-title {
+width: 1035px;
+}
+
+#timetable-route-name-part-1{
+font-size: 30px;
+margin: 11px 0 0 0px;
+float: left;
+}
+
+#timetable-route-name-part-2 {
+font-size: 30px;
+margin: 11px 0 0 40px;
+float: left;
+}
+
+
+#timetable-content .breadcrumb{
+margin: 0 0 20px 0;
+font-size: .85em;
+padding-bottom: 8px;
+padding-top: 8px;
+border-bottom: 1px solid #ccc;
+border-top: 1px solid #ccc;
+}
+
+#timetable-links {
+height: 20px;
+}
+
+#time-table-backlink,
+#timetable-pdf-link  {
+float: left;
+margin: 10px 20px 0 0;
+font-size: 13px;
+}
+
+#timetable-content {
+width: 1035px;
+margin-bottom: 20px;
+}
+
+.div-table {
+margin: 0 0 20px 0;
+}

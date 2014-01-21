@@ -1,0 +1,141 @@
+/***** hannahs markupt *****/
+
+/* Some global rules */
+
+
+
+/* Add border to anything with boxed class */
+.boxed {
+    border:1px solid #CCCCCC;
+}
+
+
+/* Basic column and headers */
+#schedules-container {
+    width: 100%;
+}
+
+#schedules-container .header {
+    width: 100%;
+	height: 50px;
+    margin: 15px 25px 0px;
+}
+
+#schedules-container .column {
+    width: 50%;
+    float: left;
+}
+
+/* Boxes in the columns - background and layout */
+.column-box {
+    background-color: #F6F3EC; 
+}
+
+#right-column .column-box {
+    margin: 0px 14px 14px 7px;
+}
+
+#left-column .column-box {
+    margin: 0px 7px 14px 14px;
+}
+
+#regional-routes {
+
+}
+#inland-routes {
+
+}
+#coastal-routes {
+
+}
+#map {
+
+    background: url('images/schedules-map/map-base.jpg') no-repeat ;
+}
+#connections {
+}
+
+
+/* Content inside of the column boxes */
+.box-header {
+    width: 90.1%;
+    font-size: 22px;
+    padding: 15px 5% 15px 5%;
+    background: #E2E0DA;
+    margin: 0 0 10px 0 ;
+}
+
+.ms-circ {
+width: 55px;
+float: left;
+}
+
+.ms-desc {
+float: left;
+width: 280px;
+}
+
+.box-row-item {
+margin-top: 10px;
+}
+
+.box-header a {
+    font-size: 10px;
+}
+
+.box-chunk {
+	width: 90%;
+
+	margin: 5px 15px;
+}
+
+.box-chunk .box-row {
+    width: 90%;
+}
+
+.box-chunk .chunk-divider {
+    width: 100%;
+    height: 20px;
+    background-color: #424242;
+    margin-bottom: 10px;
+}
+
+.chunk-divider .divider-text {
+    margin: 0px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+/* Box row types */
+.box-row div {
+
+
+}
+
+.box-row .two-col1 {
+    width: 25%;
+}
+.box-row .two-col2 {
+    width: 75%;
+}
+.box-row .three-col1 {
+    width: 30%;
+}
+.box-row .three-col2 {
+    width: 20%;
+}
+.box-row .three-col3 {
+    width: 50%;
+}
+
+/* Little tweak for connections box */
+#connections div {
+    width: 90%;
+}
+
+
+.ms-region {
+font-weight: bold; 
+}
