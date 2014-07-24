@@ -8,6 +8,7 @@ Template Name: timetable
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html>
+<title><?php the_title(); echo ' | '.get_bloginfo('name');?></title>
 <head profile="http://gmpg.org/xfn/11">
 <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/timetable.css" />
 <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/style.css" />
