@@ -201,7 +201,11 @@ Template Name: route-7-9
 				<br style="clear: both;" />
 			</div> <!-- end #route-inner-box" -->
 			<div class="route-inner-box">
-				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="/files/final/MTA%20schedule%20Inland%20Route%209MF.pdf">Download PDF version of Route 9 Mon-Fri timetable.</a></div> <!-- end #route-pdf-link -->
+				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="/files/final/MTA%20schedule%20Inland%20Route%209MF.pdf">Download PDF version of Route 9 Mon-Fri timetable (effective through July 25, 2014).</a></div> <!-- end #route-pdf-link -->
+				<br style="clear: both;" />
+				</div> <!-- end #route-inner-box" -->
+			<div class="route-inner-box">
+				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="/files/final/MTA%20schedule%20Route%209%20-%2027-July-2014.pdf">Download PDF version of Route 9 Mon-Fri timetable (effective July 27, 2014).</a></div> <!-- end #route-pdf-link -->
 				<br style="clear: both;" />
 				</div> <!-- end #route-inner-box" -->
 				<div class="route-inner-box">
