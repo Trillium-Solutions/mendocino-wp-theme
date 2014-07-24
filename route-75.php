@@ -59,16 +59,41 @@ Template Name: route-75
 					</div> <!-- end popup-button-desc -->
 				</div> <!-- end #schedule-northbound-65 -->
 				</a>
+				
+					<!-- link to South-bound timetable, ending July 25, 2014; remove this on Monday -->
+
 				<a href="/routes/route-75/southbound/"  >
 				<div id="schedule-southbound-75" class="route-popup-button route-button-right route-button-last route-button-even"">
 				<div class="popup-button-title">
-					Southbound
+					Southbound<br/>(effective through July 25, 2014)
 					</div> <!-- end #popup-button-title -->
 					<div class="popup-button-desc">
 					Ukiah to South Coast
 					</div> <!-- end popup-button-desc -->
 				</div> <!-- end #schedule-southbound-65-->
 				</a>
+				
+				<!-- links to new timetables effective July 27, 2014 -->
+
+					<a href="/routes/route-75/northbound/"  >
+				<div id="schedule-northbound-65" class="route-popup-button route-button-left route-button-first route-button-odd route-button-short" style="height:45px;">
+					<div class="popup-button-title">
+					Northbound<br/>(no changes)
+					<br/><span style="font-size:12px;"</span>
+					</div> <!-- end #popup-button-title -->
+					<div class="popup-button-desc" >
+					South Coast to Ukiah
+					</div> <!-- end popup-button-desc -->
+				</div> <!-- end #schedule-northbound-75 -->
+				</a>
+				<a href="/routes/routes-75/southbound/route-75-southbound-effective-27-july-2014"  >
+				<div id="schedule-southbound-65" class="route-popup-button route-button-right route-button-even route-button-short " style="height:45px;">
+				<div class="popup-button-title">
+					Southbound<br/>(beginning July 27, 2014)
+					<br/><span style="font-size:12px;"</span>
+					</div> <!-- end #popup-button-title -->
+					<div class="popup-button-desc">
+					Ukiah to South Coast
 				<br style="clear: both;" />
 			</div> <!-- end #schedule-buttons -->
 			
