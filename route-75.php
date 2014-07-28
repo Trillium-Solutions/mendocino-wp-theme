@@ -62,10 +62,10 @@ Template Name: route-75
 				
 					<!-- link to South-bound timetable, ending July 25, 2014; remove this on Monday -->
 
-				<a href="/routes/route-75/southbound/"  >
+				<a href="/routes/route-75/southbound/southbound-effective-july-2014/"  >
 				<div id="schedule-southbound-75" class="route-popup-button route-button-right route-button-last route-button-even"">
 				<div class="popup-button-title">
-					Southbound<br/>(effective through July 25, 2014)
+					Southbound<br/>
 					</div> <!-- end #popup-button-title -->
 					<div class="popup-button-desc">
 					Ukiah to South Coast
@@ -75,25 +75,7 @@ Template Name: route-75
 				
 				<!-- links to new timetables effective July 27, 2014 -->
 
-					<a href="/routes/route-75/northbound/"  >
-				<div id="schedule-northbound-65" class="route-popup-button route-button-left route-button-first route-button-odd route-button-short" style="height:45px;">
-					<div class="popup-button-title">
-					Northbound<br/>(no changes)
-					<br/><span style="font-size:12px;"</span>
-					</div> <!-- end #popup-button-title -->
-					<div class="popup-button-desc" >
-					South Coast to Ukiah
-					</div> <!-- end popup-button-desc -->
-				</div> <!-- end #schedule-northbound-75 -->
-				</a>
-				<a href="/routes/routes-75/southbound/route-75-southbound-effective-27-july-2014"  >
-				<div id="schedule-southbound-65" class="route-popup-button route-button-right route-button-even route-button-short " style="height:45px;">
-				<div class="popup-button-title">
-					Southbound<br/>(beginning July 27, 2014)
-					<br/><span style="font-size:12px;"</span>
-					</div> <!-- end #popup-button-title -->
-					<div class="popup-button-desc">
-					Ukiah to South Coast
+					
 				<br style="clear: both;" />
 			</div> <!-- end #schedule-buttons -->
 			
@@ -112,11 +94,11 @@ Template Name: route-75
 			<br style="clear: both;" />
 		</div> <!-- end #route-connections-box-title -->
 
+			
 			<div class="route-inner-box">
-				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="/files/final/MTA%20schedule%20Route%2075.pdf">Download PDF version of Route 75 timetable.</a></div> <!-- end #route-pdf-link -->
-				<br style="clear: both;" />
-			</div> <!-- end #route-inner-box" -->
-
+				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="/files/final/MTA%20schedule%20Route%2075.pdf">Download PDF version of Route 75 timetable (effective July 27, 2014).</a></div> <!-- end #route-pdf-link -->
+								<br style="clear: both;" />
+				</div> <!-- end #route-inner-box" -->
 	</div> <!-- end #route-connections-box -->
 		
 	</div> <!-- #end route col left -->

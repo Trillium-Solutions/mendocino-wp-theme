@@ -47,10 +47,11 @@ Template Name: route-5-60
 				Monday through Friday
 			</div> <!-- end #days-of-week -->
 			<div id="schedule-buttons">
-			<a href="/routes/routes-5-and-20/5-and-60-northbound/"  >
-				<div id="schedule-northbound-65" class="route-popup-button route-button-left route-button-first route-button-odd route-button-short">
+			<a href="/routes/routes-5-and-20/routes-5-60-ft-bragg-north-coast-northbound-effective-27-july-2014/"  >
+				<div id="schedule-northbound-65" class="route-popup-button route-button-left route-button-first route-button-odd route-button-short" style="height:45px;">
 					<div class="popup-button-title">
-					Northbound
+					Northbound<br/>(effective July 27, 2014)
+					<br/><span style="font-size:12px;"</span>
 					</div> <!-- end #popup-button-title -->
 					<div class="popup-button-desc" >
 
@@ -58,7 +59,7 @@ Template Name: route-5-60
 				</div> <!-- end #schedule-northbound-65 -->
 				</a>
 				<a href="/routes/routes-5-and-60/5-and-60-southbound/"  > 
-				<div id="schedule-southbound-65" class="route-popup-button route-button-right route-button-last route-button-even route-button-short">
+				<div id="schedule-southbound-65" class="route-popup-button route-button-right route-button-last route-button-even route-button-short" style="height:45px;">
 				<div class="popup-button-title">
 					Southbound
 					</div> <!-- end #popup-button-title -->
@@ -67,6 +68,9 @@ Template Name: route-5-60
 					</div> <!-- end popup-button-desc -->
 				</div> <!-- end #schedule-southbound-65-->
 				</a>
+				
+				<!-- update to North schedule effective July 27, 2014 - remove old North schedule on Monday-->
+				
 				
 				<br style="clear: both;" />
 			</div> <!-- end #schedule-buttons -->
@@ -87,10 +91,10 @@ Template Name: route-5-60
 			<br style="clear: both;" />
 		</div> <!-- end #route-connections-box-title -->
 
-			<div class="route-inner-box">
-				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="/files/final/MTA%20schedule%20Fort%20Bragg%20Route%205,%2060.pdf">Download PDF version of Route 5 and 60 timetable.</a></div> <!-- end #route-pdf-link -->
+<div class="route-inner-box">
+				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="/files/final/MTA%20schedule%20Route%205%20-%2027-Jul-2014.pdf">Download PDF version of Route 5 and 60 timetable (effective July 27, 2014).</a></div> <!-- end #route-pdf-link -->
 				<br style="clear: both;" />
-			</div> <!-- end #route-inner-box" -->
+				</div> <!-- end #route-inner-box" -->
 
 	</div> <!-- end #route-connections-box -->
 		

@@ -110,35 +110,10 @@ Template Name: route-7-9
 			<div id="schedule-buttons">
 				
 				<!-- links to North- and South-bound timetables, ending July 25, 2014; remove these on Monday -->
-				<a href="/routes/routes-7-and-9/route-9-northbound-mon-fri-aug-2013/"  >
+				<a href="/routes/routes-7-and-9/route-9-northbound-monday-friday-effective-27-july-2014/"  >
 				<div id="schedule-northbound-65" class="route-popup-button route-button-left route-button-first route-button-odd route-button-short" style="height:45px;">
 					<div class="popup-button-title">
-					Northbound Mon-Fri<br/>(effective through July 25, 2014)
-					<br/><span style="font-size:12px;"</span>
-					</div> <!-- end #popup-button-title -->
-					<div class="popup-button-desc" >
-
-					</div> <!-- end popup-button-desc -->
-				</div> <!-- end #schedule-northbound-9 -->
-				</a>
-				<a href="/routes/routes-7-and-9/route-9-southbound-mon-fri-aug-2013/"  >
-				<div id="schedule-southbound-65" class="route-popup-button route-button-right route-button-even route-button-short " style="height:45px;">
-				<div class="popup-button-title">
-					Southbound Mon-Fri<br/>(effective through July 25, 2014)
-					<br/><span style="font-size:12px;"</span>
-					</div> <!-- end #popup-button-title -->
-					<div class="popup-button-desc">
-
-					</div> <!-- end popup-button-desc -->
-				</div> <!-- end #schedule-southbound-65-->
-				</a>
-
-				<!-- links to new timetables effective July 27, 2014 -->
-
-					<a href="/routes/routes-7-and-9/route-9-northbound-monday-friday-effective-27-july-2014/"  >
-				<div id="schedule-northbound-65" class="route-popup-button route-button-left route-button-first route-button-odd route-button-short" style="height:45px;">
-					<div class="popup-button-title">
-					Northbound Mon-Fri<br/>(beginning July 27, 2014)
+					Northbound Mon-Fri<br/>(effective July 27, 2014)
 					<br/><span style="font-size:12px;"</span>
 					</div> <!-- end #popup-button-title -->
 					<div class="popup-button-desc" >
@@ -149,7 +124,7 @@ Template Name: route-7-9
 				<a href="/routes/routes-7-and-9/route-9-southbound-monday-friday-effective-27-july-2014/"  >
 				<div id="schedule-southbound-65" class="route-popup-button route-button-right route-button-even route-button-short " style="height:45px;">
 				<div class="popup-button-title">
-					Southbound Mon-Fri<br/>(beginning July 27, 2014)
+					Southbound Mon-Fri<br/>(effective July 27, 2014)
 					<br/><span style="font-size:12px;"</span>
 					</div> <!-- end #popup-button-title -->
 					<div class="popup-button-desc">
@@ -157,7 +132,7 @@ Template Name: route-7-9
 					</div> <!-- end popup-button-desc -->
 				</div> <!-- end #schedule-southbound-65-->
 				</a>
-				
+
 				
 				<a href="/routes/routes-7-and-9/route-9-northbound-saturday/"  >
 				<div id="schedule-northbound-65" class="route-popup-button route-button-left route-button-odd route-button-row-2 route-button-short">
@@ -200,14 +175,12 @@ Template Name: route-7-9
 				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="/files/final/MTA%20schedule%20Inland%20Route%207.pdf">Download PDF version of Route 7 timetable.</a></div> <!-- end #route-pdf-link -->
 				<br style="clear: both;" />
 			</div> <!-- end #route-inner-box" -->
-			<div class="route-inner-box">
-				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="/files/final/MTA%20schedule%20Inland%20Route%209MF.pdf">Download PDF version of Route 9 Mon-Fri timetable (effective through July 25, 2014).</a></div> <!-- end #route-pdf-link -->
-				<br style="clear: both;" />
-				</div> <!-- end #route-inner-box" -->
+			
 			<div class="route-inner-box">
 				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="/files/final/MTA%20schedule%20Route%209%20-%2027-July-2014.pdf">Download PDF version of Route 9 Mon-Fri timetable (effective July 27, 2014).</a></div> <!-- end #route-pdf-link -->
 				<br style="clear: both;" />
 				</div> <!-- end #route-inner-box" -->
+
 				<div class="route-inner-box">
 				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="/files/final/MTA%20schedule%20Inland%20Route%209%20Sat.pdf">Download PDF version of Route 9 Saturday timetable.</a></div> <!-- end #route-pdf-link -->
 				<br style="clear: both;" />
