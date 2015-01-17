@@ -124,8 +124,8 @@ $j(".fares-table, .div-table").delegate('td','mouseover mouseleave', function(e)
 
 $j.ajax({
 type: "GET",
-url: "http://www.mendocinotransit.org/site_resources/fare_calculator/proxy.php",
-data: 'csurl=http%3A%2F%2Ftrilliumtransit.com%2Fclients%2Fmendocino%2Fproduce_zone_xml.php',
+url: "http://trilliumtransit.com/clients/mendocino/produce_zone_xml.php",
+data: '',
 dataType: "xml",
 success: function(xml) {
 var select_start_zone = $j('#start_zone');
@@ -165,12 +165,12 @@ $j('#fare_zones').submit(function() { // catch the form's submit event
 function update_end_zones(start_zone_select) {
 
 var id=$j(start_zone_select).val();
-var dataString = 'csurl=http%3A%2F%2Ftrilliumtransit.com%2Fclients%2Fmendocino%2Fproduce_zone_xml.php&start_zone='+ id;
+var dataString = 'start_zone='+ id;
 
 $j.ajax
 ({
 type: "GET",
-url: "http://www.mendocinotransit.org/site_resources/fare_calculator/proxy.php",
+url: "http://trilliumtransit.com/clients/mendocino/produce_zone_xml.php",
 data: dataString,
 cache: false,
 success: function(xml) {
