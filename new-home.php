@@ -380,7 +380,9 @@ while ( have_posts() ) : the_post();
 
 		<?php 
 		$count = $count + 1;
-		endwhile; ?>
+		endwhile;
+wp_reset_query();
+?>
 </ul>
 <br style="clear: both;" />
 </div>
@@ -412,7 +414,9 @@ while ( have_posts() ) : the_post();
 
 		<?php 
 		$count = $count + 1;
-		endwhile; ?>
+		endwhile;
+wp_reset_query();
+?>
 </ul>
 <br style="clear: both;" />
 </div>
@@ -429,7 +433,7 @@ if( have_posts()) {
 ?>
  
 <div id="home-jobs" class="left-links-sec">
-<div id="home-news-title" class="left-link-title">Employment Opportunities</div>
+<div id="home-jobs-title" class="left-link-title">Employment Opportunities</div>
 <div id="home-news-arhive-link" class="left-links-archive-link"><a href="/employment-opportunities/">See all</a></div>
 <ul>
 <?php
@@ -445,7 +449,9 @@ while ( have_posts() ) : the_post();
 
 		<?php 
 		$count = $count + 1;
-		endwhile; ?>
+		endwhile;
+wp_reset_query();
+?>
 </ul>
    
 <br style="clear: both;" />
