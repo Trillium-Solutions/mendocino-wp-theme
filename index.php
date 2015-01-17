@@ -338,23 +338,104 @@ function formatDate(date) {
 var d = new Date(date); 
 var hh = d.getHours(); 
 var m = d.getMinutes(); 
-var dd = "a"; 
+var dd = "AM"; 
 var h = hh; 
 if (h >= 12) { 
 h = hh-12; 
-dd = "p"; 
+dd = "PM"; 
 } 
 if (h == 0) { 
 h = 12; 
 } 
 m = m<10?"0"+m:m; 
  
-return h+':'+m+dd 
+return h+':'+m+' '+dd 
 }
  
 document.getElementById('ftime').value=formatDate(thisdate); 
+
+var d = new Date(),
+month = d.getMonth() + 1,
+day = d.getDate(),
+year = d.getFullYear();
+
+document.getElementById('fdate').value = month + '/' + day + '/' +  year ;
+
+var format = 'g:i A';
+var step = 1;
+
+function parseTime(time, format, step) {
  
-document.getElementById('fdate').value=thisdate.getMonth()+1 + '/' +thisdate.getDate();
+ var hour, minute, stepMinute,
+ defaultFormat = 'g:ia',
+ pm = time.match(/p/i) !== null,
+ num = time.replace(/[^0-9]/g, '');
+ 
+ // Parse for hour and minute
+ switch(num.length) {
+ case 4:
+ hour = parseInt(num[0] + num[1], 10);
+ minute = parseInt(num[2] + num[3], 10);
+ break;
+ case 3:
+ hour = parseInt(num[0], 10);
+ minute = parseInt(num[1] + num[2], 10);
+ break;
+ case 2:
+ case 1:
+ hour = parseInt(num[0] + (num[1] || ''), 10);
+ minute = 0;
+ break;
+ default:
+ return '';
+ }
+ 
+ if( pm === true && hour > 0 && hour < 12 ) hour += 12;
+ 
+ if( hour >= 13 && hour <= 23 ) pm = true;
+ 
+ if( step ) {
+ if( step === 0 ) step = 60;
+ stepMinute = (Math.round(minute / step) * step) % 60;
+ if( stepMinute === 0 && minute >= 30 ) {
+ hour++;
+ if( hour === 12 || hour === 24 ) pm = !pm;
+ }
+ minute = stepMinute;
+ }
+ 
+ if( hour <= 0 || hour >= 24 ) hour = 0;
+ if( minute < 0 || minute > 59 ) minute = 0;
+ 
+ return (format || defaultFormat)
+        .replace(/g/g, hour === 0 ? '12' : 'g')
+ .replace(/g/g, hour > 12 ? hour - 12 : hour)
+ .replace(/G/g, hour)
+ .replace(/h/g, hour.toString().length > 1 ? (hour > 12 ? hour - 12 : hour) : '0' + (hour > 12 ? hour - 12 : hour))
+ .replace(/H/g, hour.toString().length > 1 ? hour : '0' + hour)
+ .replace(/i/g, minute.toString().length > 1 ? minute : '0' + minute)
+ .replace(/s/g, '00')
+ .replace(/a/g, pm ? 'pm' : 'am')
+ .replace(/A/g, pm ? 'PM' : 'AM');
+ 
+}
+
+
+function update() {
+    $j('#ftime').val(parseTime($j('#ftime').val(), format, step));   
+}
+
+$j(document).ready( function() {
+    
+    $j('#ftime').blur(update);
+
+ $j(function() {
+    $j( "#fdate" ).datepicker({dateFormat: "mm/dd/yy"});
+  });
+    
+
+});
+
 </script>
  
 <div id="home-google-transit-link">

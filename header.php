@@ -4,17 +4,24 @@
 <head profile="http://gmpg.org/xfn/11">
 <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/reset.css" type="text/css">
 <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/formalize.css" />
-<script src="<?php echo get_bloginfo('template_directory'); ?>/jquery.js"></script>
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
 <script src="<?php echo get_bloginfo('template_directory'); ?>/jquery.formalize.js"></script>
 <script src="<?php echo get_bloginfo('template_directory'); ?>/mendo.js"></script>
 <script src="<?php echo get_bloginfo('template_directory'); ?>/js/jquery.cookie.js"></script>
 <script src="<?php echo get_bloginfo('template_directory'); ?>/schedule-tables.js"></script>
 
-
+<style type="text/css">
+#ui-datepicker-div {font-size:65%;}
+</style>
 
 
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
 <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/homepage-hotfix.css" /> 
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+
 <script src="<?php echo get_bloginfo('template_directory'); ?>/js/home-left.js"></script>
 
 
