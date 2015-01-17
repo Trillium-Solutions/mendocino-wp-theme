@@ -255,7 +255,9 @@ font-weight: normal;
         
             <?php $recent = new WP_Query("page_id=570"); while($recent->have_posts()) : $recent->the_post();?>
 <?php the_content(); ?>
-<?php endwhile; ?>
+<?php endwhile;
+wp_reset_query();
+?>
             
             
             
@@ -393,7 +395,9 @@ while ( have_posts() ) : the_post();
 
 		<?php 
 		$count = $count + 1;
-		endwhile; ?>
+		endwhile;
+wp_reset_query();
+?>
 </ul>
 
 <br style="clear: both;" />
@@ -428,7 +432,9 @@ while ( have_posts() ) : the_post();
 
 		<?php 
 		$count = $count + 1;
-		endwhile; ?>
+		endwhile;
+wp_reset_query();
+?>
 </ul>
 
 <br style="clear: both;" />
@@ -447,7 +453,7 @@ if( have_posts()) {
  
 <div id="home-jobs" class="left-links-sec">
 <div class="left-sec-internal">
-<div id="home-news-title" class="left-link-title">Employment Opportunities</div>
+<div id="home-jobs-title" class="left-link-title">Employment Opportunities</div>
 <div id="home-news-arhive-link" class="left-links-archive-link"><a href="/employment-opportunities/">See all</a></div>
 <ul class="left-link-list">
 <?php
@@ -463,7 +469,9 @@ while ( have_posts() ) : the_post();
 
 		<?php 
 		$count = $count + 1;
-		endwhile; ?>
+		endwhile;
+wp_reset_query();
+?>
 </ul>
 
 <br style="clear: both;" />
