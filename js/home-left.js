@@ -7,7 +7,7 @@ $j(function(){
 
 	var leftLinksHeight = $j('#home-left-links').height();	
 	$j('.height-check li').each(function() {
-		alert(($j(this).height())/leftLinksHeight);
+	//	alert(($j(this).height())/leftLinksHeight);
 		
 	});
 	
@@ -24,6 +24,8 @@ $j(function(){
 	$j.each(leftLinkSections, function() {
 				combinedSectionHeight += $j(this).height();
 	});
+	
+	//alert(combinedSectionHeight);
 	
 
 	
@@ -53,7 +55,7 @@ $j(function(){
 				}
 			}
 			else {
-				if (newsJobCount%2 == 0 || numJobsAdded >= jobs.length) {
+				if ((newsJobCount%2 == 0 || numJobsAdded >= jobs.length-1) && !(news.length == 0) && numNewsAdded < news.length) {
 					if (numNewsAdded < news.length) {
 							var nextNews = $j(news[numNewsAdded]);
 							if (combinedSectionHeight + nextNews.height() < maxHeight) {
@@ -66,9 +68,11 @@ $j(function(){
 				}
 				else {
 					if (numJobsAdded < jobs.length) {
-						var nextJobs = $j(jobs[numJobsAdded]);
-						if (combinedSectionHeight + nextJobs.height() < maxHeight) {
-							nextJobs.css('display','inline');
+
+						var nextJob = $j(jobs[numJobsAdded]);
+
+						if (combinedSectionHeight + nextJob.height() < maxHeight) {
+							nextJob.css('display','inline');
 							numLinksAdded++;
 							numJobsAdded++;
 							newsJobCount++;
@@ -87,6 +91,8 @@ $j(function(){
 				updatedHeight += $j(this).height();
 		});
 		combinedSectionHeight = updatedHeight;
+		
+
 		
 		count++;
 		

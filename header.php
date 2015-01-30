@@ -22,11 +22,11 @@
 <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/homepage-hotfix.css" /> 
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
 
-<script src="<?php echo get_bloginfo('template_directory'); ?>/js/home-left.js"></script>
+<script src="<?php echo get_bloginfo('template_directory'); ?>/js/home-left.js?v2"></script>
 
 
 <title>Mendocino Transit Authority (MTA) | Public transportation for Mendocino County, California <?php wp_title(" : "); ?></title>
-
+<?php wp_head(); ?>
 <meta name="description" content="Mendocino County, California. MTA’s service area encompasses about 2,800 square miles including the Mendocino Coast and Inland communities. The transit system includes a network of long distance, commute and local fixed routes, plus Dial-A-Ride services in Ukiah and Ft. Bragg. MTA provides service throughout the county, including the communities of Albion, Anchor Bay, Bodega, Bodega Bay, Boonville, Calpella, Caspar, Elk, Fort Bragg, Fort Ross, Freestone, Gualala, Hopland, Jenner, Manchester, Mendocino, Navarro, Philo, Point Arena, Redwood Valley, Santa Rosa, Sea Ranch, Stewarts Point, Ukiah, Willits, and Windsor." />
 
 
@@ -48,19 +48,6 @@ function popitup(url) {
 // -->
 </script>
 
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-34817997-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
 
 <!-- THE FOLLOWING SCRIPT ENABLES AUTOCOMPLETE IN THE TRIP PLANNER FORM -->
 

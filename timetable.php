@@ -9,6 +9,7 @@ Template Name: timetable
 
 <html>
 <title><?php the_title(); echo ' | '.get_bloginfo('name');?></title>
+<?php wp_head(); ?>
 <head profile="http://gmpg.org/xfn/11">
 <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/timetable.css" />
 <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/style.css" />
