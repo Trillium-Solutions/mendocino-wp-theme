@@ -124,7 +124,7 @@ $j(".fares-table, .div-table").delegate('td','mouseover mouseleave', function(e)
 
 $j.ajax({
 type: "GET",
-url: "http://trilliumtransit.com/clients/mendocino/produce_zone_xml.php",
+url: "http://applications.trilliumtransit.com/clients/mendocino/produce_zone_xml.php",
 data: '',
 dataType: "xml",
 success: function(xml) {

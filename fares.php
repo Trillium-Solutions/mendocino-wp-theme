@@ -22,7 +22,7 @@ get_header(); ?>
                     
                     
                     
-                    <form id="fare_zones" method="POST" action="http://trilliumtransit.com/clients/mendocino/calculate_fare_result.php">
+                    <form id="fare_zones" method="POST" action="http://applications.trilliumtransit.com/clients/mendocino/calculate_fare_result.php">
 
 <h2 id="calculator-title">Fare Calculator</h2>
 
