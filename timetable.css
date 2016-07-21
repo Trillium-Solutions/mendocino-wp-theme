@@ -77,3 +77,36 @@ margin-bottom: 20px;
 .div-table {
 margin: 0 0 20px 0;
 }
+table.timetable-66 {
+	cell-padding: 0;
+	border-collapse:collapse;
+}
+
+
+table.timetable-66 {
+	border: 1px solid grey;
+	caption {
+		background: #c27d92;
+	}	
+	
+}
+
+table.timetable-66 tr:first-of-type {
+	border-bottom: 2px solid grey;
+}
+table.timetable-66 td {
+		border-right: 1px solid grey !important;
+		border-left: 1px solid grey !important; 
+	}
+
+table.timetable-66 tr:nth-child(even) {
+	background: rgba(0,0,0,.1);
+}	
+table.timetable-66 td {
+	padding: 3px;
+	font-size: .9em !important;
+}
+
+table.timetable-66 .tt-row .tt-cell .tt-cell-text {
+	font-size: .9em;
+}

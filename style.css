@@ -462,6 +462,11 @@ z-index: 999;
 line-height: 30px;
 }
 
+#agency-links-menu li {
+	font-size: 14px;
+	line-height: 22px;
+}
+
 #home-bottom-links a:link, #home-bottom-links a:visited {
 text-decoration: none;
 }
@@ -619,7 +624,8 @@ padding: 0 0 0 15px;
 background: url('images/triangle.png') no-repeat 0 5px;
 }
 
-#home-map {
+#home-map {   
+overflow: hidden;
 height: 800px;
 width: 549px;
 margin: 0px 0 0 0;

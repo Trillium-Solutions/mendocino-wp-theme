@@ -1,0 +1,9 @@
+// home map
+
+#hover g, #hover path,{
+	cursor: pointer;
+}
+
+#home-map.hover {
+	cursor: pointer;
+}

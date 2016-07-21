@@ -168,7 +168,7 @@ Route 95 connects the South Coast with Santa Rosa, 7-days per week. Serves coast
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
 					
-					<a href="/wp-content/images/detail_maps/Santa_Rosa_Detail-big.jpg" rel="lightbox"><img src="/wp-content/images/detail_maps/Santa_Rosa_Detail-sml.jpg" /></a>
+					<a href="/wp-content/images/detail_maps/Santa_Rosa_Detail-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Santa_Rosa_Detail-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
 				
 				

@@ -1,5 +1,7 @@
-/**** home left col styling ***/
 
+if(0){ 
+/**** home left col styling ***/
+  
 var $j = jQuery.noConflict();
 
 $j(function(){
@@ -27,7 +29,6 @@ $j(function(){
 	
 	//alert(combinedSectionHeight);
 	
-
 	
 	var links = $j('.left-home-link');
 	var numLinksAdded = 0;
@@ -134,3 +135,4 @@ $j(function(){
 
 
 });
+}

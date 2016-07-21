@@ -93,7 +93,7 @@ Template Name: route-1-20
 		</div> <!-- end #route-connections-box-title -->
 
 			<div class="route-inner-box">
-				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="/files/final/MTA%20schedule%20Willits%20Route%201,%2020.pdf">Download PDF version of Route 1 and 20 timetable.</a></div> <!-- end #route-pdf-link -->
+				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="http://mendocinotransit.org/wp-content/uploads/2015/06/Routes_120_starting_6282015-Sheet1.pdf">Routes 1 and 20 timetable (Starting 6/28/2015).</a></div> <!-- end #route-pdf-link -->
 				<br style="clear: both;" />
 			</div> <!-- end #route-inner-box" -->
 
@@ -126,7 +126,7 @@ Template Name: route-1-20
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
 					
-					<a href="/wp-content/images/detail_maps/ukiah-detail-11-big.jpg" rel="lightbox"><img src="/wp-content/images/detail_maps/ukiah-detail-11-sml.jpg" /></a>
+					<a href="/wp-content/images/detail_maps/ukiah-detail-11-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/ukiah-detail-11-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
 			
 			
@@ -146,7 +146,7 @@ Template Name: route-1-20
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
 					
-					<a href="/wp-content/images/detail_maps/Willits-Detail-big.jpg" rel="lightbox"><img src="/wp-content/images/detail_maps/Willits-Detail-sml.jpg" /></a>
+					<a href="/wp-content/images/detail_maps/Willits-Detail-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Willits-Detail-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
 				
 				<div class="route-detail-map-image-wrap">
@@ -159,7 +159,7 @@ Template Name: route-1-20
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
 					
-					<a href="/wp-content/images/detail_maps/Ukiah_Inset_Detail-big.jpg" rel="lightbox"><img src="/wp-content/images/detail_maps/Ukiah_Inset_Detail_sml.jpg" /></a>
+					<a href="/wp-content/images/detail_maps/Ukiah_Inset_Detail-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Ukiah_Inset_Detail_sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
 				
 			</div> <!-- end #map-col-right -->

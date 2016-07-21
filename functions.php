@@ -2,6 +2,10 @@
 
   add_action('mendo_route_alert', 'make_route_alert');
   
+  register_nav_menus( array(
+  	'agency-information' => 'Agency Information Links',
+  ) );
+  
   function make_route_alert($routeNumber){  
   global $post;
       if (is_page()) {
@@ -61,6 +65,7 @@ function routeSelect() {
 		  <option value="7-9">Rts. 7 and 9 - Ukiah</option>
 		  <option value="5-60">Rts. 5 and 60 - Ft. Bragg/North Coast</option>
 		  <option value="65">Rt. 65 CC Rider</option>
+		  <option value="66">Rt. 66 Willits - Santa Rosa</option> 
 		  <option value="75">Rt. 75 South Coast/Ukiah</option>
 		  <option value="95">Rt. 95 South Coast/Santa Rosa</option>
 		</select>

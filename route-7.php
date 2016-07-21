@@ -215,7 +215,7 @@ Template Name: route-7-9
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
 					
-					<a href="/wp-content/images/detail_maps/ukiah-detail-11-big.jpg" rel="lightbox"><img src="/wp-content/images/detail_maps/ukiah-detail-11-sml.jpg" /></a>
+					<a href="/wp-content/images/detail_maps/ukiah-detail-11-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/ukiah-detail-11-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
 			
 			
@@ -235,7 +235,7 @@ Template Name: route-7-9
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
 					
-					<a href="/wp-content/images/detail_maps/Ukiah_Inset_Detail-big.jpg" rel="lightbox"><img src="/wp-content/images/detail_maps/Ukiah_Inset_Detail_sml.jpg" /></a>
+					<a href="/wp-content/images/detail_maps/Ukiah_Inset_Detail-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Ukiah_Inset_Detail_sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
 				
 			</div> <!-- end #map-col-right -->

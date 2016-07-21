@@ -4,39 +4,42 @@
 <head profile="http://gmpg.org/xfn/11">
 <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/reset.css" type="text/css">
 <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/formalize.css" />
+<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/mendo-map.css" />
 
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
 
-<script src="<?php echo get_bloginfo('template_directory'); ?>/jquery.formalize.js"></script>
-<script src="<?php echo get_bloginfo('template_directory'); ?>/mendo.js"></script>
-<script src="<?php echo get_bloginfo('template_directory'); ?>/js/jquery.cookie.js"></script>
-<script src="<?php echo get_bloginfo('template_directory'); ?>/schedule-tables.js"></script>
+
 
 <style type="text/css">
 #ui-datepicker-div {font-size:65%;}
 </style>
 
 
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
-<link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/homepage-hotfix.css" /> 
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>?v=2" /> 
+<link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/homepage-hotfix.css?v2" /> 
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
 
-<script src="<?php echo get_bloginfo('template_directory'); ?>/js/home-left.js?v2"></script>
+
 
 
 <title>Mendocino Transit Authority (MTA) | Public transportation for Mendocino County, California <?php wp_title(" : "); ?></title>
 <?php wp_head(); ?>
 <meta name="description" content="Mendocino County, California. MTA’s service area encompasses about 2,800 square miles including the Mendocino Coast and Inland communities. The transit system includes a network of long distance, commute and local fixed routes, plus Dial-A-Ride services in Ukiah and Ft. Bragg. MTA provides service throughout the county, including the communities of Albion, Anchor Bay, Bodega, Bodega Bay, Boonville, Calpella, Caspar, Elk, Fort Bragg, Fort Ross, Freestone, Gualala, Hopland, Jenner, Manchester, Mendocino, Navarro, Philo, Point Arena, Redwood Valley, Santa Rosa, Sea Ranch, Stewarts Point, Ukiah, Willits, and Windsor." />
+<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
 
+<script src="<?php echo get_bloginfo('template_directory'); ?>/jquery.formalize.js"></script>
+<script src="<?php echo get_bloginfo('template_directory'); ?>/mendo.js"></script>
+<script src="<?php echo get_bloginfo('template_directory'); ?>/js/jquery.cookie.js"></script>
+<script src="<?php echo get_bloginfo('template_directory'); ?>/schedule-tables.js"></script>
+<script src="<?php echo get_bloginfo('template_directory'); ?>/mendo-map.js"></script>
+<script src="<?php echo get_bloginfo('template_directory'); ?>/js/home-left.js?v2"></script>
 
 <!--[if IE]>
 <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/ie.css" />
 <![endif]-->
 <link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" />
-<script src="<?php echo get_bloginfo('template_directory'); ?>/js/lightbox.js"></script>
-<link href="<?php echo get_bloginfo('template_directory'); ?>/css/lightbox.css" rel="stylesheet" />
-<script language="javascript" type="text/javascript">
+ 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript"> 
 
 <!--
 function popitup(url) {

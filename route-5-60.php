@@ -92,7 +92,7 @@ Template Name: route-5-60
 		</div> <!-- end #route-connections-box-title -->
 
 <div class="route-inner-box">
-				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="/files/final/MTA%20schedule%20Route%205%20-%2027-Jul-2014.pdf">Download PDF version of Route 5 and 60 timetable (effective July 27, 2014).</a></div> <!-- end #route-pdf-link -->
+				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="/files/final/MTA%20schedule%20Routes%205%20and%206-13-Nov-15.pdf" target="_blank">Download PDF version of Route 5 and 60 timetable (effective Nov 13, 2015).</a></div> <!-- end #route-pdf-link -->
 				<br style="clear: both;" />
 				</div> <!-- end #route-inner-box" -->
 
@@ -125,7 +125,7 @@ Template Name: route-5-60
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
 					
-					<a href="/wp-content/images/detail_maps/Ft-Bragg-Detail-Map-big.jpg" rel="lightbox"><img src="/wp-content/images/detail_maps/Ft-Bragg-Detail-Map-sml.jpg" /></a>
+					<a href="/wp-content/images/detail_maps/Ft-Bragg-Detail-Map-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Ft-Bragg-Detail-Map-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
 			
 			
@@ -144,7 +144,7 @@ Template Name: route-5-60
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
 					
-					<a href="/wp-content/images/detail_maps/Coastal_Map_Detail_08-big.jpg" rel="lightbox"><img src="/wp-content/images/detail_maps/Coastal_Map_Detail_08-sml.jpg" /></a>
+					<a href="/wp-content/images/detail_maps/Coastal_Map_Detail_08-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Coastal_Map_Detail_08-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
 				
 				

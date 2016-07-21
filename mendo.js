@@ -12,7 +12,11 @@ if(selected == "1-20") {
 	window.location = "/routes/routes-7-and-9";
 } else if (selected == "65") {
 	window.location = "/routes/route-65";
-} else if (selected == "75") {
+} 
+else if (selected == "66") {
+	window.location = "/routes/route-66";
+}
+else if (selected == "75") {
 	window.location = "/routes/route-75";
 } else if (selected == "95") {
 	window.location = "/routes/route-95";

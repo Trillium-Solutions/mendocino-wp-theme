@@ -177,7 +177,7 @@ Route 65 - CC Rider runs 7-days per week from Ft. Bragg to Willits, Ukiah and Sa
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
 					
-					<a href="/wp-content/images/detail_maps/ukiah-detail-11-big.jpg" rel="lightbox"><img src="/wp-content/images/detail_maps/ukiah-detail-11-sml.jpg" /></a>
+					<a href="/wp-content/images/detail_maps/ukiah-detail-11-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/ukiah-detail-11-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
 			
 			
@@ -191,7 +191,7 @@ Route 65 - CC Rider runs 7-days per week from Ft. Bragg to Willits, Ukiah and Sa
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
 					
-					<a href="/wp-content/images/detail_maps/Ukiah_Inset_Detail-big.jpg" rel="lightbox"><img src="/wp-content/images/detail_maps/Ukiah_Inset_Detail_sml.jpg" /></a>
+					<a href="/wp-content/images/detail_maps/Ukiah_Inset_Detail-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Ukiah_Inset_Detail_sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
 			
 				<div class="route-detail-map-image-wrap">
@@ -204,7 +204,7 @@ Route 65 - CC Rider runs 7-days per week from Ft. Bragg to Willits, Ukiah and Sa
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
 					
-					<a href="/wp-content/images/detail_maps/Santa_Rosa_Detail-big.jpg" rel="lightbox"><img src="/wp-content/images/detail_maps/Santa_Rosa_Detail-sml.jpg" /></a>
+					<a href="/wp-content/images/detail_maps/Santa_Rosa_Detail-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Santa_Rosa_Detail-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
 				
 				
@@ -220,7 +220,7 @@ Route 65 - CC Rider runs 7-days per week from Ft. Bragg to Willits, Ukiah and Sa
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
 					
-					<a href="/wp-content/images/detail_maps/Willits-Detail-big.jpg" rel="lightbox"><img src="/wp-content/images/detail_maps/Willits-Detail-sml.jpg" /></a>
+					<a href="/wp-content/images/detail_maps/Willits-Detail-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Willits-Detail-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
 				<div class="route-detail-map-image-wrap">
 					<div class="map-detail-title-bar">
@@ -232,7 +232,7 @@ Route 65 - CC Rider runs 7-days per week from Ft. Bragg to Willits, Ukiah and Sa
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
 					
-					<a href="/wp-content/images/detail_maps/Calpella-Detail-big.jpg" rel="lightbox"><img src="/wp-content/images/detail_maps/Calpella-Detail-sml.jpg" /></a>
+					<a href="/wp-content/images/detail_maps/Calpella-Detail-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Calpella-Detail-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
 				
 				<div class="route-detail-map-image-wrap">
@@ -245,7 +245,7 @@ Route 65 - CC Rider runs 7-days per week from Ft. Bragg to Willits, Ukiah and Sa
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
 					
-					<a href="/wp-content/images/detail_maps/Ft-Bragg-Detail-Map-big.jpg" rel="lightbox"><img src="/wp-content/images/detail_maps/Ft-Bragg-Detail-Map-sml.jpg" /></a>
+					<a href="/wp-content/images/detail_maps/Ft-Bragg-Detail-Map-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Ft-Bragg-Detail-Map-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
 				
 			</div> <!-- end #map-col-right -->

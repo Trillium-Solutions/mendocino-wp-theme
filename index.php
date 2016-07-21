@@ -108,6 +108,11 @@ width: 100%;
 #home-links-col-2-list li {
 margin-bottom: 5px;
 }
+
+#agency-links-menu li {
+	font-size: 14px;
+	line-height: 22px;
+}
  
 #home-route-planner-inner {
 margin: 2%;
@@ -185,7 +190,7 @@ font-size: 1.1em;
 <?php 
 
  $count = 0;
-$posts = query_posts( $query_string . '&cat=4&orderby=asc&posts_per_page=3' ); ?>
+$posts = query_posts( $query_string . '&cat=4&orderby=asc&posts_per_page=4' ); ?>
 <?php if( $posts ) { ?>
  
     <div class="home-post"> 
@@ -439,7 +444,7 @@ $j(document).ready( function() {
 
 <?php
 $count = 1;
-query_posts( array ( 'category_name' => 'service-alert', 'posts_per_page' => 3 ) );
+query_posts( array ( 'category_name' => 'service-alert', 'posts_per_page' => 4 ) );
 
 
 if( have_posts()) {
@@ -457,7 +462,7 @@ while ( have_posts() ) : the_post();
 				
 				?>
 
-			<li style="display: none;">
+			<li>
     <a class="left-home-link" id="home-alerts-link-<?php echo $count; ?>" href=" <?php the_permalink() ?>" ><?php the_title() ?></a>
     </li>
 
@@ -494,7 +499,7 @@ while ( have_posts() ) : the_post();
 				
 				?>
 
-			<li style="display: none;">
+			<li >
     <a class="left-home-link" id="home-news-link-<?php echo $count; ?>" href=" <?php the_permalink() ?>" ><?php the_title() ?></a>
     </li>
 
@@ -531,7 +536,7 @@ while ( have_posts() ) : the_post();
 				
 				?>
 
-			<li style="display: none;">
+			<li >
     <a class="left-home-link" id="home-jobs-link-<?php echo $count; ?>" href=" <?php the_permalink() ?>" ><?php the_title() ?></a>
     </li>
 
@@ -588,51 +593,7 @@ Currently no service alerts.
 		Click a route to see its schedule and detail map.
 		</div> <!-- end #home-map-caption" -->
 					<div id="home-map">
-					<div id="map-under">
-					
-					
-						<!--<div id="home-map-caption">
-							Click a route to see its schedule and detail map.
-						</div> --> 
-						
-<div id="preload-60"> </div>
-
-<div id="preload-5"> </div>
-
-<div id="preload-1"> </div>
-
-<div id="preload-7"> </div>
-
-<div id="preload-9"> </div>
-
-<div id="preload-65"> </div>
-
-<div id="preload-20"> </div>
-
-<div id="preload-75"> </div>
-
-<div id="preload-95"> </div>
-						
-						
-						
-						<map name="map">
-<area shape="poly" coords="90,228,114,222,113,205,105,165,95,130,85,123,81,115,80,89,53,89,71,220,92,235,92,234," href="/routes/routes-5-and-60" alt="60" title="60"   >
-<area shape="poly" coords="135,104,174,106,175,66,134,66," href="/routes/routes-5-and-60" alt="5" title="5"   >
-<area shape="poly" coords="245,111,284,112,282,80,245,80," href="/routes/routes-1-and-20" alt="1" title="1"   >
-<area shape="poly" coords="400,254,401,289,436,289,434,254,405,254," href="/routes/routes-7-and-9" alt="7" title="7"   >
-<area shape="poly" coords="439,254,473,256,473,287,440,290," href="/routes/routes-7-and-9" alt="9" title="9"   >
-<area shape="poly" coords="82,91,85,124,139,159,210,166,244,143,253,135,262,127,280,175,315,203,316,246,322,250,325,300,349,375,398,468,429,540,466,574,505,620,534,621,514,567,477,527,469,481,432,440,411,377,381,311,349,245,342,182,304,159,282,117,252,115,199,124,158,132,126,110," href="/routes/route-65" alt="65" title="65"   >
-<area shape="poly" coords="249,143,261,131,279,176,312,206,313,247,320,258,320,278,305,275,297,250,277,211,265,184," href="/routes/routes-1-and-20" alt="20" title="20"   >
-<area shape="poly" coords="306,280,319,281,326,305,270,360,216,332,175,282,142,274,159,348,229,444,218,458,202,450,201,440,150,375,110,370,104,348,117,304,92,245,91,234,111,221,156,233,200,238,247,281,270,299," href="/routes/route-75" alt="75" title="75"   >
-<area shape="poly" coords="111,375,149,376,197,440,199,455,235,457,297,526,350,585,393,628,406,647,440,634,475,621,496,616,531,624,531,645,485,653,466,670,435,688,390,700,356,673,311,625,266,583,220,526,180,484,155,446,139,415,110,402," href="/routes/route-95" alt="95" title="95"   >
-</map>
-						<img src="/images/549-800-clear.png" width="549" height="800" usemap="#map" hidefocus="true"   >
-
-				
-					
-					
-
-</div> <!-- end #map under -->
+				<?php include('home-map-01.svg'); ?>
 					</div> <!-- #home-map -->
 				</div><!-- home-right-col -->
 				<br style="clear: both; width: 100%;" />
@@ -665,20 +626,15 @@ Currently no service alerts.
 					<div id="home-links-col-3">
 						<div id="home-links-col-3-title" class="home-links-title">
 						Agency Information 
-						<?php
-						//if ($detect->isMobile()) {
-    					//	echo "mobile device";
-						//} 
-						?>
 						</div> <!-- end #home-links-col-1-title -->
-						<ul id="home-links-col-3-list" class="home-links-list">
-						<li><a href="/about">About MTA</a></li>
-							<li><a href="/related-organizations">Related Organizations</a></li>
-							<li><a href="/contact">Contact</a></li>
-							<li><a href="/planning-documents">Planning Documents</a></li> 
-							<li><a href="/board-of-directors/">Board agendas and minutes</a></li>
-							<li><a href="/title-vi-program/">Title VI Program</a></li> 
-						</ul>
+						<?php 
+			
+						wp_nav_menu( array (
+							'theme_location' => 'agency-information',
+							'menu_class'     => 'home-links-list',
+							'menu_id'        => 'agency-links-menu',
+						 ) );
+						?>
 					</div> <!-- end #home-links-col-3 -->
 					<br style="clear: both;">
 				</div> <!-- #home-bottom-links-->
