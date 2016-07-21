@@ -8,7 +8,7 @@
 
 			<div id="copyright">
 			
-				Copyright &copy; Mendocino Transit Authority<br />
+				Copyright &copy; Mendocino Transit Authority | <a href="<?php echo get_site_url(); ?>/site-credits">Site Credits</a><br />
 
 				
 				<?php wp_reset_query();
