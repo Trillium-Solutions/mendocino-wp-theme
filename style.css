@@ -1,10 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import url("route.css");
 @import url("maps-and-schedules.css");
-
-
-html {
-
-}
 
 a:hover {
 text-decoration: underline !important;
@@ -20,15 +16,16 @@ background-repeat: no-repeat;
 background-position: top center;
 background-attachment:scroll;
 background-color:#4272b9;
-font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+font-family: 'Open Sans', sans-serif;
 }
 
 a,img {
 border: none;
 }
 
-
+#announcement-banner {
+    display: none;
+}
 
 p{
 margin: 10px 0 10px 0;
@@ -38,8 +35,6 @@ margin-top: 0;
 div {
 margin-top: 0;
 }
-
-
 
 .ul-circle {
 list-style-type:circle;
@@ -139,13 +134,13 @@ visibility: hidden;
 }
 
 #ms-preload-65 {
-background: url('images/schedules-map/map-glow-65.jpg') 
+background: url('images/schedules-map/map-glow-65.jpg'); 
 visibility: hidden; }
 #ms-preload-75 {
 background: url('images/schedules-map/map-glow-75.jpg') ;
 visibility: hidden; }
 #ms-preload-5 {
-background: url('images/schedules-map/map-glow-5.jpg') n
+background: url('images/schedules-map/map-glow-5.jpg') ;
 visibility: hidden; }
 #ms-preload-9 {
 background: url('images/schedules-map/map-glow-9.jpg') ;
@@ -370,7 +365,7 @@ background: url('images/planner-bg.png') no-repeat;
 -moz-text-shadow: 0px 0px 4px #fff;
 	-webkit-text-shadow: 0px 0px 4px #fff;
 	text-shadow: 0px 0px 4px #fff;
-	font-size: .7em;cell
+	font-size: .7em;
 }
 
 #home-route-planner {
@@ -1077,7 +1072,7 @@ height: 25px;
 padding: 5px;
 }
 
-.page, .post {
+.page, .post, .news {
 padding: 0 3% 0 3%;
 width: 94%;
 }
@@ -1184,8 +1179,35 @@ font-size: 17px;
  right: 30px;
 }
 
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
 
+#social-links {
+    text-align: right;
+}
 
+#social-links svg {
+    stroke: #fef1bc;
+    fill: #fef1bc;
+    width: 42px;
+    height: 42px;
+    margin: 12px 6px 0;
+}
+
+#social-links svg:hover {
+    stroke: #FDE171;
+    fill: #FDE171;
+}
+
+#social-links svg.icon-twitter {
+    margin-right: 0;
+}
 
 .left-sec-internal {
 
@@ -1197,4 +1219,859 @@ padding-top: 12px;
 .left-spacer {
 float: left;
 display: block;
+}
+
+/*  new changes to left alert bar on home page */
+
+.alert-sym {
+background: url("images/alert-sym.png");
+width: 17px;
+height: 15px;
+float: left;
+margin-right: 6px;
+}
+ 
+#home-service-alerts h2 {
+margin-right: 6px;
+}
+
+.left-links-sec ul { 
+float:left;
+clear: left;
+margin-top: 12px;
+}
+ 
+.left-links-sec ul li {
+/*background: url("images/blue-bullet.png") left top;*/
+background-repeat: no-repeat;
+background-position: 0 5px;
+margin-bottom: 10px;
+}
+ 
+.left-links-sec ul li a:hover,
+.left-links-sec ul li a {
+
+position: relative;
+left: -10px;
+padding-left: 10px;
+right: -10px;
+padding-right: 10px;
+margin-bottom: 10px;
+
+}
+
+
+
+ 
+.left-link-title {
+float:left;
+font-size: 16px;
+color: #063;
+font-weight: bold;
+text-shadow: 0 0 13px rgba(255, 255, 255, 1);
+}
+ 
+.left-home-link {
+display: block;
+color: #0066FF;
+font-size: 14px;
+clear: left;
+}
+ 
+.left-links-archive-link {
+margin-top: 4px;
+margin-left: 6px;
+float: left;
+font-size: 10px;
+}
+.left-links-archive-link a {
+text-decoration: none;
+}
+
+#home-left-links {
+	height: auto;
+}
+
+#home-left-links li {
+	list-style: none;
+}
+
+#home-route-planner {
+	height: 396px;
+}
+#home-google-transit-link {
+	margin-top: 10px;
+}
+
+.home-links-text {
+    float: none;
+    display: inline;
+}
+
+#ftime, #fdate {
+    width: 65px;
+    text-align: center;
+}
+
+#timetable-header {
+    background: #6e8cbe;
+}
+
+/***************************************
+**          Breakpoints               **
+***************************************/
+
+#logo-text {
+    font-weight: bold;
+    color: white;
+    margin-left: 28px;
+    display: none;
+}
+
+.mobile-only {
+    display: none;
+}
+
+#mobile-nav-button {
+    background: transparent;
+    text-transform: uppercase;
+    color: #fef1bc;
+    border: 2px solid;
+    border-radius: 10px;
+    display: none;
+    font-family: 'Open Sans';
+    font-size: 110%;
+    padding: 8px 16px;
+    margin-right: 16px;
+    margin-top: 80px;
+    float: right;
+}
+
+#mobile-nav-button:hover {
+    color: #FDE171;
+}
+
+h1 {
+    line-height: 1.1;
+}
+
+@media only screen and (max-width: 1048px) {
+    /* Main wrapper full-width, switch to mid-size header 
+    ** Generally add responsiveness to all elements.   */
+        
+    #main-center-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+    
+    #top-curves-template {
+        display: none;
+    }
+    
+    #bg-strecher {
+        background: #f8f6ef;
+        padding-top: 20px;
+        clear: both;
+    }
+    
+    #mta-logo {
+        background: url('images/logo-mobile.png') no-repeat;
+        background-size: contain;
+        height: 100%;
+    }
+    
+    #logo-text {
+        display: block;
+    }
+    
+    #logo-left {
+        width: 345px;
+        height: 130px;
+        margin-top: 0px;
+        margin-bottom: 30px;    
+    }
+    
+    #nav {
+        float: right;
+        margin-top: 74px;
+    }
+    
+    #mendo-number,
+    #social-links {
+        display: inline-block;
+    }
+    
+    #social-links {
+        margin-right: 16px;
+    }
+    
+    #mendo-number {
+        position: relative;
+        bottom: 10px;
+        margin-right: 30px;
+    }
+    
+    #social-links svg {
+        margin-top: 6px;
+    }
+    
+    #top-right-number-and-spanish {
+        position: static;
+        
+    }
+    
+    #top-line {
+        float: right;
+        margin-top: 6px;
+    }
+    
+    #language-link {
+        float: left;
+        clear: none;
+        margin-left: 16px;
+    }
+    
+    #top {
+        clear: both;
+        height: 140px;
+    }
+    
+    #nav-maps-and-schedules,
+    #nav-fares,
+    #nav-how-to-ride,
+    #nav-connections {
+        height: 82px;
+    }
+    
+    #inner-main-container {
+        padding: 0 20px;
+        width: auto;
+    }
+    
+    #home-route-planner,
+    #home-left-links {
+        margin-left: 0;
+        width: auto;
+    }
+    
+    #home-map {
+        width: 100%;
+        height: auto;
+        background: none;
+    }
+    
+    #home-route-planner {
+        background-size: cover;
+        margin-right: 12px;
+    }
+    
+    #home-map-caption {
+        left: auto;
+        right: 10px;
+        width: 205px;
+    }
+    
+    #home-bottom-links {
+        margin-left: 0;
+    }
+    
+    #home-mta-description {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    
+    #home-links-col-1 {
+        padding: 0 10px 0 0;
+        width: 30%;
+        margin-left: 0;
+        
+    }
+    #home-links-col-2 {
+        padding: 0 10px 0 0;
+        width: 38%;
+    }
+    #home-links-col-3 {
+        padding: 0;
+        width: 20%;    
+    }
+    
+    #bottom-hr {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #bottom-scene-middle {
+        width: 100%;
+        left: 0;
+        background-size: cover;
+    }
+    
+    #bottom-scene-left-fade,
+    #bottom-scene-right-fade {
+        width: 0;
+    }
+    
+    input,
+    select {
+        max-width: 100%;
+    }
+    
+    #page-overlay {
+        background: none;
+        padding: 0;
+    }
+    
+    #post-116 #fare-table-title {
+        height: auto;
+    }
+    
+    #fare-title-text {
+        float: none;
+        display: inline;
+        position: relative;
+        top: -5px;
+    }
+    
+    #fare-title-circs {
+        float: none;
+        display: inline-block;
+    }
+    
+    .regular,
+    .reduced,
+    .students {
+        overflow-x: auto;
+    }
+    
+    #schedules-container .header {
+        width: auto;
+        height: auto;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    #route-title {
+        max-width: 60%;
+    }
+    
+    ul {
+        padding-left: 20px;
+    }
+    
+    #copyright {
+        margin: 46px 20px 0 0;
+    }
+    
+    #timetable-content {
+        width: auto;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    #timetable-center-title {
+        width: auto;
+        margin: 0;
+    }
+    
+    #timetable-route-name-part-1 {
+        margin-left: 20px;
+    }
+    
+    .table-wrap {
+        overflow-x: scroll;
+    }
+    
+    .tt-info-box {
+        width: auto !important;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    /* Switch to mobile menu here */
+    #nav {
+        height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        transition: visibility 0s linear 0.2s,height 0.2s ease-out;
+        margin-top: 0;
+        margin-top: 10px;
+        text-align: center;
+        border-top: 2px solid #f8f6ef;
+        width: 100%;
+        margin-bottom: -2px;
+    }
+    #nav.mobile-show {
+        height: 92px;
+        transition: height 0.25s ease-in;
+        visibility: visible;
+    }
+    #mobile-nav-button {
+        display: block;
+    }
+    
+    #nav > a > div {
+        float: none;
+        display: inline-block;
+    }
+    
+    #nav > a {
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 5px;
+    }
+    
+    #nav > a:hover {
+        text-decoration: none;
+    }
+    
+    #fare_result {
+        clear: both;
+    }
+    
+    #fare_zones select {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 720px) {
+    /* Switch to single column */
+    .tablet-hide {
+        display: none;
+    }
+    
+    #home-left-col {
+        width: 100%;
+        float: none;
+    }
+    
+    #home-right-col {
+        width: auto;
+        float: none;
+        padding: 20px;
+        border-radius: 10px;
+        clear: both;
+        background-color: #6e8cbe;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        text-shadow: 3px 3px 4px black;
+        box-shadow: 1px 1px 1px black;
+        cursor: pointer;
+    }
+    
+    #home-right-col.mobile-show {
+        box-shadow: none;
+        text-shadow: none;
+        color: black;
+        text-align: left;
+        font-weight: normal;
+        padding: 0;
+        border-radius: 0;
+    }
+    
+    #home-right-col:hover {
+        box-shadow: inset 0 0 3px black;
+    }
+    
+    #home-route-planner {
+        margin-right: 0;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        height: 340px;
+    }
+    
+    #home-route-planner-inner {
+        width: 80%;
+        text-align: center;
+        float: none;
+        margin: 0 auto;
+        padding: 21px 0;
+    }
+    
+    #trip_planner_form_table {
+        width: 100%;
+    }
+    
+    #home-route-planner input,
+    #home-route-planner select {
+        font-size: 100%;
+    }
+    
+    #trip_type_select, #fdate, #ftime {
+        font-size: 16px !important;
+        width: 90px;
+    }
+    
+    #home-route-planner #row1, 
+    #home-route-planner #row3,
+    #home-route-planner #when {
+/*        display: inline-block;
+        line-height: 32px;
+        margin-right: 20px;*/
+        float: left;
+        margin-right: 5%;
+        margin-left: 5%;
+        width: 10%;
+    }
+    #home-route-planner #row2,
+    #home-route-planner #row4 {
+        /*display: inline-block;*/
+        float: left;
+        width: 75%;
+    }
+    
+    #row4 {
+        margin-top: 18px;
+    }
+    
+    #saddr, #daddr {
+        width: 100% !important;
+        margin-top: 0 !important;
+    }
+    
+    #cell_2a, #cell_2b {
+        display: block;
+    }
+    
+    #cell_3b {
+        text-align: right;
+    }
+    
+    #home-google-transit-link {
+        float: right;
+    }
+    
+    #home-left-links {
+        margin: 14px 0;
+    }
+    
+    #home-map,
+    #home-map-caption {
+        display: none;
+    }
+    
+    #home-right-col:after {
+        content: 'Show Route Map';
+    }
+    #home-right-col.mobile-show:after {
+        content: '';
+    }
+    
+    #home-right-col.mobile-show #home-map,
+    #home-right-col.mobile-show #home-map-caption {
+        display: inherit;
+    } 
+    
+    #schedules-container .header {
+        margin: 0;
+    }
+    
+    #schedules-container .column {
+        width: 100%;
+        float: none;
+    }
+    
+    #left-column .column-box,
+    #right-column .column-box {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    #route-title {
+        max-width: 72%;
+        margin-bottom: 30px;
+    }
+    
+    #route-breadcrumb {
+        clear: both;
+    }
+    
+    #route-dropdown {
+        margin-bottom: 15px;
+        float: none;
+        margin-right: 0;
+        text-align: center;
+        
+    }
+    
+    #route-col-left,
+    #route-col-right {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+    
+    #route-col-right {
+        margin-top: 20px;
+    }
+    
+    #route-header {
+        height: auto;
+    }
+    
+    #timetable-route-name {
+        height: auto;
+    }
+    
+    #timetable-route-name-part-1 {
+        float: none;
+        margin-top: 0;
+        padding-bottom: 20px;
+    }
+    
+    .timetable-left-marg {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 596px) {
+    #home-links-col-1, 
+    #home-links-col-2,
+    #home-links-col-3 {
+        width: 100%;
+        margin-right: 0;
+        padding: 0;
+        border-right: 0;
+    }
+    
+    #home-bottom-links li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    
+    #home-bottom-links {
+        margin-top: 10px;
+    }
+    
+    .home-links-title {
+        margin-top: 15px;
+    }
+    
+    .page, .post, .news {
+        padding: 0;
+        width: auto;
+    }
+    
+    #page-overlay h1.main,
+    .breadcrumb {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .type-post img,
+    .type-page img,
+    .alignright {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+}
+
+@media only screen and (max-width: 528px) {
+    /* mobile size, switch to column menu */
+    .mobile-hide {
+        display: none;
+    }
+    .mobile-only {
+        display: inherit;
+    }
+    #home-route-planner-inner {
+        width: 92%;
+    }
+    
+    #nav a {
+        display: block;
+        color: #fdf0bc;
+        padding: 15px;
+        border-bottom: 1px solid rgba(253,250,188,0.8);
+        margin-top: 0;
+    }
+    
+    #nav a:hover,
+    #nav a:focus {
+        color: #fdf0bc;
+        background-color: #00519e;
+        background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(30,87,153,0.6) 56%,rgba(30,87,153,1) 100%);
+        background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(30,87,153,0.6) 56%,rgba(30,87,153,1) 100%);
+        background: linear-gradient(to bottom, rgba(30,87,153,1) 0%, rgba(30,87,153,0.6) 56%,rgba(30,87,153,1) 100%);
+        text-decoration: none !important;
+    }
+    
+    #nav > a > div {
+        background-image: none;
+        width: auto;
+        height: auto;
+        display: block;
+    }
+    
+    #nav-maps-and-schedules:after {
+        content: 'MAPS & SCHEDULES';
+    }
+    
+    #nav-fares:after {
+        content: 'FARES';
+    }
+    
+    #nav-how-to-ride:after {
+        content: 'HOW TO RIDE';
+    }
+    
+    #nav-connections:after {
+        content: 'CONNECTIONS';
+    }
+    
+    #language-link {
+        display: none;
+    }
+    
+    #logo-left {
+        width: 240px;
+        height: 90px;
+        margin-bottom: 18px;
+    }
+    
+    #logo-text {
+        font-weight: normal;
+        margin-left: 18px;
+    }
+    
+    #mobile-nav-button {
+        margin-top: 60px;
+    }
+    
+    #top {
+        height: 100px;
+    }
+    
+    #nav.mobile-show {
+        height: 190px;
+    }
+    
+     #home-route-planner {
+         height: 368px;
+     }
+     
+     li .home-link-icon {
+         display: inline-block;
+         float: none;
+         padding-left: 18px;
+         position: relative;
+         top: 5px;
+     }
+     
+     .box-chunk .box-row {
+         width: auto;
+     }
+     
+     .ms-desc {
+         max-width: 76%;
+     }
+     
+     #route-map-col-left,
+     #route-map-col-right {
+         width: auto;
+         margin: 0;
+         float: none;
+     }
+     
+     #service-alert-box h2 {
+         height: auto;
+     }
+    
+}
+
+@media only screen and (max-width: 425px) {
+    #top-line {
+        text-align: center;
+        float: none;
+    }
+    
+    #home-route-planner {
+        height: 400px;
+    }
+    
+    #mendo-number {
+        position: static;
+        margin-right: 0;
+        display: block;
+    }
+    
+    #social-links {
+        text-align: center;
+    }
+    
+    #logo-left {
+        width: 240px;
+        height: 72px;
+    }
+    
+    #nav {
+        margin-top: 6px;
+    }
+    
+    #mobile-nav-button {
+        margin-top: 40px;
+    }
+    
+    #top {
+        margin-top: 0;
+        height: 78px;
+    }
+    #trip_type_select, #fdate, #ftime {
+        font-size: 16px !important;
+        width: 90px;
+    }
+    
+    #home-route-planner #row1, 
+    #home-route-planner #row3,
+    #home-route-planner #when {
+        float: none;
+        margin: 0;
+        width: auto;
+        text-align: left;
+    }
+    #home-route-planner #row2,
+    #home-route-planner #row4 {
+        /*display: inline-block;*/
+        width: 100%
+    }
+    
+    #row4 {
+        margin-top: 0px;
+    }
+    
+    #cell_3a {
+        text-align: left;
+    }
+    
+    #saddr, #daddr {
+        width: 100% !important;
+        margin-top: 0 !important;
+    }
+    
+    #ftime {
+        width: 70px;
+    }
+    
+    #cell_3b {
+        padding-top: 20px !important;
+    }
+    
+    #home-left-links {
+        padding: 10px;
+    }
+    
+    .timetable-content {
+        padding: 0;
+    }
+}
+
+#mcd_debug {
+    display: none;
 }

@@ -1,274 +1,15 @@
 <?php
 /*
 Template Name: updated-home
-*/
-?>
-
-<?php 
-
-if(!$_COOKIE["force-desktop"] && isset($_COOKIE["force-desktop"])) {
-				
-?>
-
-<!-- This section contains headers for the mobile site.  Headers for the desktop site are in header.php. -->
-			
-<html>
-<head profile="http://gmpg.org/xfn/11">
-<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/reset.css" type="text/css">
-<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/formalize.css" />
-<script src="<?php echo get_bloginfo('template_directory'); ?>/jquery.js"></script>
-<script src="<?php echo get_bloginfo('template_directory'); ?>/jquery.formalize.js"></script>
-<script src="<?php echo get_bloginfo('template_directory'); ?>/js/jquery.cookie.js"></script>
-<script src="<?php echo get_bloginfo('template_directory'); ?>/mendo.js"></script>
-<script src="<?php echo get_bloginfo('template_directory'); ?>/schedule-tables.js"></script>
-
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
-
-
-<meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
-
-
-<meta name="viewport" content="width=device-width" />
-
-<title>Mendocino Transit Authority (MTA) | Public transportation for Mendocino County, California <?php wp_title(" : "); ?></title> 
-
-
-
-<!--[if IE]>
-<link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/ie.css" />
-<![endif]-->
-<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" />
-<script src="<?php echo get_bloginfo('template_directory'); ?>/js/lightbox.js"></script>
-<link href="<?php echo get_bloginfo('template_directory'); ?>/css/lightbox.css" rel="stylesheet" />
-<script language="javascript" type="text/javascript">
-
-<!--
-function popitup(url) {
-    newwindow=window.open(url,'name','height=800,width=1200');
-    if (window.focus) {newwindow.focus()}
-    return false;
-}
- 
-// -->
-</script>
- 
-
-
-
-<!-- THE FOLLOWING SCRIPT ENABLES AUTOCOMPLETE IN THE TRIP PLANNER FORM -->
-
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
-
-<script>
-
-function initialize() {
-
-var defaultBounds = new google.maps.LatLngBounds(
- new google.maps.LatLng(39.1503,-123.2067)
- );
-
-var origin_input = document.getElementById('saddr');
-var destination_input = document.getElementById('daddr');
-
-
-var options = {
- bounds: defaultBounds,
- componentRestrictions: {country: 'us'}
-};
-
-
-var autocomplete_origin = new google.maps.places.Autocomplete(origin_input, options);    
-var autocomplete_destination = new google.maps.places.Autocomplete(destination_input, options);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-
-
-</script>
-
- 
- 
-</head>
- 
-<body>
-<style>
-.wrap{
-    width:96%;
-    padding: 2%;
- 
-}
- 
-#home-route-planner {
-background: #ccc;
-margin: 0;
-width: 100%;
- 
-}
- 
-#home-links-col-2-list li {
-margin-bottom: 5px;
-}
-
-#agency-links-menu li {
-	font-size: 14px;
-	line-height: 22px;
-}
- 
-#home-route-planner-inner {
-margin: 2%;
-width: 98%;
-}
- 
-.logo {
-text-align: left;
-    padding: 2%;
-    background: #FFFCE9;
-}
-    
-.footer{
-    color:#8F8E8C;
-    position:absolute;
-    right:10px;
-    bottom:2px;
-}   
- 
- h2, h1 {
-color: #004C2C;
-}
- 
-h1 {
-margin: 9px 20px 20px 20px;
-font-size: 1.3em;
-}
-h2 {
-font-size: 1.2em;
-}
- 
- 
-h3 {
-margin-bottom: 10px;
-margin-top: 10px;
-font-size: 18px;
-font-weight: bold;
-font-size: 1.1em;
-}
- 
- 
-.footer a{
-    color:rgb(228, 146, 162);
-}
-</style>
- 
- 
-    <div class="wrap">
-    <?php if ( is_user_logged_in() ) { 
-    ?>
-    
-    En español
-     
-     <?php
-    } ?> 
-        <div class="logo">
-        
-                    <img src="/wp-content/images/mobile/MTA-logo-small-white-bg.png" width="280" height="89" border="0" />
- 
-<br/>
-<br/>
-<h2>Mendocino Transit Authority</h2>
- 
-<br/>
-<br/>
-<h4>Public Transportation for Mendocino County, California</h4>
- 
-<p>Currently viewing mobile site &#8211; <a id="mobile-to-desktop-link" href="/">Switch to desktop site<br /><br /></a></p>
-<hr />
- 
- 
-        
-        <div id="home-service-alerts">
-                    <h2>Service Alerts</h2>
-<?php 
-
- $count = 0;
-$posts = query_posts( $query_string . '&cat=4&orderby=asc&posts_per_page=4' ); ?>
-<?php if( $posts ) { ?>
- 
-    <div class="home-post"> 
- 
-        <?php
-       
-        foreach( $posts as $post ) : setup_postdata( $post ); 
-                
-                $count = $count + 1;
-                ?>
- 
-            <h3 class="home-alert-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
- 
-        <?php endforeach; 
-        
-        if ($count == 1) { ?>
-        
-        <style type="text/css">
-h3.home-alert-title {
-margin: 6px 0 20px 0;
-font-weight: normal;
-}
-</style>
-        
-        <?php
-        
-        } elseif ($count == 2) {  ?>
-        
-            <style type="text/css">
-h3.home-alert-title {
-margin: 12px 0 12px 0;
-font-weight: normal;
-}
-</style>
-        <?php
-        } elseif ($count == 3) {  ?>
-        
-            <style type="text/css">
-h3.home-alert-title {
-margin: 0px 0 0px 0;
-font-weight: normal;
-}
-</style>
-        <?php
-        }
-        ?>
- 
-    </div>
- 
-<?php } else { ?>
-<div id="home-no-alerts">There are currently no service alerts.</div>
-<?php } ?> 
-</div> <!-- end #home-service-alerts -->
-        
-            <?php $recent = new WP_Query("page_id=570"); while($recent->have_posts()) : $recent->the_post();?>
-<?php the_content(); ?>
-<?php endwhile;
-wp_reset_query();
-?>
-            
-            
-            
-        </div>
-    </div>    
- 
- 
-</body>
-</html>
-<?php 
-} else {
-    get_header(); 
+*/ 
+get_header(); 
 ?>
         
-                <div id="home-left-col">
-                    <div id="home-route-planner">
-                    <div id="home-route-planner-inner">
-                    <h2>PLAN YOUR TRIP</h2>
-                    <script type="text/javascript">
+<div id="home-left-col">
+<div id="home-route-planner">
+<div id="home-route-planner-inner">
+<h2>PLAN YOUR TRIP</h2>
+<script type="text/javascript">
  
 function checkclear(what){
 if(!what._haschanged){
@@ -481,9 +222,14 @@ wp_reset_query();
 <?php
 
 }
-  	query_posts( array ( 'category_name' => 'news', 'posts_per_page' => 10 ) );
+
+$args = array(
+	'numberposts' 	=> 3,
+	'post_type'		=> array('news'),	
+);
+$my_query = new WP_Query( $args );
  
- if( have_posts()) {
+ if( $my_query->have_posts()) {
  ?>
  
  
@@ -494,7 +240,7 @@ wp_reset_query();
 <ul class="left-link-list">
 <?php
 $count = 1;
-while ( have_posts() ) : the_post();
+while ( $my_query->have_posts() ) : $my_query->the_post();
 				
 				
 				?>
@@ -506,7 +252,7 @@ while ( have_posts() ) : the_post();
 		<?php 
 		$count = $count + 1;
 		endwhile;
-wp_reset_query();
+wp_reset_postdata();
 ?>
 </ul>
 
@@ -552,6 +298,28 @@ wp_reset_query();
 </div>
 <?php }
 
+$args = array(
+    'category_name' => 'agenda-packet', 
+    'posts_per_page' => 3,
+);
+$my_query = new WP_Query($args);
+if ($my_query->have_posts()) : ?>
+    <div id="home-agendas" class="left-links-sec">
+        <div class="left-sec-internal">
+            <div id="home-agendas-title" class="left-link-title">Public Meetings</div>
+            <div class="left-links-archive-link"><a href="/board-of-directors">See all</a></div>
+            <ul class="left-link-list">
+            <?php
+            while ($my_query->have_posts()) : $my_query->the_post(); ?>
+            <li>
+                <a class="left-home-link" href="<?php the_permalink(); ?>"><?php the_time('F j') ?> &ndash; <?php the_title() ?></a>
+            </li>
+<?php endwhile; ?>
+</ul>
+<br style="clear: both;" />
+</div>
+</div>
+<?php endif; wp_reset_postdata();
 if ($count == 1 ) {
 ?>
 <div id="home-service-alerts-2" class="left-links-sec">
@@ -617,7 +385,7 @@ Currently no service alerts.
 						</div> <!-- end #home-links-col-1-title -->
 						<ul id="home-links-col-2-list" class="home-links-list">
 							<li id="home-link-dial-a-ride" class="home-sub-link"><div class="home-link-icon"></div><div class="home-links-text"><a href="dial-a-ride">Dial-A-Ride</a></div></li>
-							<li id="home-link-farmworkers" class="home-sub-link"><div class="home-link-icon"></div><div class="home-links-text"><a href="farmworkers-transportation">Mendocino Farmworkers Transportation Program</a></div></li>
+							<li id="home-link-farmworkers" class="home-sub-link"><div class="home-link-icon"></div><div class="home-links-text"><a href="summer-youth-pass">Summer Youth Pass</a></div></li>
 							<li id="home-link-connecting-services" class="home-sub-link"><div class="home-link-icon"></div><div class="home-links-text"><a href="connections">Connecting Services</a></div></li>
 							<li id="home-link-app-center" class="home-sub-link"><div class="home-link-icon"></div><div class="home-links-text"><a href="/app-center/">App Center</a></div></li>
 							<li id="home-link-developer-data" class="home-sub-link"><div class="home-link-icon"></div><div class="home-links-text"><a href="developer">Developer Data</a></div></li>
@@ -646,4 +414,4 @@ Currently no service alerts.
 Mendocino County, California.  MTA’s service area encompasses about 2,800 square miles including the Mendocino Coast and Inland communities. The transit system includes a network of long distance, commute and local fixed routes, plus Dial-A-Ride services in Ukiah and Ft. Bragg.  MTA provides service throughout the county, including the communities of Albion, Anchor Bay, Bodega, Bodega Bay, Boonville, Calpella, Caspar, Elk, Fort Bragg, Fort Ross, Freestone, Gualala, Hopland, Jenner, Manchester, Mendocino, Navarro, Philo, Point Arena, Redwood Valley, Santa Rosa, Sea Ranch, Stewarts Point, Ukiah, Willits, and Windsor.
 				</div>
 <!-- test -->
-<?php get_footer(); } ?>
+<?php get_footer(); ?>

@@ -172,18 +172,14 @@ Template Name: route-7-9
 		</div> <!-- end #route-connections-box-title -->
 
 			<div class="route-inner-box">
-				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="/files/final/MTA%20schedule%20Inland%20Route%207.pdf">Download PDF version of Route 7 timetable.</a></div> <!-- end #route-pdf-link -->
+				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="http://mendocinotransit.org/wp-content/uploads/2018/08/Route-7.pdf">Download PDF version of Route 7 timetable.</a></div> <!-- end #route-pdf-link -->
 				<br style="clear: both;" />
 			</div> <!-- end #route-inner-box" -->
 			
 			<div class="route-inner-box">
-				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="/files/final/MTA%20schedule%20Route%209%20-%2027-July-2014.pdf">Download PDF version of Route 9 Mon-Fri timetable (effective July 27, 2014).</a></div> <!-- end #route-pdf-link -->
+				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="http://mendocinotransit.org/wp-content/uploads/2018/08/Route-9.pdf">Download PDF version of Route 9 timetable.</a></div> <!-- end #route-pdf-link -->
 				<br style="clear: both;" />
 				</div> <!-- end #route-inner-box" -->
-
-				<div class="route-inner-box">
-				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="/files/final/MTA%20schedule%20Inland%20Route%209%20Sat.pdf">Download PDF version of Route 9 Saturday timetable.</a></div> <!-- end #route-pdf-link -->
-				<br style="clear: both;" />
 			</div> <!-- end #route-inner-box" -->
 
 	</div> <!-- end #route-connections-box -->

@@ -554,7 +554,7 @@ wp_reset_query();
 						?>
 						</div> <!-- end #home-links-col-1-title -->
 						<ul id="home-links-col-3-list" class="home-links-list">
-						<li><a href="/about">About MTA</a></li>
+							<li><a href="/about">About MTA</a></li>
 							<li><a href="/related-organizations">Related Organizations</a></li>
 							<li><a href="/contact">Contact</a></li>
 							<li><a href="/planning-documents">Planning Documents</a></li> 

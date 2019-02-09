@@ -135,7 +135,7 @@ echo(types_render_field("route-desc", array("raw"=>"true","output"=>"html","show
 		</div> <!-- end #route-connections-box-title -->
 
 			<div class="route-inner-box">
-				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="http://mendocinotransit.org/wp-content/uploads/2015/06/Route-65.pdf">Route 65 timetable PDF (Starting 6/28/2015)</a></div> <!-- end #route-pdf-link -->
+				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="http://mendocinotransit.org/wp-content/uploads/2018/08/Route-65.pdf">Download the Route 65 PDF Timetable</a></div> <!-- end #route-pdf-link -->
 				<br style="clear: both;" />
 			</div> <!-- end #route-inner-box" -->
 

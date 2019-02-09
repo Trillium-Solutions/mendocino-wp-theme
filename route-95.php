@@ -133,7 +133,7 @@ Route 95 connects the South Coast with Santa Rosa, 7-days per week. Serves coast
 		</div> <!-- end #route-connections-box-title -->
 
 			<div class="route-inner-box">
-				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="/files/final/MTA%20schedule%20Rt%2095.pdf">Download PDF version of Route 95 timetable.</a></div> <!-- end #route-pdf-link -->
+				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="http://mendocinotransit.org/wp-content/uploads/2018/08/Route-95.pdf">Download PDF version of Route 95 timetable.</a></div> <!-- end #route-pdf-link -->
 				<br style="clear: both;" />
 			</div> <!-- end #route-inner-box" -->
 

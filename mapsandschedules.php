@@ -37,12 +37,6 @@ get_header(); ?>
 
               <br style="clear: both;">
             </div>
-            <div class="box-row box-row-item">
-              <div class="ms-circ" style="background:#c27c92; border-radius: 50%; text-align: center; font-size: 2em; vertical-align: middle; padding-top: 5px; height: 35px; width: 40px; line-height: 100%;  margin-right: 13px; color: white; font-weight: normal; display: inline-block;"><a href="/routes/route-66" alt="66" style="text-decoration: none; color: white; font-size: .75em;" >66</a></div>
-              <div class="ms-desc"><a href="/routes/route-66" alt="66">Route 66</a><br /><span style="font-size: 10px;">Mon-Fri, From Willits to Ukiah and Santa Rosa.</span></div>
-
-              <br style="clear: both;">
-            </div>
           </div>
         </div>
 
@@ -127,9 +121,8 @@ get_header(); ?>
 				  </div>
             </div>
             </div>
-             
+            <br style="clear: both;">
             <div class="box-row">
-            <br />
 <div class="box-row box-row-item">
               <div class="ms-circ"><a href="/routes/routes-5-and-60" alt="60"><img src="/images/mapsandschedules/maps-n-schedules-circ-60.png"></a></div>
               <div class="ms-desc"><a href="/routes/routes-5-and-60" alt="60">The Coaster</a><br />
@@ -144,7 +137,7 @@ get_header(); ?>
               <div class="ms-region">South Mendocino Coast / Santa Rosa</div>
               <div class="box-row box-row-item">
                <div class="ms-circ"><a href="/routes/route-95" alt="95"><img src="/images/mapsandschedules/maps-n-schedules-circ-95.png"></a></div>
-               <div class="ms-desc"><a href="/routes/route-95" alt="95">Route 95</a><br /><span style="font-size: 11px;"> 7-days per week</span></div>
+               <div class="ms-desc"><a href="/routes/route-95" alt="95">Route 95</a><br /><span style="font-size: 11px;"> 1 trip daily, 7-days per week</span></div>
             <br style="clear: both;">
            </div>
 <hr />
@@ -152,7 +145,7 @@ get_header(); ?>
               <div class="ms-region">South Mendocino Coast /Ukiah</div>
  <br />
                <div class="ms-circ"><a href="/routes/route-75" alt="75"><img src="/images/mapsandschedules/maps-n-schedules-circ-75.png"></a></div>
-               <div class="ms-desc"><a href="/routes/route-75" alt="75">Route 75</a><br /><span style="font-size: 10px;">Mon - Sat: Connects with Route 60, <br />No Saturday connection with Route 60</span></div>
+               <div class="ms-desc"><a href="/routes/route-75" alt="75">Route 75</a><br /><span style="font-size: 10px;">Mon - Sat: One trip daily, <br />Connects with Route 60 M-F only</span></div>
             </div>
             </div>
            <br style="clear: both;">
@@ -182,7 +175,7 @@ get_header(); ?>
 				<li><a href="http://www.sctransit.com/">Sonoma County Transit</a></li>
 				<li><a href="http://goldengate.org/schedules.php">Golden Gate Transit</a></li>
 				<li><a href="http://www.laketransit.org/">Lake Transit</a></li>
-				<li><a href="http://ci.santa-rosa.ca.us/departments/transit/CityBus/Pages/default.aspx">Santa Rosa CityBus</a></li>
+				<li><a href="https://srcity.org/1036/Transit-and-CityBus">Santa Rosa CityBus</a></li>
             </ul>
             For more
             information on these connections, see the

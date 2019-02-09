@@ -11,10 +11,7 @@
 				Copyright &copy; Mendocino Transit Authority | <a href="<?php echo get_site_url(); ?>/site-credits">Site Credits</a><br />
 
 				
-				<?php wp_reset_query();
-				if(is_home()) { ?><a id="desktop-to-mobile-link" href="/">Switch to mobile landing page</a> <br/><?php } ?>
-				<?php edit_post_link( $link, $before, $after, $id ); ?>
-				
+				<?php wp_reset_postdata(); ?>
 			</div>
 			
 			</div> <!-- end #bottom-scene-middle  1013 -->
@@ -32,5 +29,6 @@
       'fitImagesInViewport': false
     })
 </script>
+    <?php wp_footer(); ?>
 </body>
 </html>

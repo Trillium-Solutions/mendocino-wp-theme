@@ -93,7 +93,9 @@ Template Name: route-1-20
 		</div> <!-- end #route-connections-box-title -->
 
 			<div class="route-inner-box">
-				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="http://mendocinotransit.org/wp-content/uploads/2015/06/Routes_120_starting_6282015-Sheet1.pdf">Routes 1 and 20 timetable (Starting 6/28/2015).</a></div> <!-- end #route-pdf-link -->
+				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="http://mendocinotransit.org/wp-content/uploads/2018/08/Route-1.pdf">Download PDF version of Route 1 timetable.</a></div> <!-- end #route-pdf-link -->
+				<br style="clear: both;" />
+				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="http://mendocinotransit.org/wp-content/uploads/2018/08/Route-20.pdf">Download PDF version of Route 20 timetable.</a></div> <!-- end #route-pdf-link -->
 				<br style="clear: both;" />
 			</div> <!-- end #route-inner-box" -->
 
