@@ -14,7 +14,7 @@ Template Name: route-95
 	ROUTE 95 - South Coast / Santa Rosa
 	</div>
 <?php do_action('route_select'); ?>
-	
+
 </div><!-- #route-header -->
 
 
@@ -59,19 +59,19 @@ Route 95 connects the South Coast with Santa Rosa, 7-days per week. Serves coast
 					Southbound
 					</div> <!-- end #popup-button-title -->
 					<div class="popup-button-desc">
-					South Coast-> Santa Rosa 
+					South Coast-> Santa Rosa
 					</div> <!-- end popup-button-desc -->
 				</div> <!-- end #schedule-southbound-65-->
 				</a>
 				<br style="clear: both;" />
 			</div> <!-- end #schedule-buttons -->
-			
+
 			<div id="fare-table-link">
 				<a href="/fares/#95">See fare table for this route</a> >>
 			</div> <!-- end #fare-table-link -->
 		</div> <!-- end #route-schedule-box -->
-		
-		
+
+
 <div id="route-connections-box" class="route-box">
 		<div id="route-connections-box-title" class="route-title-box">
 			<div id="route-connections-box-title-text" class="route-title-box-text">
@@ -81,48 +81,22 @@ Route 95 connects the South Coast with Santa Rosa, 7-days per week. Serves coast
 		</div> <!-- end #route-connections-box-title -->
 		<div id="route-connections-container">
 			<div class="route-connection">
+			<?php
+			if ( have_rows('connections') ):
+				while ( have_rows('connections') ):
+					the_row();
+			?>
 				<div class="route-connection-title">
-					<?php echo(types_render_field("con-title-1", array("raw"=>"true","output"=>"html","show_name"=>"false"))); ?>
+					<?php the_sub_field('connection_title'); ?>
 				</div> <!-- end .route-connection-title -->
 				<div class="route-connection-desc">
-					<?php echo(types_render_field("con-desc-1", array("raw"=>"true","output"=>"html","show_name"=>"false"))); ?>	
+					<?php the_sub_field('connection_description'); ?>
 				</div> <!-- end .route-connection-desc -->
-			</div> <!-- end .route-conneciton -->
-			<div class="route-connection">
-				<div class="route-connection-title">
-					<?php echo(types_render_field("con-title-2", array("raw"=>"true","output"=>"html","show_name"=>"false"))); ?>
-				</div> <!-- end .route-connection-title -->
-				<div class="route-connection-desc">
-<?php echo(types_render_field("con-desc-2", array("raw"=>"true","output"=>"html","show_name"=>"false"))); ?>
-</div> <!-- end .route-connection-desc -->
-			</div><!-- end .route-conneciton -->
-			<div class="route-connection">
-				<div class="route-connection-title">
-<?php echo(types_render_field("con-title-3", array("raw"=>"true","output"=>"html","show_name"=>"false"))); ?>
-				</div> <!-- end .route-connection-title -->
-				<div class="route-connection-desc">
-<?php echo(types_render_field("con-desc-3", array("raw"=>"true","output"=>"html","show_name"=>"false"))); ?>
-</div> <!-- end .route-connection-desc -->
-			</div><!-- end .route-conneciton -->
-			<div class="route-connection">
-				<div class="route-connection-title">
-<?php echo(types_render_field("con-title-4", array("raw"=>"true","output"=>"html","show_name"=>"false"))); ?>
-				</div> <!-- end .route-connection-title -->
-				<div class="route-connection-desc">
-<?php echo(types_render_field("con-desc-4", array("raw"=>"true","output"=>"html","show_name"=>"false"))); ?>
-</div> <!-- end .route-connection-desc -->
-			</div><!-- end .route-conneciton -->
-			<div class="route-connection" class="route-connection-last">
-				<div class="route-connection-title">
-<?php echo(types_render_field("con-title-5", array("raw"=>"true","output"=>"html","show_name"=>"false"))); ?>
-				</div> <!-- end .route-connection-title -->
-				<div class="route-connection-desc">
-<?php echo(types_render_field("con-desc-5", array("raw"=>"true","output"=>"html","show_name"=>"false"))); ?>
-</div> <!-- end .route-connection-desc -->
+			<?php endwhile; endif; ?>
 			</div><!-- end .route-conneciton -->
 		</div> <!-- end #route-connections-container -->
 	</div> <!-- end #route-connections-box -->
-	
+
 
 	<div id="route-connections-box" class="route-box">
 		<div id="route-connections-box-title" class="route-title-box">
@@ -138,10 +112,10 @@ Route 95 connects the South Coast with Santa Rosa, 7-days per week. Serves coast
 			</div> <!-- end #route-inner-box" -->
 
 	</div> <!-- end #route-connections-box -->
-		
+
 	</div> <!-- #end route col left -->
-	
-	
+
+
 	<div id="route-col-right">
 
 		<div id="route-connections-box-title" class="route-title-box">
@@ -155,9 +129,9 @@ Route 95 connects the South Coast with Santa Rosa, 7-days per week. Serves coast
 
 			<div id="route-map-image-col-wrap">
 			<div id="route-map-col-left">
-			
-		
-			
+
+
+
 				<div class="route-detail-map-image-wrap">
 					<div class="map-detail-title-bar">
 						<div class="map-detail-title-text">
@@ -167,11 +141,11 @@ Route 95 connects the South Coast with Santa Rosa, 7-days per week. Serves coast
 						</div><!-- end .map-detail-zoom-icon -->
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
-					
+
 					<a href="/wp-content/images/detail_maps/Santa_Rosa_Detail-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Santa_Rosa_Detail-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
-				
-				
+
+
 			</div> <!-- end #map-col-left -->
 			<div id="route-map-col-right">
 			<div class="route-detail-map-image-wrap">
@@ -183,11 +157,11 @@ Route 95 connects the South Coast with Santa Rosa, 7-days per week. Serves coast
 						</div><!-- end .map-detail-zoom-icon -->
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
-					
+
 					<a href="/wp-content/images/detail_maps/Coastal_Map_Detail_08-big.jpg" rel="lightbox"><img src="/wp-content/images/detail_maps/Coastal_Map_Detail_08-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
-				
-				
+
+
 			</div> <!-- end #map-col-right -->
 		</div> <!-- end #route-map-image-col-wrap -->
 		<br style="clear: both;" />
@@ -197,20 +171,20 @@ Route 95 connects the South Coast with Santa Rosa, 7-days per week. Serves coast
 </div> <!-- end #route-two-col-wrap -->
 
 
- 
+
 
 
 <?php the_post(); ?>
- 
+
                 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>
       <h1 class="entry-title"><?php //the_title(); ?></h1>
- 
- 
+
+
 </div> <!-- post -->
 
 
 
- 
+
 </div> <!-- page-overlay -->
-                
+
 <?php get_footer(); ?>

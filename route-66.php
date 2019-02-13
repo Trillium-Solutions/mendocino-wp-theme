@@ -15,7 +15,7 @@ Template Name: route-66
 	ROUTE 66
 	</div>
 	<?php do_action('route_select'); ?>
-	
+
 </div><!-- #route-header -->
 
 
@@ -30,7 +30,7 @@ Template Name: route-66
 		<div id="route-desc">
 
 <?php 		wp_reset_postdata();
-echo(types_render_field("route-desc", array("raw"=>"true","output"=>"html","show_name"=>"false"))); ?>
+the_field('route-desc'); ?>
 </div> <!-- end #route-desc -->
 		<div id="route-schedule-box" class="route-box">
 			<div id="route-schedule-box-title" class="route-title-box">
@@ -48,7 +48,7 @@ echo(types_render_field("route-desc", array("raw"=>"true","output"=>"html","show
 			<div id="schedule-buttons">
 			<a href="<?php echo get_site_url(); ?>/routes/route-66/northbound/"  >
 				<div id="schedule-northbound-66" class="route-popup-button route-button-left route-button-first route-button-odd">
-					<div class="popup-button-title"> 
+					<div class="popup-button-title">
 					Northbound
 					</div> <!-- end #popup-button-title -->
 					<div class="popup-button-desc" >
@@ -62,19 +62,19 @@ echo(types_render_field("route-desc", array("raw"=>"true","output"=>"html","show
 					Southbound
 					</div> <!-- end #popup-button-title -->
 					<div class="popup-button-desc">
-					Willits -> Santa Rosa 
+					Willits -> Santa Rosa
 					</div> <!-- end popup-button-desc -->
 				</div> <!-- end #schedule-southbound-65-->
 				</a>
 				<br style="clear: both;" />
 			</div> <!-- end #schedule-buttons -->
-			
+
 			<div id="fare-table-link">
 				<a href="/fares/#66">See fare table for this route</a> >>
 			</div> <!-- end #fare-table-link -->
 		</div> <!-- end #route-schedule-box -->
-		
-		
+
+
 	<div id="route-connections-box" class="route-box">
 		<div id="route-connections-box-title" class="route-title-box">
 			<div id="route-connections-box-title-text" class="route-title-box-text">
@@ -84,48 +84,22 @@ echo(types_render_field("route-desc", array("raw"=>"true","output"=>"html","show
 		</div> <!-- end #route-connections-box-title -->
 		<div id="route-connections-container">
 			<div class="route-connection">
+			<?php
+			if ( have_rows('connections') ):
+				while ( have_rows('connections') ):
+					the_row();
+			?>
 				<div class="route-connection-title">
-					<?php echo(types_render_field("con-title-1", array("raw"=>"true","output"=>"html","show_name"=>"false"))); ?>
+					<?php the_sub_field('connection_title'); ?>
 				</div> <!-- end .route-connection-title -->
 				<div class="route-connection-desc">
-					<?php echo(types_render_field("con-desc-1", array("raw"=>"true","output"=>"html","show_name"=>"false"))); ?>	
+					<?php the_sub_field('connection_description'); ?>
 				</div> <!-- end .route-connection-desc -->
-			</div> <!-- end .route-conneciton -->
-			<div class="route-connection">
-				<div class="route-connection-title">
-					<?php echo(types_render_field("con-title-2", array("raw"=>"true","output"=>"html","show_name"=>"false"))); ?>
-				</div> <!-- end .route-connection-title -->
-				<div class="route-connection-desc">
-<?php echo(types_render_field("con-desc-2", array("raw"=>"true","output"=>"html","show_name"=>"false"))); ?>
-</div> <!-- end .route-connection-desc -->
-			</div><!-- end .route-conneciton -->
-			<div class="route-connection">
-				<div class="route-connection-title">
-<?php echo(types_render_field("con-title-3", array("raw"=>"true","output"=>"html","show_name"=>"false"))); ?>
-				</div> <!-- end .route-connection-title -->
-				<div class="route-connection-desc">
-<?php echo(types_render_field("con-desc-3", array("raw"=>"true","output"=>"html","show_name"=>"false"))); ?>
-</div> <!-- end .route-connection-desc -->
-			</div><!-- end .route-conneciton -->
-			<div class="route-connection">
-				<div class="route-connection-title">
-<?php echo(types_render_field("con-title-4", array("raw"=>"true","output"=>"html","show_name"=>"false"))); ?>
-				</div> <!-- end .route-connection-title -->
-				<div class="route-connection-desc">
-<?php echo(types_render_field("con-desc-4", array("raw"=>"true","output"=>"html","show_name"=>"false"))); ?>
-</div> <!-- end .route-connection-desc -->
-			</div><!-- end .route-conneciton -->
-			<div class="route-connection" class="route-connection-last">
-				<div class="route-connection-title">
-<?php echo(types_render_field("con-title-5", array("raw"=>"true","output"=>"html","show_name"=>"false"))); ?>
-				</div> <!-- end .route-connection-title -->
-				<div class="route-connection-desc">
-<?php echo(types_render_field("con-desc-5", array("raw"=>"true","output"=>"html","show_name"=>"false"))); ?>
-</div> <!-- end .route-connection-desc -->
+			<?php endwhile; endif; ?>
 			</div><!-- end .route-conneciton -->
 		</div> <!-- end #route-connections-container -->
 	</div> <!-- end #route-connections-box -->
-	
+
 
 	<div id="route-connections-box" class="route-box">
 		<div id="route-connections-box-title" class="route-title-box">
@@ -141,10 +115,10 @@ echo(types_render_field("route-desc", array("raw"=>"true","output"=>"html","show
 			</div> <!-- end #route-inner-box" -->
 
 	</div> <!-- end #route-connections-box -->
-		
+
 	</div> <!-- #end route col left -->
-	
-	
+
+
 	<div id="route-col-right">
 
 		<div id="route-connections-box-title" class="route-title-box">
@@ -158,7 +132,7 @@ echo(types_render_field("route-desc", array("raw"=>"true","output"=>"html","show
 
 			<div id="route-map-image-col-wrap">
 			<div id="route-map-col-left">
-			
+
 			<div class="route-detail-map-image-wrap">
 					<div class="map-detail-title-bar">
 						<div class="map-detail-title-text">
@@ -168,11 +142,11 @@ echo(types_render_field("route-desc", array("raw"=>"true","output"=>"html","show
 						</div><!-- end .map-detail-zoom-icon -->
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
-					
+
 					<a href="/wp-content/images/detail_maps/ukiah-detail-11-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/ukiah-detail-11-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
-			
-			
+
+
 			<div class="route-detail-map-image-wrap">
 					<div class="map-detail-title-bar">
 						<div class="map-detail-title-text">
@@ -182,12 +156,12 @@ echo(types_render_field("route-desc", array("raw"=>"true","output"=>"html","show
 						</div><!-- end .map-detail-zoom-icon -->
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
-					
+
 					<a href="/wp-content/images/detail_maps/Ukiah_Inset_Detail-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Ukiah_Inset_Detail_sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
-			
-				
-				
+
+
+
 			</div> <!-- end #map-col-left -->
 			<div id="route-map-col-right">
 				<div class="route-detail-map-image-wrap">
@@ -199,7 +173,7 @@ echo(types_render_field("route-desc", array("raw"=>"true","output"=>"html","show
 						</div><!-- end .map-detail-zoom-icon -->
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
-					
+
 					<a href="/wp-content/images/detail_maps/Willits-Detail-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Willits-Detail-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
 				<div class="route-detail-map-image-wrap">
@@ -211,7 +185,7 @@ echo(types_render_field("route-desc", array("raw"=>"true","output"=>"html","show
 						</div><!-- end .map-detail-zoom-icon -->
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
-					
+
 					<a href="/wp-content/images/detail_maps/Calpella-Detail-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Calpella-Detail-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
 				<div class="route-detail-map-image-wrap">
@@ -223,11 +197,11 @@ echo(types_render_field("route-desc", array("raw"=>"true","output"=>"html","show
 						</div><!-- end .map-detail-zoom-icon -->
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
-					
+
 					<a href="/wp-content/images/detail_maps/Santa_Rosa_Detail-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Santa_Rosa_Detail-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
-				
-				
+
+
 			</div> <!-- end #map-col-right -->
 		</div> <!-- end #route-map-image-col-wrap -->
 		<br style="clear: both;" />
@@ -237,20 +211,20 @@ echo(types_render_field("route-desc", array("raw"=>"true","output"=>"html","show
 </div> <!-- end #route-two-col-wrap -->
 
 
- 
+
 
 
 <?php the_post(); ?>
- 
+
                 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>
       <h1 class="entry-title"><?php //the_title(); ?></h1>
- 
- 
+
+
 </div> <!-- post -->
 
 
 
- 
+
 </div> <!-- page-overlay -->
-                
+
 <?php get_footer(); ?>
