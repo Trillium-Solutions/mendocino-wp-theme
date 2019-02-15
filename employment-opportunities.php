@@ -6,13 +6,13 @@ Template Name: employment
 
   <div id="page-overlay">
     <?php the_post(); ?>
-    
+
     <h1 class="entry-title main"><?php the_title(); ?></h1>
-<?php if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
+<?php //if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
 			<br/>
-					
-					
-					
+
+
+
 						<hr />
 
 
@@ -34,21 +34,21 @@ Template Name: employment
         	echo "There are currently no posted employment opportunities.";
         } else {
         while ( have_posts() ) : the_post();
-                
-               
+
+
                 echo '<div class="archive-alert-item">';
                 echo '<a href="';
                 echo the_permalink();
                 echo '">';
                 echo the_date();
-               echo ' - ';  
-                
+               echo ' - ';
+
 
                 echo the_title();
-                
-                
-                
-                
+
+
+
+
                echo '</a>';
                echo '</div>';
         endwhile;
@@ -66,10 +66,10 @@ Template Name: employment
             <?php previous_posts_link(__( 'Newer news articles <span class="meta-nav">&raquo;</span>', 'your-theme' )) ?>
           </div>
         </div><!-- #nav-above -->
-        <?php } 
+        <?php }
         wp_reset_query();
         ?>
 
-     
- 
+
+
   <?php get_footer(); ?>

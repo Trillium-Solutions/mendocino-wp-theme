@@ -14,22 +14,22 @@
 
 get_header(); ?>
 <div id="page-overlay">
-		
+
 			<?php the_post(); ?>
 			<h1 class="entry-title main"><?php the_title(); ?></h1>
-<?php if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
+<?php //if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
 			<br/>
-					
+
 						<hr />
 									<br/>
- 
+
                 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-                    
+
                     <?php the_content(); ?>
 
                     </div>
 
-			
+
 </div> <!-- page-overlay -->
 <?php get_footer(); ?>

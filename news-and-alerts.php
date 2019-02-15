@@ -1,19 +1,19 @@
 <?php
 /*
-Template Name: news-archive 
+Template Name: news-archive
 */
  get_header(); ?>
 
   <div id="page-overlay">
     <?php the_post(); ?>
-    
+
     <h1 class="entry-title main"><?php the_title(); ?></h1>
-<?php if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
+<?php //if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
 			<br/>
-					
+
 						<hr />
 
- 
+
 
 
     <div id="post-&lt;?php the_ID(); ?&gt;" <?php post_class(); ?>>
@@ -21,25 +21,25 @@ Template Name: news-archive
 <?php the_content(); ?><?php
         // The Query
         $page = (get_query_var('paged')) ? get_query_var('paged') : 1;
-        query_posts("paged=$page&cat=4"); 
+        query_posts("paged=$page&cat=4");
         ?><?php
         // The Loop
         while ( have_posts() ) : the_post();
-                
-               
+
+
                 echo '<div class="archive-alert-item">';
                 echo '<a href="';
                 echo the_permalink();
                 echo '">';
                 echo the_date();
-               echo ' - ';  
-                
+               echo ' - ';
+
 
                 echo the_title();
-                
-                
-                
-                
+
+
+
+
                echo '</a>';
                echo '</div>';
         endwhile;
@@ -56,36 +56,36 @@ Template Name: news-archive
             <?php previous_posts_link(__( 'Newer news articles <span class="meta-nav">&raquo;</span>', 'your-theme' )) ?>
           </div>
         </div><!-- #nav-above -->
-        <?php } 
+        <?php }
         wp_reset_query();
         ?>
 
       <div class="entry-content">
-        
-       
+
+
          <h2>News Archive</h2>
-         
+
          <?php the_content(); ?><?php
         // The Query
         $page = (get_query_var('paged')) ? get_query_var('paged') : 1;
-        query_posts("paged=$page&cat=3"); 
+        query_posts("paged=$page&cat=3");
         ?><?php
         // The Loop
         while ( have_posts() ) : the_post();
-                
+
                    echo '<div class="archive-alert-item">';
                 echo '<a href="';
                 echo the_permalink();
                 echo '">';
                 echo the_date();
-               echo ' - ';  
-                
+               echo ' - ';
+
 
                 echo the_title();
-                
-                
-                
-                
+
+
+
+
                echo '</a>';
                echo '</div>';
         endwhile;
@@ -102,12 +102,12 @@ Template Name: news-archive
             <?php previous_posts_link(__( 'Newer news articles <span class="meta-nav">&raquo;</span>', 'your-theme' )) ?>
           </div>
         </div><!-- #nav-above -->
-        <?php } 
+        <?php }
         wp_reset_query();
         ?>
       </div>
     </div><!-- page-overlay -->
     <?php get_footer(); ?><?php edit_post_link( __( 'Edit', 'your-theme' ), '<span class="edit-link">', '</span>' ) ?>
   </div><!-- .entry-content -->
- 
+
   <?php get_footer(); ?>

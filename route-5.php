@@ -25,12 +25,12 @@ Template Name: route-5
 		  <option value="1-20">Rts. 1 and 20 - Willits and Redwood Valley</option>
 		</select>
 	</div><!-- end #route-dropdown -->
-	
+
 </div><!-- #route-header -->
 
 
 <div id="route-breadcrumb" class="breadcrumb">
-		<?php if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
+		<?php //if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
 	</div><!-- end #route-breadcrumb -->
 
 <?php do_action('mendo_route_alert', '5'); ?>
@@ -69,19 +69,19 @@ Route 65 - CC Rider runs 7-days per week from Ft. Bragg to Willits, Ukiah and Sa
 					Southbound
 					</div> <!-- end #popup-button-title -->
 					<div class="popup-button-desc">
-					Fort Bragg -> Santa Rosa 
+					Fort Bragg -> Santa Rosa
 					</div> <!-- end popup-button-desc -->
 				</div> <!-- end #schedule-southbound-65-->
 				</a>
 				<br style="clear: both;" />
 			</div> <!-- end #schedule-buttons -->
-			
+
 			<div id="fare-table-link">
 				<a href="/fares/#65">See fare table for this route</a> >>
 			</div> <!-- end #fare-table-link -->
 		</div> <!-- end #route-schedule-box -->
-		
-		
+
+
 	<div id="route-connections-box" class="route-box">
 		<div id="route-connections-box-title" class="route-title-box">
 			<div id="route-connections-box-title-text" class="route-title-box-text">
@@ -96,7 +96,7 @@ Route 65 - CC Rider runs 7-days per week from Ft. Bragg to Willits, Ukiah and Sa
 				</div> <!-- end .route-connection-title -->
 				<div class="route-connection-desc">
 					While the Route 95 and 65 buses are in Santa Rosa, drop- offs and pick-ups are available within a 3 mile radius of the 2nd St. Transit Mall for an additional fare of $2.00.
-					For additional information for Route 95, call 707-884-3723 or ask the driver (recommended). For Route 65, call 707-964-0420 or ask the driver.	
+					For additional information for Route 95, call 707-884-3723 or ask the driver (recommended). For Route 65, call 707-964-0420 or ask the driver.
 				</div> <!-- end .route-connection-desc -->
 			</div> <!-- end .route-conneciton -->
 			<div class="route-connection">
@@ -120,7 +120,7 @@ Route 65 - CC Rider runs 7-days per week from Ft. Bragg to Willits, Ukiah and Sa
 					Sonoma County and Santa Rosa Buses
 				</div> <!-- end .route-connection-title -->
 				<div class="route-connection-desc">
-					At the 2nd Street Transit Mall, you can also transfer to Sonoma County Transit and Santa Rosa CityBus routes.			
+					At the 2nd Street Transit Mall, you can also transfer to Sonoma County Transit and Santa Rosa CityBus routes.
 				</div> <!-- end .route-connection-desc -->
 			</div><!-- end .route-conneciton -->
 			<div class="route-connection" class="route-connection-last">
@@ -128,12 +128,12 @@ Route 65 - CC Rider runs 7-days per week from Ft. Bragg to Willits, Ukiah and Sa
 					To and From Amtrak Bus
 				</div> <!-- end .route-connection-title -->
 				<div class="route-connection-desc">
-					MTA Route 95 and Route 65 serve the Amtrak bus stop at Railroad St./3rd St. (Courtyard by Marriott) in Santa Rosa.				
+					MTA Route 95 and Route 65 serve the Amtrak bus stop at Railroad St./3rd St. (Courtyard by Marriott) in Santa Rosa.
 				</div> <!-- end .route-connection-desc -->
 			</div><!-- end .route-conneciton -->
 		</div> <!-- end #route-connections-container -->
 	</div> <!-- end #route-connections-box -->
-	
+
 
 	<div id="route-connections-box" class="route-box">
 		<div id="route-connections-box-title" class="route-title-box">
@@ -149,10 +149,10 @@ Route 65 - CC Rider runs 7-days per week from Ft. Bragg to Willits, Ukiah and Sa
 			</div> <!-- end #route-inner-box" -->
 
 	</div> <!-- end #route-connections-box -->
-		
+
 	</div> <!-- #end route col left -->
-	
-	
+
+
 	<div id="route-col-right">
 
 		<div id="route-connections-box-title" class="route-title-box">
@@ -166,7 +166,7 @@ Route 65 - CC Rider runs 7-days per week from Ft. Bragg to Willits, Ukiah and Sa
 
 			<div id="route-map-image-col-wrap">
 			<div id="route-map-col-left">
-			
+
 			<div class="route-detail-map-image-wrap">
 					<div class="map-detail-title-bar">
 						<div class="map-detail-title-text">
@@ -176,11 +176,11 @@ Route 65 - CC Rider runs 7-days per week from Ft. Bragg to Willits, Ukiah and Sa
 						</div><!-- end .map-detail-zoom-icon -->
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
-					
+
 					<a href="/wp-content/images/detail_maps/ukiah-detail-11-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/ukiah-detail-11-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
-			
-			
+
+
 			<div class="route-detail-map-image-wrap">
 					<div class="map-detail-title-bar">
 						<div class="map-detail-title-text">
@@ -190,10 +190,10 @@ Route 65 - CC Rider runs 7-days per week from Ft. Bragg to Willits, Ukiah and Sa
 						</div><!-- end .map-detail-zoom-icon -->
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
-					
+
 					<a href="/wp-content/images/detail_maps/Ukiah_Inset_Detail-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Ukiah_Inset_Detail_sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
-			
+
 				<div class="route-detail-map-image-wrap">
 					<div class="map-detail-title-bar">
 						<div class="map-detail-title-text">
@@ -203,11 +203,11 @@ Route 65 - CC Rider runs 7-days per week from Ft. Bragg to Willits, Ukiah and Sa
 						</div><!-- end .map-detail-zoom-icon -->
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
-					
+
 					<a href="/wp-content/images/detail_maps/Santa_Rosa_Detail-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Santa_Rosa_Detail-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
-				
-				
+
+
 			</div> <!-- end #map-col-left -->
 			<div id="route-map-col-right">
 				<div class="route-detail-map-image-wrap">
@@ -219,7 +219,7 @@ Route 65 - CC Rider runs 7-days per week from Ft. Bragg to Willits, Ukiah and Sa
 						</div><!-- end .map-detail-zoom-icon -->
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
-					
+
 					<a href="/wp-content/images/detail_maps/Willits-Detail-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Willits-Detail-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
 				<div class="route-detail-map-image-wrap">
@@ -231,10 +231,10 @@ Route 65 - CC Rider runs 7-days per week from Ft. Bragg to Willits, Ukiah and Sa
 						</div><!-- end .map-detail-zoom-icon -->
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
-					
+
 					<a href="/wp-content/images/detail_maps/Calpella-Detail-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Calpella-Detail-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
-				
+
 				<div class="route-detail-map-image-wrap">
 					<div class="map-detail-title-bar">
 						<div class="map-detail-title-text">
@@ -244,10 +244,10 @@ Route 65 - CC Rider runs 7-days per week from Ft. Bragg to Willits, Ukiah and Sa
 						</div><!-- end .map-detail-zoom-icon -->
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
-					
+
 					<a href="/wp-content/images/detail_maps/Ft-Bragg-Detail-Map-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Ft-Bragg-Detail-Map-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
-				
+
 			</div> <!-- end #map-col-right -->
 		</div> <!-- end #route-map-image-col-wrap -->
 		<br style="clear: both;" />
@@ -257,20 +257,20 @@ Route 65 - CC Rider runs 7-days per week from Ft. Bragg to Willits, Ukiah and Sa
 </div> <!-- end #route-two-col-wrap -->
 
 
- 
+
 
 
 <?php the_post(); ?>
- 
+
                 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>
       <h1 class="entry-title"><?php //the_title(); ?></h1>
- 
- 
+
+
 </div> <!-- post -->
 
 
 
- 
+
 </div> <!-- page-overlay -->
-                
+
 <?php get_footer(); ?>

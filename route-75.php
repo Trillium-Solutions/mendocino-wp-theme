@@ -19,7 +19,7 @@ Template Name: route-75
 
 
 <div id="route-breadcrumb" class="breadcrumb">
-		<?php if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
+		<?php ////if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
 	</div><!-- end #route-breadcrumb -->
 
 <?php do_action('mendo_route_alert', '75'); ?>

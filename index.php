@@ -1,91 +1,91 @@
 <?php
 /*
 Template Name: updated-home
-*/ 
-get_header(); 
+*/
+get_header();
 ?>
-        
+
 <div id="home-left-col">
 <div id="home-route-planner">
 <div id="home-route-planner-inner">
 <h2>PLAN YOUR TRIP</h2>
 <script type="text/javascript">
- 
+
 function checkclear(what){
 if(!what._haschanged){
   what.value=''
 };
 what._haschanged=true;
 }
- 
- 
+
+
 </script>
- 
- 
+
+
 <form action="http://www.trilliumtransit.com/redirect/google_redirect.php" name="f"><input type="hidden" value="UTF8" name="ie"/><input type="hidden" value="d" name="f"/><input type="hidden" value="39.150171,-123.207783" name="sll"/>
           <table id="trip_planner_form_table" align="right" style="margin-right:9px;margin-top:5px;">
             <tbody><tr id="row1">
               <td id="cell_1a"><font size="-1"><strong>Start</strong></font></td>
- 
+
         </tr>
         <tr id="row2">
             <td id="cell_2a">
                 <input type="text" name="saddr" id="saddr" style="width:250px;margin-top:10px;" onfocus="checkclear(this)"  value="Address, placename, or intersection"/>
             </td>
-            
+
 </tr>
- 
+
 <tr id="row3">
 <td id="cell_1c"><font size="-1"><strong>End</strong></font></td></tr>
-        
+
 <tr id="row4">
 <td id="cell_2b">
-        
+
                 <input type="text" name="daddr" id="daddr" style="width:250px;margin-top:10px;" onfocus="checkclear(this)" value="Address, placename, or intersection"/>
-        
-    </td>    
+
+    </td>
         </tr>
     <tr id="row5">
         <td id="cell_3a" valign="top" style="padding-top:17px;">
               <font size="-1"><div id="when">When</div><select name="ttype" id="trip_type_select">
               <option name="dep">Leave at</option>
               <option name="arrive">Arrive by</option>
-              </select> 
-              
+              </select>
+
               <input type="text" maxlength="100" tabindex="1" value="" name="date" size="5" id="fdate" alt="Date"/>  <input type="text" maxlength="100" tabindex="1" value="" name="time" size="5" alt="Time" id="ftime"/><input type="hidden" value="42" name="agency"/><input type="hidden" name="sort" value="walk"/>
-              
+
              </font>
               </td>
               </tr>
               <tr id="row6">
               <td id="cell_3b" align="right" style="padding-top:17px;" id="submit_cell"><span id="plan_trip_text" class="plan_trip_text">See itinerary in </span><input type="submit" tabindex="1" value="Google Maps" id="directions_submit" style="text-align:center"/></td>
             </tr>
- 
+
           </tbody></table>
         </form>
- 
+
 <script type="text/javascript">
 var thisdate = new Date();
- 
-function formatDate(date) { 
-var d = new Date(date); 
-var hh = d.getHours(); 
-var m = d.getMinutes(); 
-var dd = "AM"; 
-var h = hh; 
-if (h >= 12) { 
-h = hh-12; 
-dd = "PM"; 
-} 
-if (h == 0) { 
-h = 12; 
-} 
-m = m<10?"0"+m:m; 
- 
-return h+':'+m+' '+dd 
+
+function formatDate(date) {
+var d = new Date(date);
+var hh = d.getHours();
+var m = d.getMinutes();
+var dd = "AM";
+var h = hh;
+if (h >= 12) {
+h = hh-12;
+dd = "PM";
 }
- 
-document.getElementById('ftime').value=formatDate(thisdate); 
+if (h == 0) {
+h = 12;
+}
+m = m<10?"0"+m:m;
+
+return h+':'+m+' '+dd
+}
+
+document.getElementById('ftime').value=formatDate(thisdate);
 
 var d = new Date(),
 month = d.getMonth() + 1,
@@ -98,12 +98,12 @@ var format = 'g:i A';
 var step = 1;
 
 function parseTime(time, format, step) {
- 
+
  var hour, minute, stepMinute,
  defaultFormat = 'g:ia',
  pm = time.match(/p/i) !== null,
  num = time.replace(/[^0-9]/g, '');
- 
+
  // Parse for hour and minute
  switch(num.length) {
  case 4:
@@ -122,11 +122,11 @@ function parseTime(time, format, step) {
  default:
  return '';
  }
- 
+
  if( pm === true && hour > 0 && hour < 12 ) hour += 12;
- 
+
  if( hour >= 13 && hour <= 23 ) pm = true;
- 
+
  if( step ) {
  if( step === 0 ) step = 60;
  stepMinute = (Math.round(minute / step) * step) % 60;
@@ -136,10 +136,10 @@ function parseTime(time, format, step) {
  }
  minute = stepMinute;
  }
- 
+
  if( hour <= 0 || hour >= 24 ) hour = 0;
  if( minute < 0 || minute > 59 ) minute = 0;
- 
+
  return (format || defaultFormat)
         .replace(/g/g, hour === 0 ? '12' : 'g')
  .replace(/g/g, hour > 12 ? hour - 12 : hour)
@@ -150,34 +150,34 @@ function parseTime(time, format, step) {
  .replace(/s/g, '00')
  .replace(/a/g, pm ? 'pm' : 'am')
  .replace(/A/g, pm ? 'PM' : 'AM');
- 
+
 }
 
 
 function update() {
-    $j('#ftime').val(parseTime($j('#ftime').val(), format, step));   
+    $j('#ftime').val(parseTime($j('#ftime').val(), format, step));
 }
 
 $j(document).ready( function() {
-    
+
     $j('#ftime').blur(update);
 
  $j(function() {
     $j( "#fdate" ).datepicker({dateFormat: "mm/dd/yy"});
   });
-    
+
 
 });
 
 </script>
- 
+
 <div id="home-google-transit-link">
     <a href="/google-maps/" >More about transit in Google Maps and on your mobile phone.</a>
 </div>
 </div> <!-- end #home-route-planner-inn -->
                     </div><!-- #home-route-planner -->
-                    
-                    
+
+
              <div id="home-left-links">
  <div id="home-dynamic-space">
 
@@ -199,15 +199,15 @@ if( have_posts()) {
 <?php
 $count = 1;
 while ( have_posts() ) : the_post();
-				
-				
+
+
 				?>
 
 			<li>
     <a class="left-home-link" id="home-alerts-link-<?php echo $count; ?>" href=" <?php the_permalink() ?>" ><?php the_title() ?></a>
     </li>
 
-		<?php 
+		<?php
 		$count = $count + 1;
 		endwhile;
 wp_reset_query();
@@ -217,22 +217,22 @@ wp_reset_query();
 <br style="clear: both;" />
 
 </div>
- 
- 
+
+
 <?php
 
 }
 
 $args = array(
 	'numberposts' 	=> 3,
-	'post_type'		=> array('news'),	
+	'post_type'		=> array('news'),
 );
 $my_query = new WP_Query( $args );
- 
+
  if( $my_query->have_posts()) {
  ?>
- 
- 
+
+
 <div id="home-news" class="left-links-sec">
 <div class="left-sec-internal">
 <div id="home-news-title" class="left-link-title">News</div>
@@ -241,15 +241,15 @@ $my_query = new WP_Query( $args );
 <?php
 $count = 1;
 while ( $my_query->have_posts() ) : $my_query->the_post();
-				
-				
+
+
 				?>
 
 			<li >
     <a class="left-home-link" id="home-news-link-<?php echo $count; ?>" href=" <?php the_permalink() ?>" ><?php the_title() ?></a>
     </li>
 
-		<?php 
+		<?php
 		$count = $count + 1;
 		endwhile;
 wp_reset_postdata();
@@ -263,43 +263,10 @@ wp_reset_postdata();
 }
 
 
- the_post(); 
-		query_posts( array ( 'category_name' => 'employment_opportunities', 'posts_per_page' => 3 ) );
-if( have_posts()) {
- 
-
-?>
- 
-<div id="home-jobs" class="left-links-sec">
-<div class="left-sec-internal">
-<div id="home-jobs-title" class="left-link-title">Employment Opportunities</div>
-<div id="home-news-arhive-link" class="left-links-archive-link"><a href="/employment-opportunities/">See all</a></div>
-<ul class="left-link-list">
-<?php
-$count = 1;
-while ( have_posts() ) : the_post();
-				
-				
-				?>
-
-			<li >
-    <a class="left-home-link" id="home-jobs-link-<?php echo $count; ?>" href=" <?php the_permalink() ?>" ><?php the_title() ?></a>
-    </li>
-
-		<?php 
-		$count = $count + 1;
-		endwhile;
-wp_reset_query();
-?>
-</ul>
-
-<br style="clear: both;" />
-</div>
-</div>
-<?php }
+ the_post();
 
 $args = array(
-    'category_name' => 'agenda-packet', 
+    'category_name' => 'agenda-packet',
     'posts_per_page' => 3,
 );
 $my_query = new WP_Query($args);
@@ -336,9 +303,9 @@ Currently no service alerts.
 
 }
 ?>
-        <!--<h3 class="home-news-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>-->      
+        <!--<h3 class="home-news-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>-->
 </div> <!-- end #dynamic-space -->
- 
+
 <div id="sign-up">
     <h2 id="sign-up-for-alerts"> Sign up for <?php if ($count == 1 ) echo "future"; ?> Service Alerts</h2>
 <form action="http://mendocinotransit.us5.list-manage.com/subscribe/post?u=00e99199bd982874f8bd36527&amp;id=495f9d88d9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -346,16 +313,16 @@ Currently no service alerts.
     <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
     </form>
 </div> <!-- sign up -->
-                    
- 
- 
- 
- 
 
- 
+
+
+
+
+
+
 					</div> <!-- #home-left-links-->
 				</div> <!-- #home-left-col -->
-				
+
 				<div id="home-right-col">
 		<div id="home-map-caption">
 		Click a route to see its schedule and detail map.
@@ -365,7 +332,7 @@ Currently no service alerts.
 					</div> <!-- #home-map -->
 				</div><!-- home-right-col -->
 				<br style="clear: both; width: 100%;" />
-				
+
 				<div id="home-bottom-links">
 					<div id="home-links-col-1">
 						<div id="home-links-col-1-title" class="home-links-title">
@@ -393,10 +360,10 @@ Currently no service alerts.
 					</div> <!-- end #home-links-col-2 -->
 					<div id="home-links-col-3">
 						<div id="home-links-col-3-title" class="home-links-title">
-						Agency Information 
+						Agency Information
 						</div> <!-- end #home-links-col-1-title -->
-						<?php 
-			
+						<?php
+
 						wp_nav_menu( array (
 							'theme_location' => 'agency-information',
 							'menu_class'     => 'home-links-list',
@@ -406,11 +373,11 @@ Currently no service alerts.
 					</div> <!-- end #home-links-col-3 -->
 					<br style="clear: both;">
 				</div> <!-- #home-bottom-links-->
-				
+
 			<br style="clear: both;">
 				<div id="bottom-hr" />
 				</div>
-				<div id="home-mta-description"> 
+				<div id="home-mta-description">
 Mendocino County, California.  MTA’s service area encompasses about 2,800 square miles including the Mendocino Coast and Inland communities. The transit system includes a network of long distance, commute and local fixed routes, plus Dial-A-Ride services in Ukiah and Ft. Bragg.  MTA provides service throughout the county, including the communities of Albion, Anchor Bay, Bodega, Bodega Bay, Boonville, Calpella, Caspar, Elk, Fort Bragg, Fort Ross, Freestone, Gualala, Hopland, Jenner, Manchester, Mendocino, Navarro, Philo, Point Arena, Redwood Valley, Santa Rosa, Sea Ranch, Stewarts Point, Ukiah, Willits, and Windsor.
 				</div>
 <!-- test -->

@@ -20,7 +20,7 @@ Template Name: timetable
 <script src="<?php echo get_bloginfo('template_directory'); ?>/jquery.formalize.js"></script>
 
 <link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" />
-<?php if ( is_user_logged_in() ) { 
+<?php if ( is_user_logged_in() ) {
 ?>
 <!--<link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/new-edits.css" />-->
 <?php
@@ -41,7 +41,7 @@ Template Name: timetable
 <div id="timetable-route-name">
 	<div id="timetable-center-title" class="timetable-left-marg">
 		<div id="timetable-route-name-part-1">
-			<?php the_title(); ?> 
+			<?php the_title(); ?>
 		</div> <!-- end #timetable-route-name-part-1 -->
 		<div id="timetable-route-name-part-2">
 		<?php do_action('route_select'); ?>
@@ -62,8 +62,8 @@ Template Name: timetable
 	</div> <!-- end #timetable-pdf-icon -->
 </div> <!-- end #timetable-links -->
 <div id="timetable-content" class="timetable-left-marg">
-<?php if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
-<strong>Bold</strong> indicates PM time. <br /> 
+<?php //if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
+<strong>Bold</strong> indicates PM time. <br />
 Times are approximate and may vary due to weather conditions.<br /> <br/>
 <?php the_content(); ?>
 	<br />

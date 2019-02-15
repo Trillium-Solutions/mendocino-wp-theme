@@ -16,21 +16,21 @@ Template Name: route-5-60
 	Routes 5 &amp; 60 - Ft. Bragg / North Coast
 	</div>
 	<?php do_action('route_select'); ?>
-	
+
 </div><!-- #route-header -->
 <div id="route-breadcrumb" class="breadcrumb">
-		<?php if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
+		<?php //if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
 	</div><!-- end #route-breadcrumb -->
 
 <?php do_action('mendo_route_alert', '5-60'); ?>
 
 <div id="route-two-col-wrap">
 	<div id="route-col-left">
-		
-		<div id="route-desc" class="route-desc-top"> 
+
+		<div id="route-desc" class="route-desc-top">
 <img src="/images/mapsandschedules/maps-n-schedules-circ-5.png" height="15" > <strong>Route 5 BraggAbout</strong> is an hourly service within Ft. Bragg.
 </div> <!-- end #route-desc -->
-<div id="route-desc"> 
+<div id="route-desc">
 <img src="/images/mapsandschedules/maps-n-schedules-circ-60.png" height="15" > <strong>Route 60 The Coaster</strong> serves Ft. Bragg south to Navarro River Junction, Monday through Friday. Within Ft. Bragg, Rt. 60 operates on the same route as Rt. 5. At the Navarro River Junction, it connects with Rt. 75 for trips to the South Coast or Ukiah.
 </div> <!-- end #route-desc -->
 		<div id="route-schedule-box" class="route-box ">
@@ -58,7 +58,7 @@ Template Name: route-5-60
 					</div> <!-- end popup-button-desc -->
 				</div> <!-- end #schedule-northbound-65 -->
 				</a>
-				<a href="/routes/routes-5-and-60/5-and-60-southbound/"  > 
+				<a href="/routes/routes-5-and-60/5-and-60-southbound/"  >
 				<div id="schedule-southbound-65" class="route-popup-button route-button-right route-button-last route-button-even route-button-short" style="height:45px;">
 				<div class="popup-button-title">
 					Southbound
@@ -68,20 +68,20 @@ Template Name: route-5-60
 					</div> <!-- end popup-button-desc -->
 				</div> <!-- end #schedule-southbound-65-->
 				</a>
-				
+
 				<!-- update to North schedule effective July 27, 2014 - remove old North schedule on Monday-->
-				
-				
+
+
 				<br style="clear: both;" />
 			</div> <!-- end #schedule-buttons -->
-			
+
 			<div id="fare-table-link">
 				<a href="/fares/#inland">See fare table for this route</a> >>
 			</div> <!-- end #fare-table-link -->
 		</div> <!-- end #route-schedule-box -->
 
-		
-		
+
+
 
 	<div id="route-connections-box" class="route-box">
 		<div id="route-connections-box-title" class="route-title-box">
@@ -97,10 +97,10 @@ Template Name: route-5-60
 				</div> <!-- end #route-inner-box" -->
 
 	</div> <!-- end #route-connections-box -->
-		
+
 	</div> <!-- #end route col left -->
-	
-	
+
+
 	<div id="route-col-right">
 
 		<div id="route-connections-box-title" class="route-title-box">
@@ -114,7 +114,7 @@ Template Name: route-5-60
 
 			<div id="route-map-image-col-wrap">
 			<div id="route-map-col-left">
-			
+
 			<div class="route-detail-map-image-wrap">
 					<div class="map-detail-title-bar">
 						<div class="map-detail-title-text">
@@ -124,14 +124,14 @@ Template Name: route-5-60
 						</div><!-- end .map-detail-zoom-icon -->
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
-					
+
 					<a href="/wp-content/images/detail_maps/Ft-Bragg-Detail-Map-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Ft-Bragg-Detail-Map-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
-			
-			
-			
-				
-				
+
+
+
+
+
 			</div> <!-- end #map-col-left -->
 			<div id="route-map-col-right">
 				<div class="route-detail-map-image-wrap">
@@ -143,12 +143,12 @@ Template Name: route-5-60
 						</div><!-- end .map-detail-zoom-icon -->
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
-					
+
 					<a href="/wp-content/images/detail_maps/Coastal_Map_Detail_08-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Coastal_Map_Detail_08-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
-				
-				
-				
+
+
+
 			</div> <!-- end #map-col-right -->
 		</div> <!-- end #route-map-image-col-wrap -->
 		<br style="clear: both;" />
@@ -158,20 +158,20 @@ Template Name: route-5-60
 </div> <!-- end #route-two-col-wrap -->
 
 
- 
+
 
 
 <?php the_post(); ?>
- 
+
                 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>
       <h1 class="entry-title"><?php //the_title(); ?></h1>
- 
- 
+
+
 </div> <!-- post -->
 
 
 
- 
+
 </div> <!-- page-overlay -->
-                
+
 <?php get_footer(); ?>

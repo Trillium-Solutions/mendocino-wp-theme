@@ -18,23 +18,23 @@ Template Name: route-1-20
 
 	</div>
 	<?php do_action('route_select'); ?>
-	
+
 </div><!-- #route-header -->
 
 
 <div id="route-breadcrumb" class="breadcrumb">
-		<?php if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
+		<?php //if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
 	</div><!-- end #route-breadcrumb -->
 
 <?php do_action('mendo_route_alert', '1-20'); ?>
 
 <div id="route-two-col-wrap">
 	<div id="route-col-left">
-		
-		<div id="route-desc" class="route-desc-top"> 
+
+		<div id="route-desc" class="route-desc-top">
 <img src="/images/mapsandschedules/maps-n-schedules-circ-1.png" height="15" > <strong>Route 1 - Willits Local</strong> is a service within Willits, Monday through Friday. Note: Route 20 can also be used for local routes within Willits.
 </div> <!-- end #route-desc -->
-<div id="route-desc"> 
+<div id="route-desc">
 <img src="/images/mapsandschedules/maps-n-schedules-circ-20.png" height="15" > <strong>Route 20 - Willits / Ukiah</strong> is a service which connects Willits and Mendocino Community College, with timed transfers to Route 9 Ukiah Local.
 </div> <!-- end #route-desc -->
 		<div id="route-schedule-box" class="route-box ">
@@ -72,17 +72,17 @@ Template Name: route-1-20
 					</div> <!-- end popup-button-desc -->
 				</div> <!-- end #schedule-southbound-65-->
 				</a>
-				
+
 				<br style="clear: both;" />
 			</div> <!-- end #schedule-buttons -->
-			
+
 			<div id="fare-table-link">
 				<a href="/fares/#inland">See fare table for this route</a> >>
 			</div> <!-- end #fare-table-link -->
 		</div> <!-- end #route-schedule-box -->
 
-		
-		
+
+
 
 	<div id="route-connections-box" class="route-box">
 		<div id="route-connections-box-title" class="route-title-box">
@@ -100,10 +100,10 @@ Template Name: route-1-20
 			</div> <!-- end #route-inner-box" -->
 
 	</div> <!-- end #route-connections-box -->
-		
+
 	</div> <!-- #end route col left -->
-	
-	
+
+
 	<div id="route-col-right">
 
 		<div id="route-connections-box-title" class="route-title-box">
@@ -117,7 +117,7 @@ Template Name: route-1-20
 
 			<div id="route-map-image-col-wrap">
 			<div id="route-map-col-left">
-			
+
 			<div class="route-detail-map-image-wrap">
 					<div class="map-detail-title-bar">
 						<div class="map-detail-title-text">
@@ -127,15 +127,15 @@ Template Name: route-1-20
 						</div><!-- end .map-detail-zoom-icon -->
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
-					
+
 					<a href="/wp-content/images/detail_maps/ukiah-detail-11-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/ukiah-detail-11-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
-			
-			
-			
-			
-				
-				
+
+
+
+
+
+
 			</div> <!-- end #map-col-left -->
 			<div id="route-map-col-right">
 				<div class="route-detail-map-image-wrap">
@@ -147,10 +147,10 @@ Template Name: route-1-20
 						</div><!-- end .map-detail-zoom-icon -->
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
-					
+
 					<a href="/wp-content/images/detail_maps/Willits-Detail-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Willits-Detail-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
-				
+
 				<div class="route-detail-map-image-wrap">
 					<div class="map-detail-title-bar">
 						<div class="map-detail-title-text">
@@ -160,10 +160,10 @@ Template Name: route-1-20
 						</div><!-- end .map-detail-zoom-icon -->
 						<br style="clear: both;" />
 					</div><!-- end map-detail-title-bar -->
-					
+
 					<a href="/wp-content/images/detail_maps/Ukiah_Inset_Detail-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Ukiah_Inset_Detail_sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
-				
+
 			</div> <!-- end #map-col-right -->
 		</div> <!-- end #route-map-image-col-wrap -->
 		<br style="clear: both;" />
@@ -173,20 +173,20 @@ Template Name: route-1-20
 </div> <!-- end #route-two-col-wrap -->
 
 
- 
+
 
 
 <?php the_post(); ?>
- 
+
                 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>
       <h1 class="entry-title"><?php //the_title(); ?></h1>
- 
- 
+
+
 </div> <!-- post -->
 
 
 
- 
+
 </div> <!-- page-overlay -->
-                
+
 <?php get_footer(); ?>

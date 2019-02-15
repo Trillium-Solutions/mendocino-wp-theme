@@ -6,13 +6,13 @@ get_header(); ?>
 
 <div id="page-overlay">
 <h1 class="entry-title main"><?php the_title(); ?></h1>
-<?php if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
+<?php //if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
 	<br/>
-					
+
 						<hr />
 									<br/>
 <div id="schedules-container" >
-      <!-- Header -->      
+      <!-- Header -->
       <div class="header top guide">
 
         Click a route in the list below or in the map to get its schedule, detailed service maps, and connections.
@@ -26,7 +26,7 @@ get_header(); ?>
           <div class="box-header">
             Regional routes
           </div>
- 
+
           <div class="box-chunk">
             <div class="box-row">
               <div class="ms-region">North Mendocino Coast/Ukiah/Santa Rosa</div>
@@ -58,7 +58,7 @@ get_header(); ?>
 							<img src="/images/mapsandschedules/maps-n-schedules-circ-7.png">
 						</a>
 					</div>
-						
+
 					<div class="ms-desc"><a href="/routes/routes-7-and-9" alt="7">Ukiah Jitney</a><br /> <span style="font-size: 11px;">A direct route connecting North and South Ukiah
 						<br /> Mon-Fri</span>
 					</div>
@@ -77,12 +77,12 @@ get_header(); ?>
           	</div>
           </div>
 	<br style="clear: both;">
-	
+
           <div class="box-chunk">  <hr />
             <div class="box-row">
             <div class="ms-region">Willits / Redwood Valley</div>
             <div class="box-row box-row-item">
-             
+
               <div class="ms-circ"><a href="/routes/routes-1-and-20" alt="1"><img src="/images/mapsandschedules/maps-n-schedules-circ-1.png"></a></div>
               <div class="ms-desc"><a href="/routes/routes-1-and-20" alt="1">Willits Local</a><br /><span style="font-size: 11px;"> Local Service within Willits.</span></div>
             </div>
@@ -95,11 +95,11 @@ get_header(); ?>
             </div>
             </div>
             <br style="clear: both;">
-           
+
 
           </div>
           </div>
-        
+
         <!-- Coastal Routes -->
         <div id="coastal-routes" class="column-box boxed">
           <div class="box-header">
@@ -115,7 +115,7 @@ get_header(); ?>
 				  <div class="ms-circ">
 					<a href="/routes/routes-5-and-60" alt="5"><img src="/images/mapsandschedules/maps-n-schedules-circ-5.png"></a>
 				  </div>
-				  
+
 				  <div class="ms-desc">
 					<a href="/routes/routes-5-and-60" alt="5">BraggAbout</a><br /> <span style="font-size: 11px;">Mon - Fri: Hourly service in Ft. Bragg</span>
 				  </div>
@@ -141,7 +141,7 @@ get_header(); ?>
             <br style="clear: both;">
            </div>
 <hr />
-            <div class="box-row"> 
+            <div class="box-row">
               <div class="ms-region">South Mendocino Coast /Ukiah</div>
  <br />
                <div class="ms-circ"><a href="/routes/route-75" alt="75"><img src="/images/mapsandschedules/maps-n-schedules-circ-75.png"></a></div>
@@ -155,12 +155,12 @@ get_header(); ?>
 
         </div>
       </div>
-      
+
       <!-- Right Column -->
       <div id="right-column" class="column right">
         <!-- Map Container -->
         <div id="map" class="column-box boxed">
-        
+
        <?php include('coastal_detail-01.svg'); ?>
         </div>
 
@@ -168,7 +168,7 @@ get_header(); ?>
         <div id="connections" class="column-box boxed">
           <div class="box-header">Connections</div>
           <div class="box-chunk" style="margin-top: 17px">
-            MTA service connects with 
+            MTA service connects with
             <ul class="ul-circle">
 				<li><a href="http://www.greyhound.com/">Greyhound</a></li>
 					<li><a href="http://www.amtrak.com/">Amtrak</a></li>

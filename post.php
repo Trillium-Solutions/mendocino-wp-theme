@@ -13,7 +13,7 @@
  */
 
 get_header(); ?>
-<?php if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
+<?php //if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
 		<div id="container">
 			<div id="content" role="main">
 
