@@ -86,7 +86,7 @@ $upcoming = new WP_Query(array(
      <input type="submit" class="btn" value="Get Meetings">
 </form>
 </div>
-<br /></br />
+<br />
 <?php
      $start = $archive_year . '0101';
      $end = $archive_year . '1231';
