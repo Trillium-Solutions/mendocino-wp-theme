@@ -66,12 +66,13 @@ $upcoming = new WP_Query(array(
 
 
 <h2><?php echo $archive_year; ?> Past Agendas and Minutes</h2>
+<div>
 <form method="get" action="">
      <label for="archiveyear">Show different year: </label>
      <select name="archiveyear" id="archiveyear">
           <?php
           $cur = date("Y");
-          $first = 2014;
+          $first = 2012;
           $range = range($cur, $first);
           foreach($range as $r) {
                $selected = '';
@@ -84,6 +85,8 @@ $upcoming = new WP_Query(array(
      </select>
      <input type="submit" class="btn" value="Get Meetings">
 </form>
+</div>
+<br /></br />
 <?php
      $start = $archive_year . '0101';
      $end = $archive_year . '1231';
