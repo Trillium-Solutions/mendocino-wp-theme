@@ -15,8 +15,8 @@
 </style>
 
 
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>?v=4.3" /> 
-<link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/homepage-hotfix.css?v2" /> 
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>?v=4.3" />
+<link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/homepage-hotfix.css?v2" />
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
 
 
@@ -39,9 +39,9 @@
 <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/ie.css" />
 <![endif]-->
 <link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" />
- 
+
 <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css" rel="stylesheet" />
-<script language="javascript" type="text/javascript"> 
+<script language="javascript" type="text/javascript">
 
 <!--
 function popitup(url) {
@@ -76,13 +76,22 @@ var options = {
 };
 
 
-var autocomplete_origin = new google.maps.places.Autocomplete(origin_input, options);    
+var autocomplete_origin = new google.maps.places.Autocomplete(origin_input, options);
 var autocomplete_destination = new google.maps.places.Autocomplete(destination_input, options);
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
 
+</script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-48913012-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-48913012-1', {'anonymize_ip' : true});
 </script>
 
 </head>
@@ -106,7 +115,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 <div id="coast-repeat-wrapper">
 <div id="coast-right-hill-wrapper">
 	<div id="main-center-wrapper">
-	
+
 	<div id="top-right-number-and-spanish">
         <div id="top-line">
          <div id="mendo-number">1-800-696-4MTA</div>
@@ -121,8 +130,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
      </div>
 	     <div id="language-link"><a href="/es">En espa&ntilde;ol</a></div>
     </div> <!-- #top-right-number-and-spanish-->
-	 
-	
+
+
 		<div id="top">
 			<div id="logo-left">
 				<a href="/">
@@ -133,7 +142,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
                     Mendocino Transit Authority
 				</div> <!-- #logo-text -->
 			</div> <!-- #logo-left-->
-			
+
             <button id="mobile-nav-button">Menu</button>
 			<div id="nav">
 				<a href="/maps-and-schedules">
