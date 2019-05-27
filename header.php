@@ -86,12 +86,12 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-48913012-1"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34817997-1"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'UA-48913012-1', {'anonymize_ip' : true});
+gtag('config', 'UA-34817997-1', {'anonymize_ip' : true});
 </script>
 
 </head>
