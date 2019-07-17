@@ -22,7 +22,7 @@ what._haschanged=true;
 </script>
 
 
-<form action="http://www.trilliumtransit.com/redirect/google_redirect.php" name="f"><input type="hidden" value="UTF8" name="ie"/><input type="hidden" value="d" name="f"/><input type="hidden" value="39.150171,-123.207783" name="sll"/>
+<form action="https://www.trilliumtransit.com/redirect/google_redirect.php" name="f"><input type="hidden" value="UTF8" name="ie"/><input type="hidden" value="d" name="f"/><input type="hidden" value="39.150171,-123.207783" name="sll"/>
           <table id="trip_planner_form_table" align="right" style="margin-right:9px;margin-top:5px;">
             <tbody><tr id="row1">
               <td id="cell_1a"><font size="-1"><strong>Start</strong></font></td>
@@ -308,7 +308,7 @@ Currently no service alerts.
 
 <div id="sign-up">
     <h2 id="sign-up-for-alerts"> Sign up for <?php if ($count == 1 ) echo "future"; ?> Service Alerts</h2>
-<form action="http://mendocinotransit.us5.list-manage.com/subscribe/post?u=00e99199bd982874f8bd36527&amp;id=495f9d88d9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<form action="https://mendocinotransit.us5.list-manage.com/subscribe/post?u=00e99199bd982874f8bd36527&amp;id=495f9d88d9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <input type="email" value="" name="EMAIL" class="email" size="35" id="mce-EMAIL" placeholder="email address" required>
     <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
     </form>
