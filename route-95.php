@@ -28,7 +28,7 @@ Template Name: route-95
 <div id="route-two-col-wrap">
 	<div id="route-col-left">
 		<div id="route-desc">
-Route 95 connects the South Coast with Santa Rosa, 7-days per week. Serves coastal communities from Point Arena south to Bodega Bay.		</div> <!-- end #route-desc -->
+Route 95 connects the South Coast of Mendocino County with Santa Rosa, 7 days per week. The bus serves coastal communities from Point Arena south to Gualala, Sea Ranch, Jenner, Bodega, Freestone and more.		</div> <!-- end #route-desc -->
 		<div id="route-schedule-box" class="route-box">
 			<div id="route-schedule-box-title" class="route-title-box">
 			 	<div id="route-schedule-box-title-text" class="route-title-box-text">
