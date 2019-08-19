@@ -159,20 +159,6 @@ the_field("route-desc"); ?>
 					<a href="/wp-content/images/detail_maps/Ukiah_Inset_Detail-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Ukiah_Inset_Detail_sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
 
-				<div class="route-detail-map-image-wrap">
-					<div class="map-detail-title-bar">
-						<div class="map-detail-title-text">
-							Santa Rosa Detail
-						</div> <!-- end map-detail-title-text -->
-						<div class="map-detail-zoom-icon">
-						</div><!-- end .map-detail-zoom-icon -->
-						<br style="clear: both;" />
-					</div><!-- end map-detail-title-bar -->
-
-					<a href="/wp-content/images/detail_maps/Santa_Rosa_Detail-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Santa_Rosa_Detail-sml.jpg" /></a>
-				</div> <!-- end .route-detail-map-image-wrap -->
-
-
 			</div> <!-- end #map-col-left -->
 			<div id="route-map-col-right">
 				<div class="route-detail-map-image-wrap">
