@@ -23,7 +23,6 @@ Template Name: employment
         <br />
      <?php the_content(); ?>
              <br />        <br />
-       <h2>Currently Posted Jobs</h2>
 <?php
         // The Query
         $page = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -31,8 +30,9 @@ Template Name: employment
         ?><?php
         // The Loop
         if(!have_posts()) {
-        	echo "There are currently no posted employment opportunities.";
+        	echo "";
         } else {
+        echo '<h2>Current Jobs</h2>';
         while ( have_posts() ) : the_post();
 
 
