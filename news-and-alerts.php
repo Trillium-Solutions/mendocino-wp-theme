@@ -67,11 +67,13 @@ Template Name: news-archive
 
          <?php the_content(); ?><?php
         // The Query
-        $page = (get_query_var('paged')) ? get_query_var('paged') : 1;
-        query_posts("paged=$page&cat=3");
+        $news = new WP_Query(array(
+          'post_type' => array('news'),
+          'posts_per_page' => 20
+        ));
         ?><?php
         // The Loop
-        while ( have_posts() ) : the_post();
+        while ( $news->have_posts() ) : $news->the_post();
 
                    echo '<div class="archive-alert-item">';
                 echo '<a href="';
