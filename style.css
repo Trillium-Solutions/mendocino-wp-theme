@@ -372,6 +372,12 @@ background: url('images/planner-bg.png') no-repeat;
 font-size: 20px;
 }
 
+#home-alerts {
+    text-align: center;
+    border: 2px solid #ff6;
+    background-color: #ffc;
+    padding: 0 11.424px 11.424px 11.424px;
+}
 
 
 

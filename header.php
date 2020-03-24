@@ -96,6 +96,11 @@ gtag('config', 'UA-34817997-1', {'anonymize_ip' : true});
 
 </head>
 <body>
+	<div id="home-alerts">
+		<a href="https://mendocinotransit.org/2020/03/18/alert-mta-reduces-bus-service-on-3-19/"><span style="text-transform: uppercase;">
+			Reduced Service Bus Schedules - 3/19/2020</span></a>
+    </div>
+
     <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <defs>
     <symbol id="icon-facebook" viewBox="0 0 32 32">
