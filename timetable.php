@@ -63,8 +63,8 @@ Template Name: timetable
 </div> <!-- end #timetable-links -->
 <div id="timetable-content" class="timetable-left-marg">
 <?php //if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
-<strong>Bold</strong> indicates PM time. <br />
-Times are approximate and may vary due to weather conditions.<br /> <br/>
+<!--<strong>Bold</strong> indicates PM time. <br />
+Times are approximate and may vary due to weather conditions.<br /> <br/>-->
 <?php the_content(); ?>
 	<br />
 
