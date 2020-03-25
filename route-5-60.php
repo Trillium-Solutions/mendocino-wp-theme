@@ -32,6 +32,7 @@ Template Name: route-5-60
 </div> <!-- end #route-desc -->
 <div id="route-desc">
 <img src="/images/mapsandschedules/maps-n-schedules-circ-60.png" height="15" > <strong>Route 60 The Coaster</strong> serves Ft. Bragg south to Navarro River Junction, Monday through Friday. Within Ft. Bragg, Rt. 60 operates on the same route as Rt. 5. At the Navarro River Junction, it connects with Rt. 75 for trips to the South Coast or Ukiah.
+<p>Please see PDF for current reduced service.</p>
 </div> <!-- end #route-desc -->
 		<div id="route-schedule-box" class="route-box ">
 			<div id="route-schedule-box-title" class="route-title-box">

@@ -38,6 +38,7 @@ Template Name: route-7-9
 		<div id="route-identifier-7" class="route-identifier">
 		<div id="route-desc">
 <img src="/images/mapsandschedules/maps-n-schedules-circ-7.png" height="15" > <strong>Route 7 Ukiah Jitney</strong> is a direct route connecting north and south Ukiah.
+<p>Please see PDF for current reduced service</p>
 </div> <!-- end #route-desc -->
 		<div id="route-schedule-box" class="route-box">
 			<div id="route-schedule-box-title" class="route-title-box">
