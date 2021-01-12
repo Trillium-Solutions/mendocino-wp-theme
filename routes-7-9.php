@@ -36,14 +36,21 @@ Template Name: route-7-9
 
 
 		<div id="route-identifier-7" class="route-identifier">
-		<div id="route-desc">
-<img src="/images/mapsandschedules/maps-n-schedules-circ-7.png" height="15" > <strong>Route 7 Ukiah Jitney</strong> is a direct route connecting north and south Ukiah.
-<p>Please see PDF for current reduced service</p>
-</div> <!-- end #route-desc -->
+			<div id="route-desc">
+				<img src="/images/mapsandschedules/maps-n-schedules-circ-7.png" height="15" > <strong>Route 7 Ukiah Jitney</strong> is a direct route connecting north and south Ukiah.
+				<p>Please see PDF for current reduced service</p>
+			</div> <!-- end #route-desc -->
+		</div>
+		<div id="route-identifier-9" class="route-identifier">
+			<div id="route-desc">
+				<img src="/images/mapsandschedules/maps-n-schedules-circ-9.png" height="15" > <strong> Route 9 Ukiah Local</strong> offers service between locations within Ukiah.
+				<em> Deviated Fixed Route: Ukiah Local 9 evening service after 6:00 pm offers deviated service to persons living with ¾ miles of the Local Route.  This service is available to the general public as well as seniors and persons with disabilities, for an additional charge. Advance reservations are required.  Please call 462-3881 before 5:00pm for pick up.</em>
+			</div> <!-- end #route-desc -->
+		</div>
 		<div id="route-schedule-box" class="route-box">
 			<div id="route-schedule-box-title" class="route-title-box">
 			 	<div id="route-schedule-box-title-text" class="route-title-box-text">
-			 		Route 7 Schedule
+			 		Route 7 & 9 Schedule
 			 	</div> <!-- end #route-schedule-box-title-text -->
 			 	<div id="route-schedule-popup-info-text">
 			 	 (Click to pop-up a schedule for each route)
@@ -56,22 +63,22 @@ Template Name: route-7-9
 
 			<!-- begin new schedule update 18-Aug-2013 -->
 			<div id="schedule-buttons">
-			<a href="/routes/routes-7-and-9/route-7-northbound-aug-2013/"  >
+			<a href="/routes/routes-7-and-9/route-7-and-9-northbound/"  >
 				<div id="schedule-northbound-65" class="route-popup-button route-button-left route-button-first route-button-odd route-button-short" style="height:45px;">
 					<div class="popup-button-title">
 					Northbound
-					<br/><span style="font-size:12px;"</span>
+					<br/><span style="font-size:12px;"></span>
 					</div> <!-- end #popup-button-title -->
 					<div class="popup-button-desc" >
 
 					</div> <!-- end popup-button-desc -->
 				</div> <!-- end #schedule-northbound-65 -->
 				</a>
-				<a href="/routes/routes-7-and-9/route-7-southbound-aug-2013/"  >
+				<a href="/routes/routes-7-and-9/route-7-and-9-southbound/"  >
 				<div id="schedule-southbound-65" class="route-popup-button route-button-right route-button-last route-button-even route-button-short" style="height:45px;">
 				<div class="popup-button-title">
 					Southbound
-					<br/><span style="font-size:12px;"</span>
+					<br/><span style="font-size:12px;"></span>
 					</div> <!-- end #popup-button-title -->
 					<div class="popup-button-desc">
 
@@ -86,81 +93,7 @@ Template Name: route-7-9
 				<a href="/fares/#inland">See fare table for this route</a> >>
 			</div> <!-- end #fare-table-link -->
 		</div> <!-- end #route-schedule-box -->
-		</div> <!-- end route-identifier -->
-
-		<!-- ROUTE 9 -->
-		<div id="route-identifier-9" class="route-identifier">
-		<div id="route-desc">
-<img src="/images/mapsandschedules/maps-n-schedules-circ-9.png" height="15" > <strong> Route 9 Ukiah Local</strong> offers service between locations within Ukiah.
-<em> Deviated Fixed Route: Ukiah Local 9 evening service after 6:00 pm offers deviated service to persons living with ¾ miles of the Local Route.  This service is available to the general public as well as seniors and persons with disabilities, for an additional charge. Advance reservations are required.  Please call 462-3881 before 5:00pm for pick up.</em>
-</div> <!-- end #route-desc -->
-		<div id="route-schedule-box" class="route-box">
-			<div id="route-schedule-box-title" class="route-title-box">
-			 	<div id="route-schedule-box-title-text" class="route-title-box-text">
-			 		Route 9 Schedule
-			 	</div> <!-- end #route-schedule-box-title-text -->
-			 	<div id="route-schedule-popup-info-text">
-			 	 (Click to pop-up a schedule for each route)
-			 	</div> <!-- end#route-schedule-popup-info-text -->
-			 	<br style="clear: both;" />
-			</div> <!-- end #route-schedule-box-title -->
-			<div id="route-days-of-week">
-				Monday through Friday: til 11 p.m. <br />
-				Saturday: 10 a.m. – 5 p.m.
-			</div> <!-- end #days-of-week -->
-			<div id="schedule-buttons">
-
-				<!-- links to North- and South-bound timetables, ending July 25, 2014; remove these on Monday -->
-				<a href="/routes/routes-7-and-9/route-9-northbound-monday-friday-effective-27-july-2014/"  >
-				<div id="schedule-northbound-65" class="route-popup-button route-button-left route-button-first route-button-odd route-button-short" style="height:45px;">
-					<div class="popup-button-title">
-					Northbound Mon-Fri<br/><span style="font-size:12px;"</span>
-					</div> <!-- end #popup-button-title -->
-					<div class="popup-button-desc" >
-
-					</div> <!-- end popup-button-desc -->
-				</div> <!-- end #schedule-northbound-9 -->
-				</a>
-				<a href="/routes/routes-7-and-9/route-9-southbound-monday-friday-effective-27-july-2014/"  >
-				<div id="schedule-southbound-65" class="route-popup-button route-button-right route-button-even route-button-short " style="height:45px;">
-				<div class="popup-button-title">
-					Southbound Mon-Fri<br/><span style="font-size:12px;"</span>
-					</div> <!-- end #popup-button-title -->
-					<div class="popup-button-desc">
-
-					</div> <!-- end popup-button-desc -->
-				</div> <!-- end #schedule-southbound-65-->
-				</a>
-
-
-				<a href="/routes/routes-7-and-9/route-9-northbound-saturday/"  >
-				<div id="schedule-northbound-65" class="route-popup-button route-button-left route-button-odd route-button-row-2 route-button-short">
-					<div class="popup-button-title">
-					Northbound Saturday
-					</div> <!-- end #popup-button-title -->
-					<div class="popup-button-desc" >
-
-					</div> <!-- end popup-button-desc -->
-				</div> <!-- end #schedule-northbound-65 -->
-				</a>
-				<a href="/routes/routes-7-and-9/route-9-southbound-saturday/"  >
-				<div id="schedule-southbound-65" class="route-popup-button route-button-right route-button-last route-button-even route-button-row-2 route-button-short">
-				<div class="popup-button-title">
-					Southbound Saturday
-					</div> <!-- end #popup-button-title -->
-					<div class="popup-button-desc">
-
-					</div> <!-- end popup-button-desc -->
-				</div> <!-- end #schedule-southbound-65-->
-				</a>
-				<br style="clear: both;" />
-			</div> <!-- end #schedule-buttons -->
-
-			<div id="fare-table-link">
-				<a href="/fares/#inland">See fare table for this route</a> >>
-			</div> <!-- end #fare-table-link -->
-		</div> <!-- end #route-schedule-box -->
-		</div > <!-- end #route-identifier -->
+	
 
 	<div id="route-connections-box" class="route-box">
 		<div id="route-connections-box-title" class="route-title-box">
@@ -171,14 +104,10 @@ Template Name: route-7-9
 		</div> <!-- end #route-connections-box-title -->
 
 			<div class="route-inner-box">
-				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="http://mendocinotransit.org/wp-content/uploads/2018/08/Route-7.pdf">Download PDF version of Route 7 timetable.</a></div> <!-- end #route-pdf-link -->
+				<div id="route-pdf-icon"></div>
+					<div id="route-pdf-link">
+						<a href="<?php the_field('schedule_pdf'); ?>" target="_blank">Download PDF version of Route 7 & 9 timetables.</a></div> <!-- end #route-pdf-link -->
 				<br style="clear: both;" />
-			</div> <!-- end #route-inner-box" -->
-
-			<div class="route-inner-box">
-				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="http://mendocinotransit.org/wp-content/uploads/2018/08/Route-9.pdf">Download PDF version of Route 9 timetable.</a></div> <!-- end #route-pdf-link -->
-				<br style="clear: both;" />
-				</div> <!-- end #route-inner-box" -->
 			</div> <!-- end #route-inner-box" -->
 
 	</div> <!-- end #route-connections-box -->

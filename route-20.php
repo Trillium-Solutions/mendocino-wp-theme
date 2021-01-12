@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: route-1-20
+Template Name: route-20
 */
 ?>
 
@@ -8,12 +8,10 @@ Template Name: route-1-20
 <div id="page-overlay">
 
 <div id="route-header">
-	<div id="route-circle-icon-1" class="route-circle-icon">
-	</div>
 	<div id="route-circle-icon-20" class="route-circle-icon">
 	</div>
 	<div id="route-title">
-	ROUTES 1 &amp; 20 - Willits / Redwood Valley
+	ROUTE 20 - Redwood Valley
 
 
 	</div>
@@ -26,23 +24,20 @@ Template Name: route-1-20
 		<?php //if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
 	</div><!-- end #route-breadcrumb -->
 
-<?php do_action('mendo_route_alert', '1-20'); ?>
+<?php do_action('mendo_route_alert', '20'); ?>
 
 <div id="route-two-col-wrap">
 	<div id="route-col-left">
 
-		<div id="route-desc" class="route-desc-top">
-<img src="/images/mapsandschedules/maps-n-schedules-circ-1.png" height="15" > <strong>Route 1 - Willits Local</strong> is a service within Willits, Monday through Friday. Note: Route 20 can also be used for local routes within Willits.
-</div> <!-- end #route-desc -->
 <div id="route-desc">
 <img src="/images/mapsandschedules/maps-n-schedules-circ-20.png" height="15" > <strong>Route 20 - Willits / Ukiah</strong> is a service which connects Willits and Mendocino Community College, with timed transfers to Route 9 Ukiah Local.
 </div> <!-- end #route-desc -->
 		<div id="route-schedule-box" class="route-box ">
 			<div id="route-schedule-box-title" class="route-title-box">
 			 	<div id="route-schedule-box-title-text" class="route-title-box-text">
-			 		Route 1 and 20 Combined Schedule
+			 		Schedule
 			 	</div> <!-- end #route-schedule-box-title-text -->
-			 	<div id="route-schedule-popup-info-text-1-20" class="1-20">
+			 	<div id="route-schedule-popup-info-text">
 			 	 (Click to pop-up a schedule for each route)
 			 	</div> <!-- end#route-schedule-popup-info-text -->
 			 	<br style="clear: both;" />
@@ -52,20 +47,20 @@ Template Name: route-1-20
 			</div> <!-- end #days-of-week -->
 
 			<div id="schedule-buttons">
-			<a href="/routes/routes-1-and-20/route-1-and-20-northbound-aug-2013/"  >
+			<a href="/routes/route-20/route-20-northbound/"  >
 				<div id="schedule-northbound-65" class="route-popup-button route-button-left route-button-first route-button-odd route-button-short" style="height:45px;">
 					<div class="popup-button-title">
-					Northbound<br/><span style="font-size:12px;"</span>
+					Northbound<br/><span style="font-size:12px;"></span>
 					</div> <!-- end #popup-button-title -->
 					<div class="popup-button-desc" >
 
 					</div> <!-- end popup-button-desc -->
 				</div> <!-- end #schedule-northbound-65 -->
 				</a>
-				<a href="/routes/routes-1-and-20/route-1-and-20-southbound-aug-2013/"  >
+				<a href="/routes/route-20/route-20-southbound/"  >
 				<div id="schedule-southbound-65" class="route-popup-button route-button-right route-button-last route-button-even route-button-short" style="height:45px;">
 				<div class="popup-button-title">
-					Southbound<br/><span style="font-size:12px;"</span>
+					Southbound<br/><span style="font-size:12px;"></span>
 					</div> <!-- end #popup-button-title -->
 					<div class="popup-button-desc">
 
@@ -92,12 +87,12 @@ Template Name: route-1-20
 			<br style="clear: both;" />
 		</div> <!-- end #route-connections-box-title -->
 
-			<div class="route-inner-box">
-				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="http://mendocinotransit.org/wp-content/uploads/2018/08/Route-1.pdf">Download PDF version of Route 1 timetable.</a></div> <!-- end #route-pdf-link -->
-				<br style="clear: both;" />
-				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="http://mendocinotransit.org/wp-content/uploads/2018/08/Route-20.pdf">Download PDF version of Route 20 timetable.</a></div> <!-- end #route-pdf-link -->
-				<br style="clear: both;" />
-			</div> <!-- end #route-inner-box" -->
+		<div class="route-inner-box">
+            <div id="route-pdf-icon"></div>
+                <div id="route-pdf-link">
+                    <a href="<?php the_field('schedule_pdf'); ?>" target="_blank">Download PDF version of Route 20 timetable.</a></div> <!-- end #route-pdf-link -->
+            <br style="clear: both;" />
+            </div> <!-- end #route-inner-box" -->
 
 	</div> <!-- end #route-connections-box -->
 

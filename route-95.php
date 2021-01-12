@@ -107,7 +107,9 @@ Route 95 connects the South Coast of Mendocino County with Santa Rosa, 7 days pe
 		</div> <!-- end #route-connections-box-title -->
 
 			<div class="route-inner-box">
-				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="http://mendocinotransit.org/wp-content/uploads/2018/08/Route-95.pdf">Download PDF version of Route 95 timetable.</a></div> <!-- end #route-pdf-link -->
+				<div id="route-pdf-icon"></div>
+					<div id="route-pdf-link">
+					<a href="<?php the_field('schedule_pdf'); ?>" target="_blank">Download PDF version of Route 95 timetable.</a></div> <!-- end #route-pdf-link -->
 				<br style="clear: both;" />
 			</div> <!-- end #route-inner-box" -->
 

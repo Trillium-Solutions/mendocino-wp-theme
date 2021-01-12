@@ -61,9 +61,11 @@ function routeSelect() {
 ?><div id="route-dropdown" >
 		<select id="route-select" 	style="width: 180px; height: 35px; font-size: 18px; padding: 3px 0 0 10px; color: #666;">
 		  <option selected="selected" >Select a Route</option>
-		  <option value="1-20">Rts. 1 and 20 - Willits and Redwood Valley</option>
+		  <option value="1">Rt. 1 Willits</option>
+		  <option value="20">Rt. 20 Redwood Valley</option>
 		  <option value="7-9">Rts. 7 and 9 - Ukiah</option>
-		  <option value="5-60">Rts. 5 and 60 - Ft. Bragg/North Coast</option>
+		  <option value="5">Rt. 5 Ft. Bragg</option>
+		  <option value="60">Rt. 60 North Coast</option>
 		  <option value="65">Rt. 65 CC Rider</option>
 		  <option value="66">Rt. 66 Willits - Santa Rosa</option> 
 		  <option value="75">Rt. 75 South Coast/Ukiah</option>

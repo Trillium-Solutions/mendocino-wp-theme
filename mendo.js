@@ -4,11 +4,15 @@ $j(function(){
 
 $j("#route-select").change(function() {
 var selected = $j(this).val();
-if(selected == "1-20") {
-	window.location = "/routes/routes-1-and-20";
-} else if (selected == "5-60") {
-	window.location = "/routes/routes-5-and-60";
-} else if (selected == "7-9") {
+if(selected == "1") {
+	window.location = "/routes/route-1";
+} else if (selected == "20") {
+	window.location = "/routes/route-20";
+} else if (selected == "5") {
+	window.location = "/routes/route-5";
+} else if (selected == "60") {
+	window.location = "/routes/route-60";
+}else if (selected == "7-9") {
 	window.location = "/routes/routes-7-and-9";
 } else if (selected == "65") {
 	window.location = "/routes/route-65";

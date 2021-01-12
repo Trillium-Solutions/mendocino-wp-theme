@@ -1,11 +1,11 @@
 var hoverObjs = [];
 var routeLinks = {
-				 "1":"routes-1-and-20",
-				 "20":"routes-1-and-20",
+				 "1":"route-1",
+				 "20":"route-20",
 				 "7":"routes-7-and-9",
 				 "9": "routes-7-and-9",
-				 "5":"routes-5-and-60",
-				 "60":"routes-5-and-60",
+				 "5":"route-5",
+				 "60":"route-60",
 				 "65":"route-65",
 				 "66":"route-66",
 				 "75":"route-75",

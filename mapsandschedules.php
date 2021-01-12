@@ -83,15 +83,15 @@ get_header(); ?>
             <div class="ms-region">Willits / Redwood Valley</div>
             <div class="box-row box-row-item">
 
-              <div class="ms-circ"><a href="/routes/routes-1-and-20" alt="1"><img src="/images/mapsandschedules/maps-n-schedules-circ-1.png"></a></div>
-              <div class="ms-desc"><a href="/routes/routes-1-and-20" alt="1">Willits Local</a><br /><span style="font-size: 11px;"> Local Service within Willits.</span></div>
+              <div class="ms-circ"><a href="/routes/route-1" alt="1"><img src="/images/mapsandschedules/maps-n-schedules-circ-1.png"></a></div>
+              <div class="ms-desc"><a href="/routes/route-1" alt="1">Willits Local</a><br /><span style="font-size: 11px;"> Local Service within Willits.</span></div>
             </div>
             </div>
             <br style="clear: both;">
             <div class="box-row">
 <div class="box-row box-row-item">
-              <div class="ms-circ"><a href="/routes/routes-1-and-20" alt="20"><img src="/images/mapsandschedules/maps-n-schedules-circ-20.png"></a></div>
-               <div class="ms-desc"><a href="/routes/routes-1-and-20" alt="20">Willits / Ukiah</a><br /><span style="font-size: 10px;">Connects Willits, Mendocino Community College, and Ukiah, with timed transfers to Route 9 Ukiah Local. Mon-Fri.</span></div>
+              <div class="ms-circ"><a href="/routes/route-20" alt="20"><img src="/images/mapsandschedules/maps-n-schedules-circ-20.png"></a></div>
+               <div class="ms-desc"><a href="/routes/route-20" alt="20">Willits / Ukiah</a><br /><span style="font-size: 10px;">Connects Willits, Mendocino Community College, and Ukiah, with timed transfers to Route 9 Ukiah Local. Mon-Fri.</span></div>
             </div>
             </div>
             <br style="clear: both;">
@@ -113,19 +113,19 @@ get_header(); ?>
               <div class="ms-region">Ft. Bragg / North Coast</div>
               <div class="box-row box-row-item">
 				  <div class="ms-circ">
-					<a href="/routes/routes-5-and-60" alt="5"><img src="/images/mapsandschedules/maps-n-schedules-circ-5.png"></a>
+					<a href="/routes/route-5" alt="5"><img src="/images/mapsandschedules/maps-n-schedules-circ-5.png"></a>
 				  </div>
 
 				  <div class="ms-desc">
-					<a href="/routes/routes-5-and-60" alt="5">BraggAbout</a><br /> <span style="font-size: 11px;">Mon - Fri: Hourly service in Ft. Bragg</span>
+					<a href="/routes/route-5" alt="5">BraggAbout</a><br /> <span style="font-size: 11px;">Mon - Fri: Hourly service in Ft. Bragg</span>
 				  </div>
             </div>
             </div>
             <br style="clear: both;">
             <div class="box-row">
 <div class="box-row box-row-item">
-              <div class="ms-circ"><a href="/routes/routes-5-and-60" alt="60"><img src="/images/mapsandschedules/maps-n-schedules-circ-60.png"></a></div>
-              <div class="ms-desc"><a href="/routes/routes-5-and-60" alt="60">The Coaster</a><br />
+              <div class="ms-circ"><a href="/routes/route-60" alt="60"><img src="/images/mapsandschedules/maps-n-schedules-circ-60.png"></a></div>
+              <div class="ms-desc"><a href="/routes/route-60" alt="60">The Coaster</a><br />
 <span style="font-size: 11px;">Mon - Fri: Ft. Bragg to Mendocino, Connects with Route 75</span></div>
             </div></div>
           </div>

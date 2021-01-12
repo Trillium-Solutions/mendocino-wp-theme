@@ -109,7 +109,9 @@ the_field("route-desc"); ?>
 		</div> <!-- end #route-connections-box-title -->
 
 			<div class="route-inner-box">
-				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="http://mendocinotransit.org/wp-content/uploads/2018/08/Route-65.pdf">Download the Route 65 PDF Timetable</a></div> <!-- end #route-pdf-link -->
+				<div id="route-pdf-icon"></div>
+					<div id="route-pdf-link">
+					<a href="<?php the_field('schedule_pdf'); ?>" target="_blank">Download PDF version of Route 65 timetable.</a></div> <!-- end #route-pdf-link -->
 				<br style="clear: both;" />
 			</div> <!-- end #route-inner-box" -->
 

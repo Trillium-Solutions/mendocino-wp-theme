@@ -96,7 +96,9 @@ Template Name: route-75
 
 
 			<div class="route-inner-box">
-				<div id="route-pdf-icon"></div><div id="route-pdf-link"><a href="http://mendocinotransit.org/wp-content/uploads/2018/08/Route-75.pdf">Download PDF version of Route 75 timetable.</a></div> <!-- end #route-pdf-link -->
+				<div id="route-pdf-icon"></div>
+					<div id="route-pdf-link">
+						<a href="<?php the_field('schedule_pdf'); ?>" target="_blank">Download PDF version of Route 75 timetable.</a></div> <!-- end #route-pdf-link -->
 								<br style="clear: both;" />
 				</div> <!-- end #route-inner-box" -->
 	</div> <!-- end #route-connections-box -->
