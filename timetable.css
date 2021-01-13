@@ -147,7 +147,7 @@ a.symbol {
 	padding-right: 2px;
 }
 
-.stop-code, .excluded-dates, .sr-only {
+.stop-code, .excluded-dates, .sr-only, .description, .service-notes {
 	display: none;
 }
 

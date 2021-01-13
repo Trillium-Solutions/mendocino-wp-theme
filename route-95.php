@@ -43,7 +43,7 @@ Route 95 connects the South Coast of Mendocino County with Santa Rosa, 7 days pe
 				7 Days a week
 			</div> <!-- end #days-of-week -->
 			<div id="schedule-buttons">
-			<a href="http://www.mendocinotransit.org/routes/route-95/northbound"  >
+			<a href="/routes/route-95/northbound"  >
 				<div id="schedule-northbound-65" class="route-popup-button route-button-left route-button-first route-button-odd">
 					<div class="popup-button-title">
 					Northbound
@@ -53,8 +53,8 @@ Route 95 connects the South Coast of Mendocino County with Santa Rosa, 7 days pe
 					</div> <!-- end popup-button-desc -->
 				</div> <!-- end #schedule-northbound-65 -->
 				</a>
-				<a href="http://www.mendocinotransit.org/routes/route-95/southbound"  >
-				<div id="schedule-southbound-65" class="route-popup-button route-button-right route-button-last route-button-even"">
+				<a href="/routes/route-95/southbound"  >
+				<div id="schedule-southbound-65" class="route-popup-button route-button-right route-button-last route-button-even">
 				<div class="popup-button-title">
 					Southbound
 					</div> <!-- end #popup-button-title -->
