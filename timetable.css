@@ -1,6 +1,7 @@
 body.timetable {
 background: white !important;
 overflow: auto;
+margin-top: -30px;
 }
 
 .tt-cell-hint {
