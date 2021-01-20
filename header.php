@@ -148,8 +148,8 @@ gtag('config', 'UA-34817997-1', {'anonymize_ip' : true});
 				</div> <!-- #logo-text -->
 			</div> <!-- #logo-left-->
 
-            <button id="mobile-nav-button">Menu</button>
-			<div id="nav">
+            <!--<button id="mobile-nav-button">Menu</button>-->
+			<nav id="nav" class="mobile-show">
 				<a href="/maps-and-schedules">
     				<div id="nav-maps-and-schedules">
     				</div> <!-- #nav-maps-and-schedules-link -->
@@ -166,7 +166,7 @@ gtag('config', 'UA-34817997-1', {'anonymize_ip' : true});
     				<div id="nav-connections">
     				</div><!-- #nav-connections-->
 				</a>
-			</div> <!-- #nav -->
+			</nav> <!-- #nav -->
 		</div> <!-- #top -->
 		<?php
 		if(is_front_page()){ ?>

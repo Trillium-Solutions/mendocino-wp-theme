@@ -67,7 +67,6 @@ function routeSelect() {
 		  <option value="5">Rt. 5 Ft. Bragg</option>
 		  <option value="60">Rt. 60 North Coast</option>
 		  <option value="65">Rt. 65 CC Rider</option>
-		  <option value="66">Rt. 66 Willits - Santa Rosa</option> 
 		  <option value="75">Rt. 75 South Coast/Ukiah</option>
 		  <option value="95">Rt. 95 South Coast/Santa Rosa</option>
 		</select>

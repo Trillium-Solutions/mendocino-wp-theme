@@ -17,9 +17,6 @@ if(selected == "1") {
 } else if (selected == "65") {
 	window.location = "/routes/route-65";
 }
-else if (selected == "66") {
-	window.location = "/routes/route-66";
-}
 else if (selected == "75") {
 	window.location = "/routes/route-75";
 } else if (selected == "95") {
@@ -205,3 +202,5 @@ select_end_zone.html(optionsHtml);
 function clear_fare_result() {
 document.getElementById('fare_result').innerHTML = '';
 }
+
+
