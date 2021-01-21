@@ -32,8 +32,15 @@ get_header(); ?>
               <div class="ms-region">North Mendocino Coast/Ukiah/Santa Rosa</div>
              </div> <!-- end box row -->
              <div class="box-row box-row-item">
-              <div class="ms-circ"><a href="/routes/route-65" alt="65"><img src="/images/mapsandschedules/maps-n-schedules-circ-65.png"></a></div>
-              <div class="ms-desc"><a href="/routes/route-65" alt="65">CC Rider</a><br /><span style="font-size: 10px;">7-days per week from Ft. Bragg to Willits, Ukiah and Santa Rosa.</span></div>
+              <div class="ms-circ">
+                <a href="/routes/route-65">
+                  <img src="/images/mapsandschedules/maps-n-schedules-circ-65.png" alt="Route 65">
+                </a>
+              </div>
+              <div class="ms-desc"><a href="/routes/route-65">CC Rider</a>
+                <br />
+                <span style="font-size: 10px;">7-days per week from Ft. Bragg to Willits, Ukiah and  Santa Rosa.</span>
+              </div>
 
               <br style="clear: both;">
             </div>
@@ -54,45 +61,66 @@ get_header(); ?>
             	</div>
 				<div class="box-row box-row-item">
 					<div class="ms-circ">
-						<a href="/routes/routes-7-and-9" alt="7">
-							<img src="/images/mapsandschedules/maps-n-schedules-circ-7.png">
+						<a href="/routes/routes-7-and-9">
+							<img src="/images/mapsandschedules/maps-n-schedules-circ-7.png" alt=" Route 7">
 						</a>
 					</div>
 
-					<div class="ms-desc"><a href="/routes/routes-7-and-9" alt="7">Ukiah Jitney</a><br /> <span style="font-size: 11px;">A direct route connecting North and South Ukiah
+					<div class="ms-desc">
+            <a href="/routes/routes-7-and-9">Ukiah Jitney</a><br /> <span style="font-size: 11px;">A direct route connecting North and South Ukiah
 						<br /> Mon-Fri</span>
 					</div>
 				</div>
 			</div>
 			<br style="clear: both;">
-            <div class="box-row">
+      <div class="box-row">
 				<div class="box-row box-row-item">
-           		   <div class="ms-circ">
-           		   		<a href="/routes/routes-7-and-9" alt="9"><img src="/images/mapsandschedules/maps-n-schedules-circ-9.png"></a>
-           		   	</div>
-             		<div class="ms-desc"><a href="/routes/routes-7-and-9" alt="9">Ukiah Local</a><br />
+          <div class="ms-circ">
+           	<a href="/routes/routes-7-and-9">
+              <img src="/images/mapsandschedules/maps-n-schedules-circ-9.png" alt=" Route 9">
+            </a>
+          </div>
+          <div class="ms-desc">
+            <a href="/routes/routes-7-and-9">Ukiah Local</a>
+            <br />
 						<span style="font-size: 11px;">Local route within Ukiah. Mon-Fri: 7a.m. to 11 p.m. Sat: 10 a.m. to 5 p.m.</span>
 					</div>
            		</div>
           	</div>
           </div>
-	<br style="clear: both;">
+	    <br style="clear: both;">
 
           <div class="box-chunk">  <hr />
             <div class="box-row">
             <div class="ms-region">Willits / Redwood Valley</div>
             <div class="box-row box-row-item">
 
-              <div class="ms-circ"><a href="/routes/route-1" alt="1"><img src="/images/mapsandschedules/maps-n-schedules-circ-1.png"></a></div>
-              <div class="ms-desc"><a href="/routes/route-1" alt="1">Willits Local</a><br /><span style="font-size: 11px;"> Local Service within Willits.</span></div>
+              <div class="ms-circ">
+                <a href="/routes/route-1">
+                  <img src="/images/mapsandschedules/maps-n-schedules-circ-1.png" alt=" Route 1">
+                </a>
+              </div>
+              <div class="ms-desc">
+                <a href="/routes/route-1">Willits Local</a>
+                <br />
+                <span style="font-size: 11px;"> Local Service within Willits.</span>
+              </div>
             </div>
             </div>
             <br style="clear: both;">
             <div class="box-row">
-<div class="box-row box-row-item">
-              <div class="ms-circ"><a href="/routes/route-20" alt="20"><img src="/images/mapsandschedules/maps-n-schedules-circ-20.png"></a></div>
-               <div class="ms-desc"><a href="/routes/route-20" alt="20">Willits / Ukiah</a><br /><span style="font-size: 10px;">Connects Willits, Mendocino Community College, and Ukiah, with timed transfers to Route 9 Ukiah Local. Mon-Fri.</span></div>
-            </div>
+              <div class="box-row box-row-item">
+                <div class="ms-circ">
+                  <a href="/routes/route-20">
+                    <img src="/images/mapsandschedules/maps-n-schedules-circ-20.png" alt="Route 20">
+                  </a>
+                </div>
+                <div class="ms-desc">
+                  <a href="/routes/route-20">Willits / Ukiah</a>
+                  <br />
+                  <span style="font-size: 10px;">Connects Willits, Mendocino Community College, and Ukiah, with timed transfers to Route 9 Ukiah Local. Mon-Fri.</span>
+                </div>
+              </div>
             </div>
             <br style="clear: both;">
 
@@ -113,39 +141,61 @@ get_header(); ?>
               <div class="ms-region">Ft. Bragg / North Coast</div>
               <div class="box-row box-row-item">
 				  <div class="ms-circ">
-					<a href="/routes/route-5" alt="5"><img src="/images/mapsandschedules/maps-n-schedules-circ-5.png"></a>
+					<a href="/routes/route-5">
+            <img src="/images/mapsandschedules/maps-n-schedules-circ-5.png" alt=" Route 5">
+          </a>
 				  </div>
 
 				  <div class="ms-desc">
-					<a href="/routes/route-5" alt="5">BraggAbout</a><br /> <span style="font-size: 11px;">Mon - Fri: Hourly service in Ft. Bragg</span>
+					  <a href="/routes/route-5">BraggAbout</a>
+            <br /> <span style="font-size: 11px;">Mon - Fri: Hourly service in Ft. Bragg</span>
 				  </div>
             </div>
             </div>
             <br style="clear: both;">
             <div class="box-row">
-<div class="box-row box-row-item">
-              <div class="ms-circ"><a href="/routes/route-60" alt="60"><img src="/images/mapsandschedules/maps-n-schedules-circ-60.png"></a></div>
-              <div class="ms-desc"><a href="/routes/route-60" alt="60">The Coaster</a><br />
-<span style="font-size: 11px;">Mon - Fri: Ft. Bragg to Mendocino, Connects with Route 75</span></div>
-            </div></div>
-          </div>
-<br style="clear: both;">
-          <div class="box-chunk">
-
-            <div class="box-row">
-             <hr />
-              <div class="ms-region">South Mendocino Coast / Santa Rosa</div>
               <div class="box-row box-row-item">
-               <div class="ms-circ"><a href="/routes/route-95" alt="95"><img src="/images/mapsandschedules/maps-n-schedules-circ-95.png"></a></div>
-               <div class="ms-desc"><a href="/routes/route-95" alt="95">Route 95</a><br /><span style="font-size: 11px;"> 1 trip daily, 7-days per week</span></div>
+                <div class="ms-circ">
+                  <a href="/routes/route-60">
+                    <img src="/images/mapsandschedules/maps-n-schedules-circ-60.png" alt=" Route 60">
+                  </a>
+                </div>
+              <div class="ms-desc">
+                <a href="/routes/route-60">The Coaster</a>
+                <br />
+                <span style="font-size: 11px;">Mon - Fri: Ft. Bragg to Mendocino, Connects with Route 75</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      <br style="clear: both;">
+      <div class="box-chunk">
+        <div class="box-row">
+        <hr />
+        <div class="ms-region">South Mendocino Coast / Santa Rosa</div>
+        <div class="box-row box-row-item">
+          <div class="ms-circ">
+            <a href="/routes/route-95">
+              <img src="/images/mapsandschedules/maps-n-schedules-circ-95.png" alt=" Route 95">
+            </a>
+          </div>
+          <div class="ms-desc">
+            <a href="/routes/route-95">Route 95</a>
+              <br />
+              <span style="font-size: 11px;"> 1 trip daily, 7-days per week</span>
+            </div>
             <br style="clear: both;">
            </div>
 <hr />
             <div class="box-row">
               <div class="ms-region">South Mendocino Coast /Ukiah</div>
  <br />
-               <div class="ms-circ"><a href="/routes/route-75" alt="75"><img src="/images/mapsandschedules/maps-n-schedules-circ-75.png"></a></div>
-               <div class="ms-desc"><a href="/routes/route-75" alt="75">Route 75</a><br /><span style="font-size: 10px;">Mon - Sat: One trip daily, <br />Connects with Route 60 M-F only</span></div>
+               <div class="ms-circ">
+                <a href="/routes/route-75">
+                  <img src="/images/mapsandschedules/maps-n-schedules-circ-75.png" alt=" Route 75">
+                </a>
+              </div>
+               <div class="ms-desc"><a href="/routes/route-75">Route 75</a><br /><span style="font-size: 10px;">Mon - Sat: One trip daily, <br />Connects with Route 60 M-F only</span></div>
             </div>
             </div>
            <br style="clear: both;">

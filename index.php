@@ -52,13 +52,13 @@ what._haschanged=true;
               <option name="arrive">Arrive by</option>
               </select>
 
-              <input type="text" maxlength="100" tabindex="1" value="" name="date" size="5" id="fdate" alt="Date"/>  <input type="text" maxlength="100" tabindex="1" value="" name="time" size="5" alt="Time" id="ftime"/><input type="hidden" value="42" name="agency"/><input type="hidden" name="sort" value="walk"/>
+              <input type="text" maxlength="100" value="" name="date" size="5" id="fdate" alt="Date"/>  <input type="text" maxlength="100" value="" name="time" size="5" alt="Time" id="ftime"/><input type="hidden" value="42" name="agency"/><input type="hidden" name="sort" value="walk"/>
 
              </font>
               </td>
               </tr>
               <tr id="row6">
-              <td id="cell_3b" align="right" style="padding-top:17px;" id="submit_cell"><span id="plan_trip_text" class="plan_trip_text">See itinerary in </span><input type="submit" tabindex="1" value="Google Maps" id="directions_submit" style="text-align:center"/></td>
+              <td id="cell_3b" align="right" style="padding-top:17px;" id="submit_cell"><span id="plan_trip_text" class="plan_trip_text">See itinerary in </span><input type="submit" value="Google Maps" id="directions_submit" style="text-align:center"/></td>
             </tr>
 
           </tbody></table>

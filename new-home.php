@@ -11,234 +11,228 @@ if(!$_COOKIE["force-desktop"] && isset($_COOKIE["force-desktop"])) {
 ?>
 <html>
 <head profile="https://gmpg.org/xfn/11">
-<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/reset.css" type="text/css">
-<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/formalize.css" />
-<script src="<?php echo get_bloginfo('template_directory'); ?>/jquery.js"></script>
-<script src="<?php echo get_bloginfo('template_directory'); ?>/jquery.formalize.js"></script>
-<script src="<?php echo get_bloginfo('template_directory'); ?>/js/jquery.cookie.js"></script>
-<script src="<?php echo get_bloginfo('template_directory'); ?>/mendo.js"></script>
-<script src="<?php echo get_bloginfo('template_directory'); ?>/schedule-tables.js"></script>
+    <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/reset.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/formalize.css" />
+    <script src="<?php echo get_bloginfo('template_directory'); ?>/jquery.js"></script>
+    <script src="<?php echo get_bloginfo('template_directory'); ?>/jquery.formalize.js"></script>
+    <script src="<?php echo get_bloginfo('template_directory'); ?>/js/jquery.cookie.js"></script>
+    <script src="<?php echo get_bloginfo('template_directory'); ?>/mendo.js"></script>
+    <script src="<?php echo get_bloginfo('template_directory'); ?>/schedule-tables.js"></script>
 
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
-
-
-<meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
 
 
-<meta name="viewport" content="width=device-width" />
-
-<title>Mendocino Transit Authority (MTA) | Public transportation for Mendocino County, California. <?php wp_title(" : "); ?></title>
-<meta name="description" content="Mendocino County, California. MTA’s service area encompasses about 2,800 square miles including the Mendocino Coast and Inland communities. The transit system includes a network of long distance, commute and local fixed routes, plus Dial-A-Ride services in Ukiah and Ft. Bragg. MTA provides service throughout the county, including the communities of Albion, Anchor Bay, Bodega, Bodega Bay, Boonville, Calpella, Caspar, Elk, Fort Bragg, Fort Ross, Freestone, Gualala, Hopland, Jenner, Manchester, Mendocino, Navarro, Philo, Point Arena, Redwood Valley, Santa Rosa, Sea Ranch, Stewarts Point, Ukiah, Willits, and Windsor." />
+    <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
 
 
-<!--[if IE]>
-<link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/ie.css" />
-<![endif]-->
-<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" />
-<script src="<?php echo get_bloginfo('template_directory'); ?>/js/lightbox.js"></script>
-<link href="<?php echo get_bloginfo('template_directory'); ?>/css/lightbox.css" rel="stylesheet" />
-<script language="javascript" type="text/javascript">
+    <meta name="viewport" content="width=device-width" />
 
-<!--
-function popitup(url) {
-    newwindow=window.open(url,'name','height=800,width=1200');
-    if (window.focus) {newwindow.focus()}
-    return false;
-}
-
-// -->
-</script>
+    <title>Mendocino Transit Authority (MTA) | Public transportation for Mendocino County, California. <?php wp_title(" : "); ?></title>
+    <meta name="description" content="Mendocino County, California. MTA’s service area encompasses about 2,800 square miles including the Mendocino Coast and Inland communities. The transit system includes a network of long distance, commute and local fixed routes, plus Dial-A-Ride services in Ukiah and Ft. Bragg. MTA provides service throughout the county, including the communities of Albion, Anchor Bay, Bodega, Bodega Bay, Boonville, Calpella, Caspar, Elk, Fort Bragg, Fort Ross, Freestone, Gualala, Hopland, Jenner, Manchester, Mendocino, Navarro, Philo, Point Arena, Redwood Valley, Santa Rosa, Sea Ranch, Stewarts Point, Ukiah, Willits, and Windsor." />
 
 
-<!-- THE FOLLOWING SCRIPT ENABLES AUTOCOMPLETE IN THE TRIP PLANNER FORM -->
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/ie.css" />
+    <![endif]-->
+    <link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" />
+    <script src="<?php echo get_bloginfo('template_directory'); ?>/js/lightbox.js"></script>
+    <link href="<?php echo get_bloginfo('template_directory'); ?>/css/lightbox.css" rel="stylesheet" />
+    <script language="javascript" type="text/javascript">
 
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+        <!--
+        function popitup(url) {
+            newwindow=window.open(url,'name','height=800,width=1200');
+            if (window.focus) {newwindow.focus()}
+            return false;
+        }
 
-<script>
-
-function initialize() {
-
-var defaultBounds = new google.maps.LatLngBounds(
- new google.maps.LatLng(39.1503,-123.2067)
- );
-
-var origin_input = document.getElementById('saddr');
-var destination_input = document.getElementById('daddr');
-
-
-var options = {
- bounds: defaultBounds,
- componentRestrictions: {country: 'us'}
-};
+        // -->
+    </script>
 
 
-var autocomplete_origin = new google.maps.places.Autocomplete(origin_input, options);
-var autocomplete_destination = new google.maps.places.Autocomplete(destination_input, options);
-}
+    <!-- THE FOLLOWING SCRIPT ENABLES AUTOCOMPLETE IN THE TRIP PLANNER FORM -->
 
-google.maps.event.addDomListener(window, 'load', initialize);
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+
+    <script>
+
+        function initialize() {
+
+        var defaultBounds = new google.maps.LatLngBounds(
+        new google.maps.LatLng(39.1503,-123.2067)
+        );
+
+        var origin_input = document.getElementById('saddr');
+        var destination_input = document.getElementById('daddr');
 
 
-</script>
+        var options = {
+        bounds: defaultBounds,
+        componentRestrictions: {country: 'us'}
+        };
+
+
+        var autocomplete_origin = new google.maps.places.Autocomplete(origin_input, options);
+        var autocomplete_destination = new google.maps.places.Autocomplete(destination_input, options);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+
+    </script>
 
 </head>
 
 <body >
-<style>
-.wrap{
-    width:96%;
-    padding: 2%;
+    <style>
+        .wrap {
+            width:96%;
+            padding: 2%;
+        }
 
-}
+        #home-route-planner {
+        background: #ccc;
+        margin: 0;
+        width: 100%;
 
-#home-route-planner {
-background: #ccc;
-margin: 0;
-width: 100%;
+        }
 
-}
+        #home-links-col-2-list li {
+        margin-bottom: 5px;
+        }
 
-#home-links-col-2-list li {
-margin-bottom: 5px;
-}
+        #home-route-planner-inner {
+        margin: 2%;
+        width: 98%;
+        }
 
-#home-route-planner-inner {
-margin: 2%;
-width: 98%;
-}
+        .logo {
+        text-align: left;
+            padding: 2%;
+            background: #FFFCE9;
+        }
 
-.logo {
-text-align: left;
-    padding: 2%;
-    background: #FFFCE9;
-}
+        .footer{
+            color:#8F8E8C;
+            position:absolute;
+            right:10px;
+            bottom:2px;
+        }
 
-.footer{
-    color:#8F8E8C;
-    position:absolute;
-    right:10px;
-    bottom:2px;
-}
+        h2, h1 {
+        color: #004C2C;
+        }
 
- h2, h1 {
-color: #004C2C;
-}
-
-h1 {
-margin: 9px 20px 20px 20px;
-font-size: 1.3em;
-}
-h2 {
-font-size: 1.2em;
-}
-
-
-h3 {
-margin-bottom: 10px;
-margin-top: 10px;
-font-size: 18px;
-font-weight: bold;
-font-size: 1.1em;
-}
+        h1 {
+        margin: 9px 20px 20px 20px;
+        font-size: 1.3em;
+        }
+        h2 {
+        font-size: 1.2em;
+        }
 
 
-.footer a{
-    color:rgb(228, 146, 162);
-}
-</style>
+        h3 {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        font-size: 1.1em;
+        }
+
+
+        .footer a{
+            color:rgb(228, 146, 162);
+        }
+    </style>
 
 
     <div class="wrap">
-    <?php if ( is_user_logged_in() ) {
-    ?>
-
-    En español
-
-     <?php
-    } ?>
-        <div class="logo">
-
-                    <img src="/wp-content/images/mobile/MTA-logo-small-white-bg.png" width="280" height="89" border="0" />
-
-<br/>
-<br/>
-<h2>Mendocino Transit Authority</h2>
-
-<br/>
-<br/>
-<h4>Public Transportation for Mendocino County, California</h4>
-
-<p>Currently viewing mobile site &#8211; <a id="mobile-to-desktop-link" href="/">Switch to desktop site<br /><br /></a></p>
-<hr />
-
-
-
-        <div id="home-service-alerts">
-                    <h2>Service Alerts</h2>
-<?php $posts = query_posts( $query_string . '&cat=4&orderby=asc&posts_per_page=3' ); ?>
-<?php if( $posts ) { ?>
-
-    <div class="home-post">
-
-        <?php
-        $count = 0;
-        foreach( $posts as $post ) : setup_postdata( $post );
-
-                $count = $count + 1;
-                ?>
-
-            <h3 class="home-alert-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
-
-        <?php endforeach;
-
-        if ($count == 1) { ?>
-
-        <style type="text/css">
-h3.home-alert-title {
-margin: 6px 0 20px 0;
-font-weight: normal;
-}
-</style>
-
-        <?php
-
-        } elseif ($count == 2) {  ?>
-
-            <style type="text/css">
-h3.home-alert-title {
-margin: 12px 0 12px 0;
-font-weight: normal;
-}
-</style>
-        <?php
-        } elseif ($count == 3) {  ?>
-
-            <style type="text/css">
-h3.home-alert-title {
-margin: 0px 0 0px 0;
-font-weight: normal;
-}
-</style>
-        <?php
-        }
+        <?php if ( is_user_logged_in() ) {
         ?>
 
-    </div>
+            En español
 
-<?php } else { ?>
-<div id="home-no-alerts">There are currently no service alerts.</div>
-<?php } ?>
-</div> <!-- end #home-service-alerts -->
+        <?php
+        } ?>
+        <div class="logo">
+            <img src="/wp-content/images/mobile/MTA-logo-small-white-bg.png" width="280" height="89" border="0" />
+
+            <br/>
+            <br/>
+            <h2>Mendocino Transit Authority</h2>
+
+            <br/>
+            <br/>
+            <h4>Public Transportation for Mendocino County, California</h4>
+
+            <p>Currently viewing mobile site &#8211; <a id="mobile-to-desktop-link" href="/">Switch to desktop site<br /><br /></a></p>
+            <hr />
+
+
+            <div id="home-service-alerts">
+                <h2>Service Alerts</h2>
+                <?php $posts = query_posts( $query_string . '&cat=4&orderby=asc&posts_per_page=3' ); ?>
+                <?php if( $posts ) { ?>
+
+                <div class="home-post">
+
+                    <?php
+                    $count = 0;
+                    foreach( $posts as $post ) : setup_postdata( $post );
+
+                            $count = $count + 1;
+                            ?>
+
+                        <h3 class="home-alert-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
+
+                    <?php endforeach;
+
+                        if ($count == 1) { ?>
+
+                        <style type="text/css">
+                            h3.home-alert-title {
+                            margin: 6px 0 20px 0;
+                            font-weight: normal;
+                            }
+                        </style>
+
+                    <?php
+
+                    } elseif ($count == 2) {  ?>
+
+                        <style type="text/css">
+                            h3.home-alert-title {
+                            margin: 12px 0 12px 0;
+                            font-weight: normal;
+                            }
+                        </style>
+                    <?php
+                    } elseif ($count == 3) {  ?>
+
+                        <style type="text/css">
+                            h3.home-alert-title {
+                            margin: 0px 0 0px 0;
+                            font-weight: normal;
+                            }
+                        </style>
+                    <?php
+                    }
+                    ?>
+                </div>
+
+                <?php } else { ?>
+                <div id="home-no-alerts">There are currently no service alerts.</div>
+                <?php } ?>
+            </div> <!-- end #home-service-alerts -->
 
             <?php $recent = new WP_Query("page_id=570"); while($recent->have_posts()) : $recent->the_post();?>
-<?php the_content(); ?>
-<?php endwhile; ?>
+            <?php the_content(); ?>
 
-
+            <?php endwhile; ?>
 
         </div>
     </div>
-
 
 </body>
 </html>
@@ -294,13 +288,13 @@ what._haschanged=true;
               <option name="arrive">Arrive by</option>
               </select>
 
-              <input type="text" maxlength="100" tabindex="1" value="" name="date" size="5" id="fdate" alt="Date"/>  <input type="text" maxlength="100" tabindex="1" value="" name="time" size="5" alt="Time" id="ftime"/><input type="hidden" value="42" name="agency"/><input type="hidden" name="sort" value="walk"/>
+              <input type="text" maxlength="100" value="" name="date" size="5" id="fdate" alt="Date"/>  <input type="text" maxlength="100" value="" name="time" size="5" alt="Time" id="ftime"/><input type="hidden" value="42" name="agency"/><input type="hidden" name="sort" value="walk"/>
 
              </font>
               </td>
               </tr>
               <tr id="row6">
-              <td id="cell_3b" align="right" style="padding-top:17px;" id="submit_cell"><span id="plan_trip_text" class="plan_trip_text">See itinerary in </span><input type="submit" tabindex="1" value="Google Maps" id="directions_submit" style="text-align:center"/></td>
+              <td id="cell_3b" align="right" style="padding-top:17px;" id="submit_cell"><span id="plan_trip_text" class="plan_trip_text">See itinerary in </span><input type="submit" value="Google Maps" id="directions_submit" style="text-align:center"/></td>
             </tr>
 
           </tbody></table>
