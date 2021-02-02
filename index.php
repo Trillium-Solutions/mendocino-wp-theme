@@ -22,47 +22,47 @@ what._haschanged=true;
 </script>
 
 
-<form action="https://www.trilliumtransit.com/redirect/google_redirect.php" name="f"><input type="hidden" value="UTF8" name="ie"/><input type="hidden" value="d" name="f"/><input type="hidden" value="39.150171,-123.207783" name="sll"/>
-          <table id="trip_planner_form_table" align="right" style="margin-right:9px;margin-top:5px;">
-            <tbody><tr id="row1">
-              <td id="cell_1a"><font size="-1"><strong>Start</strong></font></td>
-
-        </tr>
-        <tr id="row2">
-            <td id="cell_2a">
-                <input type="text" name="saddr" id="saddr" style="width:250px;margin-top:10px;" onfocus="checkclear(this)"  value="Address, placename, or intersection"/>
-            </td>
-
-</tr>
-
-<tr id="row3">
-<td id="cell_1c"><font size="-1"><strong>End</strong></font></td></tr>
-
-<tr id="row4">
-<td id="cell_2b">
-
-                <input type="text" name="daddr" id="daddr" style="width:250px;margin-top:10px;" onfocus="checkclear(this)" value="Address, placename, or intersection"/>
-
-    </td>
-        </tr>
-    <tr id="row5">
-        <td id="cell_3a" valign="top" style="padding-top:17px;">
-              <font size="-1"><div id="when">When</div><select name="ttype" id="trip_type_select">
-              <option name="dep">Leave at</option>
-              <option name="arrive">Arrive by</option>
-              </select>
-
-              <input type="text" maxlength="100" value="" name="date" size="5" id="fdate" alt="Date"/>  <input type="text" maxlength="100" value="" name="time" size="5" alt="Time" id="ftime"/><input type="hidden" value="42" name="agency"/><input type="hidden" name="sort" value="walk"/>
-
-             </font>
-              </td>
-              </tr>
-              <tr id="row6">
-              <td id="cell_3b" align="right" style="padding-top:17px;" id="submit_cell"><span id="plan_trip_text" class="plan_trip_text">See itinerary in </span><input type="submit" value="Google Maps" id="directions_submit" style="text-align:center"/></td>
-            </tr>
-
-          </tbody></table>
-        </form>
+<form action="https://www.trilliumtransit.com/redirect/google_redirect.php" name="f">
+	<input type="hidden" value="UTF8" name="ie"/>
+	<input type="hidden" value="d" name="f"/>
+	<input type="hidden" value="39.150171,-123.207783" name="sll"/>
+    <table id="trip_planner_form_table" align="right" style="margin-right:9px;margin-top:5px;">
+    	<tbody>
+			<tr id="row1">
+            	<td id="cell_1a">
+					<label for="saddr">Start</label>
+					<input type="text" name="saddr" id="saddr" style="width:250px;margin-top:10px;" onfocus="checkclear(this)"  value="Address, placename, or intersection"/>
+				</td>
+        	</tr>
+        	<tr id="row2">
+				<td id="cell_2a">
+					<label for="daddr">End</label>
+					<input type="text" name="daddr" id="daddr" style="width:250px;margin-top:10px;" onfocus="checkclear(this)" value="Address, placename, or intersection"/>
+				</td>
+			</tr>
+			<tr id="row3">
+				<td id="cell_1c">
+					<label for="ttype" id="when">When</label>
+					<select name="ttype" id="trip_type_select">
+						<option name="dep">Leave at</option>
+						<option name="arrive">Arrive by</option>
+					</select>
+					<label for="fdate" class="obscure">Date</label>
+					<input type="text" id="fdate" maxlength="100" value="" name="date" size="5" id="fdate"/>
+					<label for="ftime" class="obscure">Time</label>
+					<input type="text" id="ftime" maxlength="100" value="" name="time" size="5" id="ftime"/>
+					<input type="hidden" value="42" name="agency"/>
+					<input type="hidden" name="sort" value="walk"/>
+				</td>
+			</tr>
+			<tr id="row4">
+				<td id="cell_2b" align="right" style="padding-top:17px;" id="submit_cell"><span id="plan_trip_text" class="plan_trip_text">See itinerary</span>
+					<input type="submit" value="Get Directions" id="directions_submit" style="text-align:center"/>
+				</td>
+        	</tr>
+		</tbody>
+	</table>
+</form>
 
 <script type="text/javascript">
 var thisdate = new Date();
@@ -309,6 +309,7 @@ Currently no service alerts.
 <div id="sign-up">
     <h2 id="sign-up-for-alerts"> Sign up for <?php if ($count == 1 ) echo "future"; ?> Service Alerts</h2>
 <form action="https://mendocinotransit.us5.list-manage.com/subscribe/post?u=00e99199bd982874f8bd36527&amp;id=495f9d88d9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	<label for="email" class="obscure">Email</label>
     <input type="email" value="" name="EMAIL" class="email" size="35" id="mce-EMAIL" placeholder="email address" required>
     <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
     </form>

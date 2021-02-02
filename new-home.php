@@ -288,7 +288,7 @@ what._haschanged=true;
               <option name="arrive">Arrive by</option>
               </select>
 
-              <input type="text" maxlength="100" value="" name="date" size="5" id="fdate" alt="Date"/>  <input type="text" maxlength="100" value="" name="time" size="5" alt="Time" id="ftime"/><input type="hidden" value="42" name="agency"/><input type="hidden" name="sort" value="walk"/>
+              <input type="text" maxlength="100" value="" name="date" size="5" id="fdate"/>  <input type="text" maxlength="100" value="" name="time" size="5" id="ftime"/><input type="hidden" value="42" name="agency"/><input type="hidden" name="sort" value="walk"/>
 
              </font>
               </td>
@@ -491,7 +491,7 @@ wp_reset_query();
 
 
 
-						<map name="map">
+					<!--	<map name="map">
 <area shape="poly" coords="90,228,114,222,113,205,105,165,95,130,85,123,81,115,80,89,53,89,71,220,92,235,92,234," href="/routes/routes-5-and-60" alt="60" title="60"   >
 <area shape="poly" coords="135,104,174,106,175,66,134,66," href="/routes/routes-5-and-60" alt="5" title="5"   >
 <area shape="poly" coords="245,111,284,112,282,80,245,80," href="/routes/routes-1-and-20" alt="1" title="1"   >
@@ -502,7 +502,7 @@ wp_reset_query();
 <area shape="poly" coords="306,280,319,281,326,305,270,360,216,332,175,282,142,274,159,348,229,444,218,458,202,450,201,440,150,375,110,370,104,348,117,304,92,245,91,234,111,221,156,233,200,238,247,281,270,299," href="/routes/route-75" alt="75" title="75"   >
 <area shape="poly" coords="111,375,149,376,197,440,199,455,235,457,297,526,350,585,393,628,406,647,440,634,475,621,496,616,531,624,531,645,485,653,466,670,435,688,390,700,356,673,311,625,266,583,220,526,180,484,155,446,139,415,110,402," href="/routes/route-95" alt="95" title="95"   >
 </map>
-						<img src="/images/549-800-clear.png" width="549" height="800" usemap="#map" hidefocus="true"   >
+						<img src="/images/549-800-clear.png" width="549" height="800" usemap="#map" hidefocus="true"   >-->
 
 
 

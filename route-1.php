@@ -8,13 +8,9 @@ Template Name: route-1
 <div id="page-overlay">
 
 <div id="route-header">
-	<div id="route-circle-icon-1" class="route-circle-icon">
-	</div>
-	<div id="route-title">
-	ROUTE 1 - Willits
+	<div id="route-circle-icon-1" class="route-circle-icon"></div>
+	<h1 id="route-title">ROUTE 1 - Willits</h1>
 
-
-	</div>
 	<?php do_action('route_select'); ?>
 
 </div><!-- #route-header -->

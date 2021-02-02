@@ -8,14 +8,11 @@ Template Name: route-60
 <div id="page-overlay">
 
 <div id="route-header">
-	<div id="route-circle-icon-60" class="route-circle-icon">
-	</div>
-	<div id="route-title">
-	Routes 60 - North Coast
-	</div>
-	<?php do_action('route_select'); ?>
-
+	<div id="route-circle-icon-60" class="route-circle-icon"></div>
+		<h1 id="route-title"> Routes 60 - North Coast </h1>
+		<?php do_action('route_select'); ?>
 </div><!-- #route-header -->
+
 <div id="route-breadcrumb" class="breadcrumb">
 		<?php //if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
 	</div><!-- end #route-breadcrumb -->

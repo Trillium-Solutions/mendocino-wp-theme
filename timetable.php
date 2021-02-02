@@ -40,9 +40,9 @@ Template Name: timetable
 </div> <!-- end #time-table-banner -->
 <div id="timetable-route-name">
 	<div id="timetable-center-title" class="timetable-left-marg">
-		<div id="timetable-route-name-part-1">
+		<h1 id="timetable-route-name-part-1">
 			<?php the_title(); ?>
-		</div> <!-- end #timetable-route-name-part-1 -->
+		</h1> <!-- end #timetable-route-name-part-1 -->
 		<div id="timetable-route-name-part-2">
 		<?php do_action('route_select'); ?>
 		</div> <!-- end #timetable-route-name-part-2 -->

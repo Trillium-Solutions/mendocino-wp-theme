@@ -8,17 +8,10 @@ Template Name: route-7-9
 <div id="page-overlay">
 
 <div id="route-header">
-	<div id="route-circle-icon-7" class="route-circle-icon">
-	</div>
-	<div id="route-circle-icon-9" class="route-circle-icon">
-	</div>
-	<div id="route-title">
-	ROUTES 7 &amp; 9 - UKIAH
-	</div>
-
-	<?php do_action('route_select'); ?>
-
-
+	<div id="route-circle-icon-7" class="route-circle-icon"></div>
+	<div id="route-circle-icon-9" class="route-circle-icon"></div>
+		<h1 id="route-title"> ROUTES 7 &amp; 9 - UKIAH </h1>
+		<?php do_action('route_select'); ?>
 </div><!-- #route-header -->
 
 

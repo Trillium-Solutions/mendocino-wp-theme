@@ -8,24 +8,10 @@ Template Name: route-5-1
 <div id="page-overlay">
 
 <div id="route-header">
-	<div id="route-circle-icon-5" class="route-circle-icon">
-	</div>
-	<div id="route-title">
-	ROUTE 5
-	</div>
-	<div id="route-dropdown" >
-		<select id="route-select" 	style="width: 180px; height: 35px; font-size: 18px; padding: 3px 0 0 10px; color: #666;">
-		  <option selected="selected" >Select a Route</option>
-		  <option value="5-60">Rts. 5 and 60 - Ft. Bragg/North Coast</option>
-		  <option value="7">Rt. 7 - Ukiah</option>
-		  <option value="9">Rt. 9 Ukiah</option>
-		  <option value="65">Rt. 65 CC Rider</option>
-		  <option value="75">Rt. 75 South Coast/Ukiah</option>
-		  <option value="95">Rt. 95 South Coast/Santa Rosa</option>
-		  <option value="1-20">Rts. 1 and 20 - Willits and Redwood Valley</option>
-		</select>
-	</div><!-- end #route-dropdown -->
-
+	<div id="route-circle-icon-5" class="route-circle-icon"></div>
+	<h1 id="route-title">ROUTE 5</h1>
+	
+	<?php do_action('route_select'); ?>
 </div><!-- #route-header -->
 
 

@@ -925,7 +925,7 @@ height: 29px;
 font-weight: 200 !important; 
 }
 
-h2#calculator-title {
+.calculator-title legend {
 text-transform: uppercase;
 color: #545472;
 padding: 0px;

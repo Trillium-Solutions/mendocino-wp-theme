@@ -8,13 +8,9 @@ Template Name: route-75
 <div id="page-overlay">
 
 <div id="route-header">
-	<div id="route-circle-icon-75" class="route-circle-icon">
-	</div>
-	<div id="route-title">
-	Route 75
-	</div>
-	<?php do_action('route_select'); ?>
-
+	<div id="route-circle-icon-75" class="route-circle-icon"></div>
+		<h1 id="route-title"> Route 75 </h1>
+		<?php do_action('route_select'); ?>
 </div><!-- #route-header -->
 
 

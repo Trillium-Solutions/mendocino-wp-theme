@@ -8,11 +8,8 @@ Template Name: route-5
 <div id="page-overlay">
 
 <div id="route-header">
-	<div id="route-circle-icon-5" class="route-circle-icon">
-	</div>
-	<div id="route-title">
-	Routes 5 - Ft. Bragg
-	</div>
+	<div id="route-circle-icon-5" class="route-circle-icon"></div>
+		<h1 id="route-title"> Routes 5 - Ft. Bragg</h1>
 	<?php do_action('route_select'); ?>
 
 </div><!-- #route-header -->

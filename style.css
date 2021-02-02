@@ -2,6 +2,9 @@
 @import url("route.css");
 @import url("maps-and-schedules.css");
 
+a {
+    color: #005F8F;
+}
 a:hover {
 text-decoration: underline !important;
 }
@@ -276,32 +279,41 @@ float: left !important;
 color: white;
 font-size: 18px !important;
 padding: 20px 0 0 0;
-	
-
 }
 
 #trip_planner_form_table #when {
-font-size: 19px;
-font-weight: bold;
 margin-bottom: 10px;
+margin-top: 10px;
+display: block;
 }
 
 #trip_planner_form_table  {
 margin: 25px 0 0 0 !important;
 }
 
-#cell_1a strong, #cell_1c strong{
-font-size: 19px !important;
-float: left;
+
+#cell_1a label, #cell_2a label, #cell_1c label {
+font-size: 19px;
+font-weight: bold;
 }
 
-#cell_1a strong {
+#cell_1a input[type=text], #cell_2a input[type=text] {
+    margin-bottom: 10px;
+}
+
+#cell_1a label, #cell_2a label {
 margin: 10px 0 0 0;
+display: block;
 }
 
-#cell_1c strong{ 
-margin: 25px 0 0 0;
-float: left;
+#cell_2b {
+    color: white;
+font-weight: bold;
+text-align: left;
+padding: 30px 0 0 0 !important;
+-moz-text-shadow: 0px 0px 4px #000;
+	-webkit-text-shadow: 0px 0px 4px #000;
+	text-shadow: 0px 0px 4px #000;
 }
 
 #cell_3a {
@@ -310,13 +322,17 @@ padding: 30px  0 0 0 !important;
 }
 
 #cell_3b {
-color: white;
+/*color: white;
 font-weight: bold;
 text-align: left;
 padding: 50px 0 0 0 !important;
 -moz-text-shadow: 0px 0px 4px #000;
 	-webkit-text-shadow: 0px 0px 4px #000;
-	text-shadow: 0px 0px 4px #000;
+	text-shadow: 0px 0px 4px #000;*/
+}
+
+.obscure {
+    display: none;
 }
 
 #home-route-planner h2 {
@@ -958,7 +974,7 @@ height: 29px;
 font-weight: 200 !important; 
 }
 
-h2#calculator-title {
+.calculator-title legend {
 text-transform: uppercase;
 color: #545472;
 padding: 0px;
@@ -1471,6 +1487,11 @@ h1 {
         margin-left: 0;
         width: auto;
     }
+
+    #cell_1a label, #cell_2a label {
+        display: block;
+    }
+
     
     #home-map {
         width: 100%;
@@ -1707,7 +1728,7 @@ h1 {
     
     #home-route-planner-inner {
         width: 80%;
-        text-align: center;
+        /*text-align: center;*/
         float: none;
         margin: 0 auto;
         padding: 21px 0;
@@ -1733,20 +1754,20 @@ h1 {
 /*        display: inline-block;
         line-height: 32px;
         margin-right: 20px;*/
-        float: left;
+        /*float: left;*/
         margin-right: 5%;
-        margin-left: 5%;
+        /*margin-left: 5%;*/
         width: 10%;
     }
     #home-route-planner #row2,
     #home-route-planner #row4 {
         /*display: inline-block;*/
-        float: left;
+        /*float: left;*/
         width: 75%;
     }
     
     #row4 {
-        margin-top: 18px;
+        /*margin-top: 18px;*/
     }
     
     #saddr, #daddr {
@@ -1763,7 +1784,7 @@ h1 {
     }
     
     #home-google-transit-link {
-        float: right;
+        /*float: right;*/
     }
     
     #home-left-links {
@@ -1849,6 +1870,12 @@ h1 {
     }
 }
 
+@media only screen and (min-width: 720px) {
+    #home-google-transit-link {
+        line-height: 1em;
+    }
+}
+
 @media only screen and (max-width: 596px) {
     #home-links-col-1, 
     #home-links-col-2,
@@ -1903,7 +1930,9 @@ h1 {
     #home-route-planner-inner {
         width: 92%;
     }
-    
+    #cell_2a label {
+        float: left;
+    }
     #nav a {
         display: block;
         color: #fdf0bc;
@@ -2054,13 +2083,15 @@ h1 {
         margin: 0;
         width: auto;
         text-align: left;
+        margin-top: 10px;
     }
     #home-route-planner #row2,
     #home-route-planner #row4 {
         /*display: inline-block;*/
         width: 100%
     }
-    
+
+  
     #row4 {
         margin-top: 0px;
     }
@@ -2068,7 +2099,6 @@ h1 {
     #cell_3a {
         text-align: left;
     }
-    
     #saddr, #daddr {
         width: 100% !important;
         margin-top: 0 !important;
