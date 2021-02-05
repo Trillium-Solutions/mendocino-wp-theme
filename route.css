@@ -148,9 +148,7 @@ color: #666666;
 margin: 0 0 5px 10px;
 }
 
-.map-detail-title-text  {
 
-}
 
 #route-desc {
 font-size: 15px;
@@ -187,9 +185,7 @@ height: 20px;
 background:	#CFE9E6;
 cursor: pointer;
 }
-.route-popup-button.route-button-left {
 
-}
 
 
 
@@ -243,7 +239,7 @@ margin-bottom: 15px;
 
 #route-connections-container {
 margin-bottom: 15px;
-]}
+}
 
 .route-inner-box {
 margin: 15px; 
