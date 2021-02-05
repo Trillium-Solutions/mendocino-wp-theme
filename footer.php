@@ -1,7 +1,7 @@
 </div><!-- #inner-main-container -->
-		</div> <!-- #main-container-->
+</div> <!-- #main-container-->
 <div id="pushfooter"></div>
-		<div id="footer">
+		<footer id="footer">
 			<div id="bottom-scene-left-fade">
 			</div> <!-- end #bottom-scene-left-fade 140 -->
 			<div id="bottom-scene-middle">
@@ -17,7 +17,7 @@
 			</div> <!-- end #bottom-scene-middle  1013 -->
 			<div id="bottom-scene-right-fade">
 			</div> <!-- end #bottom-scene-right-fade 165 -->
-		</div> <!-- #footer -->
+		</footer> <!-- #footer -->
 </div> <!-- end bg-strecher -->
 	</div><!-- main-center-wrapper-->
 	

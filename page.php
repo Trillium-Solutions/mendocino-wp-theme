@@ -14,21 +14,20 @@
 
 get_header(); ?>
 <div id="page-overlay">
-
-			<?php the_post(); ?>
+	<?php the_post(); ?>
+		<header>
 			<h1 class="entry-title main"><?php the_title(); ?></h1>
-<?php //if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
+		</header>
+		<?php //if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
 			<br/>
-
-						<hr />
-									<br/>
-
-                <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-
-                    <?php the_content(); ?>
-
-                    </div>
+			<hr />
+			<br/>
+		<main>
+			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<?php the_content(); ?>
+			</div>
+		</main>
+              
 
 
 </div> <!-- page-overlay -->

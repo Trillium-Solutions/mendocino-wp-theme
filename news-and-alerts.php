@@ -6,19 +6,16 @@ Template Name: news-archive
 
   <div id="page-overlay">
     <?php the_post(); ?>
-
-    <h1 class="entry-title main"><?php the_title(); ?></h1>
-<?php //if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
+    <header>
+      <h1 class="entry-title main"><?php the_title(); ?></h1>
+    </header>
+    <?php //if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
 			<br/>
-
-						<hr />
-
-
-
-
+			<hr />
+    <main>
     <div id="post-&lt;?php the_ID(); ?&gt;" <?php post_class(); ?>>
        <h2>Current Alerts</h2>
-<?php the_content(); ?><?php
+          <?php the_content(); ?><?php
         // The Query
         $page = (get_query_var('paged')) ? get_query_var('paged') : 1;
         query_posts("paged=$page&cat=4");
@@ -108,8 +105,10 @@ Template Name: news-archive
         wp_reset_query();
         ?>
       </div>
-    </div><!-- page-overlay -->
-    <?php get_footer(); ?><?php edit_post_link( __( 'Edit', 'your-theme' ), '<span class="edit-link">', '</span>' ) ?>
+    </main>
+    
+  </div><!-- page-overlay -->
+  <?php get_footer(); ?><?php edit_post_link( __( 'Edit', 'your-theme' ), '<span class="edit-link">', '</span>' ) ?>
   </div><!-- .entry-content -->
 
   <?php get_footer(); ?>

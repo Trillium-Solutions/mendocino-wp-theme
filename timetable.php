@@ -29,6 +29,7 @@ Template Name: timetable
 </head>
 <body class="timetable">
 <?php the_post(); ?>
+<header>
 <div id="timetable-banner">
 <a href="/">
 	<div id="timetable-logo" class="timetable-left-marg">
@@ -43,6 +44,8 @@ Template Name: timetable
 		<h1 id="timetable-route-name-part-1">
 			<?php the_title(); ?>
 		</h1> <!-- end #timetable-route-name-part-1 -->
+</header>
+
 		<div id="timetable-route-name-part-2">
 		<?php do_action('route_select'); ?>
 		</div> <!-- end #timetable-route-name-part-2 -->

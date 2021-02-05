@@ -6,24 +6,20 @@ Template Name: employment
 
   <div id="page-overlay">
     <?php the_post(); ?>
-
-    <h1 class="entry-title main"><?php the_title(); ?></h1>
-<?php //if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
+        <header>
+          <h1 class="entry-title main"><?php the_title(); ?></h1>
+        </header>
+    <?php //if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
 			<br/>
-
-
-
-						<hr />
-
-
-
-
-    <div id="post-&lt;?php the_ID(); ?&gt;" <?php post_class(); ?>
-    <br />
+			<hr />
+      <main>
+        <div id="post-&lt;?php the_ID(); ?&gt;" <?php post_class(); ?>
+    <br/>
         <br />
      <?php the_content(); ?>
-             <br />        <br />
-<?php
+             <br />        
+             <br />
+    <?php
         // The Query
         $page = (get_query_var('paged')) ? get_query_var('paged') : 1;
         query_posts( array ( 'category_name' => 'employment_opportunities', 'posts_per_page' => -1 ) );
@@ -57,6 +53,8 @@ Template Name: employment
 
         global $wp_query; $total_pages = $wp_query->max_num_pages; if ( $total_pages > 1 ) { ?>
 
+      </main>
+   
         <div id="nav-above" class="navigation">
           <div class="nav-previous">
             <?php next_posts_link(__( '<span class="meta-nav">&laquo;</span> Older news articles', 'your-theme' )) ?>

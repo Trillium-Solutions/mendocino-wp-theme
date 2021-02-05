@@ -5,13 +5,15 @@ Template Name: mapsAndSchedules
 get_header(); ?>
 
 <div id="page-overlay">
-<h1 class="entry-title main"><?php the_title(); ?></h1>
-<?php //if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
+    <header>
+      <h1 class="entry-title main"><?php the_title(); ?></h1>
+    </header>
+  <?php //if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
 	<br/>
-
-						<hr />
-									<br/>
-<div id="schedules-container" >
+	<hr />
+  <br/>
+    <main>
+    <div id="schedules-container" >
       <!-- Header -->
       <div class="header top guide">
 
@@ -209,35 +211,36 @@ get_header(); ?>
       <!-- Right Column -->
       <div id="right-column" class="column right">
         <!-- Map Container -->
-        <div id="map" class="column-box boxed">
-
-       <?php include('coastal_detail-01.svg'); ?>
-        </div>
+        <aside id="map" class="column-box boxed">
+          <?php include('coastal_detail-01.svg'); ?>
+        </aside>
 
         <!-- Connections container -->
-        <div id="connections" class="column-box boxed">
+        <aside id="connections" class="column-box boxed">
           <div class="box-header">Connections</div>
-          <div class="box-chunk" style="margin-top: 17px">
-            MTA service connects with
-            <ul class="ul-circle">
-				<li><a href="http://www.greyhound.com/">Greyhound</a></li>
-					<li><a href="http://www.amtrak.com/">Amtrak</a></li>
-				<li><a href="http://www.sctransit.com/">Sonoma County Transit</a></li>
-				<li><a href="http://goldengate.org/schedules.php">Golden Gate Transit</a></li>
-				<li><a href="http://www.laketransit.org/">Lake Transit</a></li>
-				<li><a href="https://srcity.org/1036/Transit-and-CityBus">Santa Rosa CityBus</a></li>
-            </ul>
-            For more
-            information on these connections, see the
-            <a href="/connections">Connections</a> page or individual routes
-            pages.
+            <div class="box-chunk" style="margin-top: 17px">
+              MTA service connects with
+              <ul class="ul-circle">
+                <li><a href="http://www.greyhound.com/">Greyhound</a></li>
+                  <li><a href="http://www.amtrak.com/">Amtrak</a></li>
+                <li><a href="http://www.sctransit.com/">Sonoma County Transit</a></li>
+                <li><a href="http://goldengate.org/schedules.php">Golden Gate Transit</a></li>
+                <li><a href="http://www.laketransit.org/">Lake Transit</a></li>
+                <li><a href="https://srcity.org/1036/Transit-and-CityBus">Santa Rosa CityBus</a></li>
+              </ul>
+              For more
+              information on these connections, see the
+              <a href="/connections">Connections</a> page or individual routes
+              pages.
+            </div>
           </div>
-        </div>
-      </div>
+        </aside>
 
     </div>
     <br style="clear: both;">
+    </main>
+   
 
-    </div> <!-- page-overlay -->
+  </div> <!-- page-overlay -->
 
 <?php get_footer(); ?>

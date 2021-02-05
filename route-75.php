@@ -7,11 +7,11 @@ Template Name: route-75
 <?php get_header(); ?>
 <div id="page-overlay">
 
-<div id="route-header">
+<header id="route-header">
 	<div id="route-circle-icon-75" class="route-circle-icon"></div>
 		<h1 id="route-title"> Route 75 </h1>
 		<?php do_action('route_select'); ?>
-</div><!-- #route-header -->
+</header><!-- #route-header -->
 
 
 <div id="route-breadcrumb" class="breadcrumb">
@@ -19,7 +19,7 @@ Template Name: route-75
 	</div><!-- end #route-breadcrumb -->
 
 <?php do_action('mendo_route_alert', '75'); ?>
-
+<main>
 <div id="route-two-col-wrap">
 	<div id="route-col-left">
 		<div id="route-desc">
@@ -102,7 +102,7 @@ Template Name: route-75
 	</div> <!-- #end route col left -->
 
 
-	<div id="route-col-right">
+	<aside id="route-col-right">
 
 		<div id="route-connections-box-title" class="route-title-box">
 			<div id="route-connections-box-title-text" class="route-title-box-text">
@@ -168,12 +168,10 @@ Template Name: route-75
 		</div> <!-- end #route-map-image-col-wrap -->
 		<br style="clear: both;" />
 
-	</div> <!-- end #route-col-right -->
+	</aside> <!-- end #route-col-right -->
 	<br style="clear: both;" />
 </div> <!-- end #route-two-col-wrap -->
-
-
-
+</main>
 
 
 <?php the_post(); ?>

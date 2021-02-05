@@ -7,12 +7,12 @@ Template Name: route-7-9
 <?php get_header(); ?>
 <div id="page-overlay">
 
-<div id="route-header">
+<header id="route-header">
 	<div id="route-circle-icon-7" class="route-circle-icon"></div>
 	<div id="route-circle-icon-9" class="route-circle-icon"></div>
 		<h1 id="route-title"> ROUTES 7 &amp; 9 - UKIAH </h1>
 		<?php do_action('route_select'); ?>
-</div><!-- #route-header -->
+</header><!-- #route-header -->
 
 
 <div id="route-breadcrumb" class="breadcrumb">
@@ -21,6 +21,7 @@ Template Name: route-7-9
 
 <?php do_action('mendo_route_alert', '7-9'); ?>
 
+<main>
 <div id="route-two-col-wrap">
 	<div id="route-col-left">
 
@@ -88,9 +89,9 @@ Template Name: route-7-9
 		</div> <!-- end #route-schedule-box -->
 	
 
-	<div id="route-connections-box" class="route-box">
-		<div id="route-connections-box-title" class="route-title-box">
-			<div id="route-connections-box-title-text" class="route-title-box-text">
+	<div class="route-connections-box route-box">
+		<div class="route-connections-box-title route-title-box">
+			<div class="route-connections-box-title-text route-title-box-text">
 				PDF Timetables
 			</div> <!-- end #route-connections-box-title-text -->
 			<br style="clear: both;" />
@@ -108,10 +109,10 @@ Template Name: route-7-9
 	</div> <!-- #end route col left -->
 
 
-	<div id="route-col-right">
+	<aside id="route-col-right">
 
-		<div id="route-connections-box-title" class="route-title-box">
-			<div id="route-connections-box-title-text" class="route-title-box-text">
+		<div class="route-connections-box-title route-title-box">
+			<div class="route-connections-box-title-text route-title-box-text">
 				Detail and Overview maps
 			</div> <!-- end #route-connections-box-title-text -->
 			<br style="clear: both;" />
@@ -159,11 +160,10 @@ Template Name: route-7-9
 		</div> <!-- end #route-map-image-col-wrap -->
 		<br style="clear: both;" />
 
-	</div> <!-- end #route-col-right -->
+	</aside> <!-- end #route-col-right -->
 	<br style="clear: both;" />
 </div> <!-- end #route-two-col-wrap -->
-
-
+</main>
 
 
 

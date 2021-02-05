@@ -1,6 +1,19 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ *
+ */
 
-<html >
+?>
+
+<!doctype html>
+
+<html <?php language_attributes(); ?> >
 <head profile="http://gmpg.org/xfn/11">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/reset.css" type="text/css">
@@ -91,12 +104,13 @@
 
 </head>
 <body>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'mendocino' ); ?></a>
 	<div id="home-alerts">
 		<a href="https://mendocinotransit.org/2020/03/18/alert-mta-reduces-bus-service-on-3-19/"><span style="text-transform: uppercase;">
 			Reduced Service Bus Schedules - 3/19/2020</span></a>
     </div>
 <header>
-    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <defs>
     <symbol id="icon-facebook" viewBox="0 0 32 32">
     <title>facebook</title>
@@ -121,11 +135,11 @@
 					<div id="mendo-number">1-800-696-4MTA</div>
 					<div id="social-links">
 						<a href="https://facebook.com/RideMTA">
-						<svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg><span class="name"></span></a>
+						<svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg><span class="screen-reader-text">Mendocino Facebook page</span></a>
 						<a href="https://instagram.com/mendocinotransit">
-						<svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg><span class="name"></span></a>
+						<svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg><span class="screen-reader-text">Mendocino Instagram page</span></a>
 						<a href="https://twitter.com/HopOnMTA">
-						<svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg><span class="name"></span></a>
+						<svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg><span class="screen-reader-text">Mendocino Twitter page</span></a>
 					</div>
 				</div>
 				<div id="language-link"><a href="/es">En espa&ntilde;ol</a></div>
@@ -133,34 +147,57 @@
 
 
 			<div id="top">
+			<?php
+			if(is_front_page()) : ?>
 				<div id="logo-left">
-					<a href="/">
-					<div id="mta-logo">
-					</div> <!-- #logo -->
-					</a>
-					<div id="logo-text">
-						Mendocino Transit Authority
-					</div> <!-- #logo-text -->
-				</div> <!-- #logo-left-->
+						<a href="/">
+							<div id="mta-logo">
+							</div> <!-- #logo -->
+						</a>
+						<div>
+							<h1 id="logo-text">Mendocino Transit Authority</h1>
+						</div> <!-- #logo-text -->
+					</div> <!-- #logo-left-->
 
+				<?php else: ?>
+					<div id="logo-left">
+						<a href="/">
+							<div id="mta-logo">
+							</div> <!-- #logo -->
+						</a>
+						<div id="logo-text">
+							Mendocino Transit Authority
+						</div> <!-- #logo-text -->
+					</div> <!-- #logo-left-->
+				<?php endif; ?>
 				<!--<button id="mobile-nav-button">Menu</button>-->
 				<nav id="nav" class="mobile-show">
-					<a href="/maps-and-schedules">
-						<div id="nav-maps-and-schedules">
-						</div> <!-- #nav-maps-and-schedules-link -->
-					</a>
-					<a href="/fares">
-						<div id="nav-fares">
-						</div><!-- #nav-fares -->
-					</a>
-					<a href="/how-to-ride">
-						<div id="nav-how-to-ride">
-						</div><!-- nav-how-to-ride -->
-					</a>
-					<a href="/connections">
-						<div id="nav-connections">
-						</div><!-- #nav-connections-->
-					</a>
+					<ul>
+						<a href="/maps-and-schedules">
+							<li id="maps-and-schedules">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/clock.png" alt="icon-maps-and-schedules">
+								<p>Maps & Schedules</p>
+							</li> <!-- #nav-maps-and-schedules-link -->
+						</a>
+						<a href="/fares">
+							<li id="fares">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/dollar.png" alt="icon-fares">
+							<p>Fares</p>
+							</li><!-- #nav-fares -->
+						</a>
+						<a href="/how-to-ride">
+							<li id="how-to-ride">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/information.png" alt="icon-how-to-ride">
+							<p>How to Ride</p>
+							</li><!-- nav-how-to-ride -->
+						</a>
+						<a href="/connections">
+							<li id="connections">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/direction.png" alt="icon-connections">
+							<p>Connections</p>
+							</li><!-- #nav-connections-->
+						</a>
+					</ul>
 				</nav> <!-- #nav -->
 			</div> <!-- #top -->
 		<?php
@@ -172,8 +209,8 @@
 			</div>
 
 		<?php } ?>
-		<!--Header ends -->
+	
 		<div id="top-curves-template"></div>
 		<div id="bg-strecher">
-		<div id="main-container">
-			<div id="inner-main-container">
+			<div id="main-container">
+				<div id="inner-main-container">

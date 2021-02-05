@@ -7,12 +7,12 @@ Template Name: route-20
 <?php get_header(); ?>
 <div id="page-overlay">
 
-<div id="route-header">
+<header id="route-header">
 	<div id="route-circle-icon-20" class="route-circle-icon"></div>
 	<h1 id="route-title"> ROUTE 20 - Redwood Valley</h1>
 	<?php do_action('route_select'); ?>
 
-</div><!-- #route-header -->
+</header><!-- #route-header -->
 
 
 <div id="route-breadcrumb" class="breadcrumb">
@@ -21,12 +21,12 @@ Template Name: route-20
 
 <?php do_action('mendo_route_alert', '20'); ?>
 
-<div id="route-two-col-wrap">
+	<main>
+	<div id="route-two-col-wrap">
 	<div id="route-col-left">
-
-<div id="route-desc">
-<img src="/images/mapsandschedules/maps-n-schedules-circ-20.png" height="15" > <strong>Route 20 - Willits / Ukiah</strong> is a service which connects Willits and Mendocino Community College, with timed transfers to Route 9 Ukiah Local.
-</div> <!-- end #route-desc -->
+		<div id="route-desc">
+		<img src="/images/mapsandschedules/maps-n-schedules-circ-20.png" height="15" > <strong>Route 20 - Willits / Ukiah</strong> is a service which connects Willits and Mendocino Community College, with timed transfers to Route 9 Ukiah Local.
+		</div> <!-- end #route-desc -->
 		<div id="route-schedule-box" class="route-box ">
 			<div id="route-schedule-box-title" class="route-title-box">
 			 	<div id="route-schedule-box-title-text" class="route-title-box-text">
@@ -71,12 +71,9 @@ Template Name: route-20
 			</div> <!-- end #fare-table-link -->
 		</div> <!-- end #route-schedule-box -->
 
-
-
-
-	<div id="route-connections-box" class="route-box">
-		<div id="route-connections-box-title" class="route-title-box">
-			<div id="route-connections-box-title-text" class="route-title-box-text">
+	<div class="route-connections-box route-box">
+		<div class="route-connections-box-title route-title-box">
+			<div class="route-connections-box-title-text route-title-box-text">
 				PDF Timetables
 			</div> <!-- end #route-connections-box-title-text -->
 			<br style="clear: both;" />
@@ -94,10 +91,10 @@ Template Name: route-20
 	</div> <!-- #end route col left -->
 
 
-	<div id="route-col-right">
+	<aside id="route-col-right">
 
-		<div id="route-connections-box-title" class="route-title-box">
-			<div id="route-connections-box-title-text" class="route-title-box-text">
+		<div class="route-connections-box-title route-title-box">
+			<div class="route-connections-box-title-text route-title-box-text">
 				Detail and Overview maps
 			</div> <!-- end #route-connections-box-title-text -->
 			<br style="clear: both;" />
@@ -120,11 +117,6 @@ Template Name: route-20
 
 					<a href="/wp-content/images/detail_maps/ukiah-detail-11-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/ukiah-detail-11-sml.jpg" /></a>
 				</div> <!-- end .route-detail-map-image-wrap -->
-
-
-
-
-
 
 			</div> <!-- end #map-col-left -->
 			<div id="route-map-col-right">
@@ -158,10 +150,10 @@ Template Name: route-20
 		</div> <!-- end #route-map-image-col-wrap -->
 		<br style="clear: both;" />
 
-	</div> <!-- end #route-col-right -->
+</aside> <!-- end #route-col-right -->
 	<br style="clear: both;" />
 </div> <!-- end #route-two-col-wrap -->
-
+</main>
 
 
 

@@ -75,6 +75,8 @@ function routeSelect() {
 }
 
 
+
+
 add_action( 'widgets_init', 'my_register_sidebars' );
 
 function my_register_sidebars() {
@@ -91,5 +93,6 @@ function my_register_sidebars() {
 	/* Repeat register_sidebar() code for additional sidebars. */
 }
 
-
 ?>
+
+

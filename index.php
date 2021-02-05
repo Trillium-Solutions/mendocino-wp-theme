@@ -4,260 +4,255 @@ Template Name: updated-home
 */
 get_header();
 ?>
+	<main>
+		<div id="home-left-col">
+			<div id="home-route-planner">
+				<div id="home-route-planner-inner">
+					<h2>PLAN YOUR TRIP</h2>
+					<script type="text/javascript">
 
-<div id="home-left-col">
-<div id="home-route-planner">
-<div id="home-route-planner-inner">
-<h2>PLAN YOUR TRIP</h2>
-<script type="text/javascript">
-
-function checkclear(what){
-if(!what._haschanged){
-  what.value=''
-};
-what._haschanged=true;
-}
-
-
-</script>
+					function checkclear(what){
+					if(!what._haschanged){
+					what.value=''
+					};
+					what._haschanged=true;
+					}
 
 
-<form action="https://www.trilliumtransit.com/redirect/google_redirect.php" name="f">
-	<input type="hidden" value="UTF8" name="ie"/>
-	<input type="hidden" value="d" name="f"/>
-	<input type="hidden" value="39.150171,-123.207783" name="sll"/>
-    <table id="trip_planner_form_table" align="right" style="margin-right:9px;margin-top:5px;">
-    	<tbody>
-			<tr id="row1">
-            	<td id="cell_1a">
-					<label for="saddr">Start</label>
-					<input type="text" name="saddr" id="saddr" style="width:250px;margin-top:10px;" onfocus="checkclear(this)"  value="Address, placename, or intersection"/>
-				</td>
-        	</tr>
-        	<tr id="row2">
-				<td id="cell_2a">
-					<label for="daddr">End</label>
-					<input type="text" name="daddr" id="daddr" style="width:250px;margin-top:10px;" onfocus="checkclear(this)" value="Address, placename, or intersection"/>
-				</td>
-			</tr>
-			<tr id="row3">
-				<td id="cell_1c">
-					<label for="ttype" id="when">When</label>
-					<select name="ttype" id="trip_type_select">
-						<option name="dep">Leave at</option>
-						<option name="arrive">Arrive by</option>
-					</select>
-					<label for="fdate" class="obscure">Date</label>
-					<input type="text" id="fdate" maxlength="100" value="" name="date" size="5" id="fdate"/>
-					<label for="ftime" class="obscure">Time</label>
-					<input type="text" id="ftime" maxlength="100" value="" name="time" size="5" id="ftime"/>
-					<input type="hidden" value="42" name="agency"/>
-					<input type="hidden" name="sort" value="walk"/>
-				</td>
-			</tr>
-			<tr id="row4">
-				<td id="cell_2b" align="right" style="padding-top:17px;" id="submit_cell"><span id="plan_trip_text" class="plan_trip_text">See itinerary</span>
-					<input type="submit" value="Get Directions" id="directions_submit" style="text-align:center"/>
-				</td>
-        	</tr>
-		</tbody>
-	</table>
-</form>
+					</script>
 
-<script type="text/javascript">
-var thisdate = new Date();
+				<form action="https://www.trilliumtransit.com/redirect/google_redirect.php" name="f">
+					<input type="hidden" value="UTF8" name="ie"/>
+					<input type="hidden" value="d" name="f"/>
+					<input type="hidden" value="39.150171,-123.207783" name="sll"/>
+					<table id="trip_planner_form_table" align="right" style="margin-right:9px;margin-top:5px;">
+						<tbody>
+							<tr id="row1">
+								<td id="cell_1a">
+									<label for="saddr">Start</label>
+									<input type="text" name="saddr" id="saddr" style="width:250px;margin-top:10px;" onfocus="checkclear(this)"  value="Address, placename, or intersection"/>
+								</td>
+							</tr>
+							<tr id="row2">
+								<td id="cell_2a">
+									<label for="daddr">End</label>
+									<input type="text" name="daddr" id="daddr" style="width:250px;margin-top:10px;" onfocus="checkclear(this)" value="Address, placename, or intersection"/>
+								</td>
+							</tr>
+							<tr id="row3">
+								<td id="cell_1c">
+									<label for="ttype" id="when">When</label>
+									<select name="ttype" id="trip_type_select">
+										<option name="dep">Leave at</option>
+										<option name="arrive">Arrive by</option>
+									</select>
+									<label for="fdate" class="obscure">Date</label>
+									<input type="text" id="fdate" maxlength="100" value="" name="date" size="5" id="fdate"/>
+									<label for="ftime" class="obscure">Time</label>
+									<input type="text" id="ftime" maxlength="100" value="" name="time" size="5" id="ftime"/>
+									<input type="hidden" value="42" name="agency"/>
+									<input type="hidden" name="sort" value="walk"/>
+								</td>
+							</tr>
+							<tr id="row4">
+								<td id="cell_2b" align="right" style="padding-top:17px;" id="submit_cell"><span id="plan_trip_text" class="plan_trip_text">See itinerary</span>
+									<input type="submit" value="Get Directions" id="directions_submit" style="text-align:center"/>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
 
-function formatDate(date) {
-var d = new Date(date);
-var hh = d.getHours();
-var m = d.getMinutes();
-var dd = "AM";
-var h = hh;
-if (h >= 12) {
-h = hh-12;
-dd = "PM";
-}
-if (h == 0) {
-h = 12;
-}
-m = m<10?"0"+m:m;
+				<script type="text/javascript">
+				var thisdate = new Date();
 
-return h+':'+m+' '+dd
-}
+				function formatDate(date) {
+				var d = new Date(date);
+				var hh = d.getHours();
+				var m = d.getMinutes();
+				var dd = "AM";
+				var h = hh;
+				if (h >= 12) {
+				h = hh-12;
+				dd = "PM";
+				}
+				if (h == 0) {
+				h = 12;
+				}
+				m = m<10?"0"+m:m;
 
-document.getElementById('ftime').value=formatDate(thisdate);
+				return h+':'+m+' '+dd
+				}
 
-var d = new Date(),
-month = d.getMonth() + 1,
-day = d.getDate(),
-year = d.getFullYear();
+				document.getElementById('ftime').value=formatDate(thisdate);
 
-document.getElementById('fdate').value = month + '/' + day + '/' +  year ;
+				var d = new Date(),
+				month = d.getMonth() + 1,
+				day = d.getDate(),
+				year = d.getFullYear();
 
-var format = 'g:i A';
-var step = 1;
+				document.getElementById('fdate').value = month + '/' + day + '/' +  year ;
 
-function parseTime(time, format, step) {
+				var format = 'g:i A';
+				var step = 1;
 
- var hour, minute, stepMinute,
- defaultFormat = 'g:ia',
- pm = time.match(/p/i) !== null,
- num = time.replace(/[^0-9]/g, '');
+				function parseTime(time, format, step) {
 
- // Parse for hour and minute
- switch(num.length) {
- case 4:
- hour = parseInt(num[0] + num[1], 10);
- minute = parseInt(num[2] + num[3], 10);
- break;
- case 3:
- hour = parseInt(num[0], 10);
- minute = parseInt(num[1] + num[2], 10);
- break;
- case 2:
- case 1:
- hour = parseInt(num[0] + (num[1] || ''), 10);
- minute = 0;
- break;
- default:
- return '';
- }
+				var hour, minute, stepMinute,
+				defaultFormat = 'g:ia',
+				pm = time.match(/p/i) !== null,
+				num = time.replace(/[^0-9]/g, '');
 
- if( pm === true && hour > 0 && hour < 12 ) hour += 12;
+				// Parse for hour and minute
+				switch(num.length) {
+				case 4:
+				hour = parseInt(num[0] + num[1], 10);
+				minute = parseInt(num[2] + num[3], 10);
+				break;
+				case 3:
+				hour = parseInt(num[0], 10);
+				minute = parseInt(num[1] + num[2], 10);
+				break;
+				case 2:
+				case 1:
+				hour = parseInt(num[0] + (num[1] || ''), 10);
+				minute = 0;
+				break;
+				default:
+				return '';
+				}
 
- if( hour >= 13 && hour <= 23 ) pm = true;
+				if( pm === true && hour > 0 && hour < 12 ) hour += 12;
 
- if( step ) {
- if( step === 0 ) step = 60;
- stepMinute = (Math.round(minute / step) * step) % 60;
- if( stepMinute === 0 && minute >= 30 ) {
- hour++;
- if( hour === 12 || hour === 24 ) pm = !pm;
- }
- minute = stepMinute;
- }
+				if( hour >= 13 && hour <= 23 ) pm = true;
 
- if( hour <= 0 || hour >= 24 ) hour = 0;
- if( minute < 0 || minute > 59 ) minute = 0;
+				if( step ) {
+				if( step === 0 ) step = 60;
+				stepMinute = (Math.round(minute / step) * step) % 60;
+				if( stepMinute === 0 && minute >= 30 ) {
+				hour++;
+				if( hour === 12 || hour === 24 ) pm = !pm;
+				}
+				minute = stepMinute;
+				}
 
- return (format || defaultFormat)
-        .replace(/g/g, hour === 0 ? '12' : 'g')
- .replace(/g/g, hour > 12 ? hour - 12 : hour)
- .replace(/G/g, hour)
- .replace(/h/g, hour.toString().length > 1 ? (hour > 12 ? hour - 12 : hour) : '0' + (hour > 12 ? hour - 12 : hour))
- .replace(/H/g, hour.toString().length > 1 ? hour : '0' + hour)
- .replace(/i/g, minute.toString().length > 1 ? minute : '0' + minute)
- .replace(/s/g, '00')
- .replace(/a/g, pm ? 'pm' : 'am')
- .replace(/A/g, pm ? 'PM' : 'AM');
+				if( hour <= 0 || hour >= 24 ) hour = 0;
+				if( minute < 0 || minute > 59 ) minute = 0;
 
-}
+				return (format || defaultFormat)
+						.replace(/g/g, hour === 0 ? '12' : 'g')
+				.replace(/g/g, hour > 12 ? hour - 12 : hour)
+				.replace(/G/g, hour)
+				.replace(/h/g, hour.toString().length > 1 ? (hour > 12 ? hour - 12 : hour) : '0' + (hour > 12 ? hour - 12 : hour))
+				.replace(/H/g, hour.toString().length > 1 ? hour : '0' + hour)
+				.replace(/i/g, minute.toString().length > 1 ? minute : '0' + minute)
+				.replace(/s/g, '00')
+				.replace(/a/g, pm ? 'pm' : 'am')
+				.replace(/A/g, pm ? 'PM' : 'AM');
 
-
-function update() {
-    $j('#ftime').val(parseTime($j('#ftime').val(), format, step));
-}
-
-$j(document).ready( function() {
-
-    $j('#ftime').blur(update);
-
- $j(function() {
-    $j( "#fdate" ).datepicker({dateFormat: "mm/dd/yy"});
-  });
+				}
 
 
-});
+				function update() {
+					$j('#ftime').val(parseTime($j('#ftime').val(), format, step));
+				}
 
-</script>
+				$j(document).ready( function() {
 
-<div id="home-google-transit-link">
-    <a href="/google-maps/" >More about transit in Google Maps and on your mobile phone.</a>
-</div>
-</div> <!-- end #home-route-planner-inn -->
-                    </div><!-- #home-route-planner -->
+					$j('#ftime').blur(update);
 
-
-             <div id="home-left-links">
- <div id="home-dynamic-space">
+				$j(function() {
+					$j( "#fdate" ).datepicker({dateFormat: "mm/dd/yy"});
+				});
 
 
+				});
 
-<?php
-$count = 1;
-query_posts( array ( 'category_name' => 'service-alert', 'posts_per_page' => 4 ) );
+				</script>
 
-
-if( have_posts()) {
-?>
-<div id="home-service-alerts" class="left-links-sec">
-
-<div class="alert-sym"></div><div id="service-alert-title" class="left-link-title">Service Alerts</div>
-<div id="home-news-arhive-link" class="left-links-archive-link"><a href="/alerts-and-news/">See all</a></div>
-
-<ul class="left-link-list">
-<?php
-$count = 1;
-while ( have_posts() ) : the_post();
+					<div id="home-google-transit-link">
+						<a href="/google-maps/" >More about transit in Google Maps and on your mobile phone.</a>
+					</div>
+				</div> <!-- end #home-route-planner-inn -->
+    		</div><!-- #home-route-planner -->
 
 
+            <div id="home-left-links">
+ 			<div id="home-dynamic-space">
+
+			<?php
+			$count = 1;
+			query_posts( array ( 'category_name' => 'service-alert', 'posts_per_page' => 4 ) );
+
+
+			if( have_posts()) {
+			?>
+			<div id="home-service-alerts" class="left-links-sec">
+
+			<div class="alert-sym"></div>
+				<div id="service-alert-title" class="left-link-title">
+				<a href="/alerts-and-news/">Service Alerts</a>
+			</div>
+
+				<ul class="left-link-list">
+				<?php
+				$count = 1;
+				while ( have_posts() ) : the_post(); 
 				?>
+					<li>
+						<a class="left-home-link" id="home-alerts-link-<?php echo $count; ?>" href=" <?php the_permalink() ?>" ><?php the_title() ?></a>
+					</li>
 
-			<li>
-    <a class="left-home-link" id="home-alerts-link-<?php echo $count; ?>" href=" <?php the_permalink() ?>" ><?php the_title() ?></a>
-    </li>
+					<?php
+					$count = $count + 1;
+					endwhile;
+					wp_reset_query();
+					?>
+					</ul>
+
+			<br style="clear: both;" />
+
+		</div>
+
 
 		<?php
-		$count = $count + 1;
-		endwhile;
-wp_reset_query();
-?>
-</ul>
 
-<br style="clear: both;" />
+		}
 
-</div>
+		$args = array(
+			'numberposts' 	=> 3,
+			'post_type'		=> array('news'),
+		);
+		$my_query = new WP_Query( $args );
 
-
-<?php
-
-}
-
-$args = array(
-	'numberposts' 	=> 3,
-	'post_type'		=> array('news'),
-);
-$my_query = new WP_Query( $args );
-
- if( $my_query->have_posts()) {
- ?>
+		if( $my_query->have_posts()) {
+		?>
 
 
 <div id="home-news" class="left-links-sec">
 <div class="left-sec-internal">
-<div id="home-news-title" class="left-link-title">News</div>
-<div id="home-news-arhive-link" class="left-links-archive-link"><a href="/alerts-and-news/">See all</a></div>
-<ul class="left-link-list">
-<?php
-$count = 1;
-while ( $my_query->have_posts() ) : $my_query->the_post();
+	<div id="home-news-title" class="left-link-title">
+		<a href="/alerts-and-news/">News</a>
+	</div>
+		<ul class="left-link-list">
+			<?php
+			$count = 1;
+			while ( $my_query->have_posts() ) : $my_query->the_post();
+			?>
 
+				<li >
+					<a class="left-home-link" id="home-news-link-<?php echo $count; ?>" href=" <?php the_permalink() ?>" ><?php the_title() ?></a>
+				</li>
 
-				?>
+			<?php
+			$count = $count + 1;
+			endwhile;
+			wp_reset_postdata();
+			?>
+		</ul>
 
-			<li >
-    <a class="left-home-link" id="home-news-link-<?php echo $count; ?>" href=" <?php the_permalink() ?>" ><?php the_title() ?></a>
-    </li>
-
-		<?php
-		$count = $count + 1;
-		endwhile;
-wp_reset_postdata();
-?>
-</ul>
-
-<br style="clear: both;" />
-</div>
+	<br style="clear: both;" />
+	</div>
  </div>
  <?php
 }
@@ -273,19 +268,20 @@ $my_query = new WP_Query($args);
 if ($my_query->have_posts()) : ?>
     <div id="home-agendas" class="left-links-sec">
         <div class="left-sec-internal">
-            <div id="home-agendas-title" class="left-link-title">Public Meetings</div>
-            <div class="left-links-archive-link"><a href="/board-of-directors">See all</a></div>
+            <div id="home-agendas-title" class="left-link-title">
+				<a href="/board-of-directors">Public Meetings</a>
+			</div>
             <ul class="left-link-list">
-            <?php
-            while ($my_query->have_posts()) : $my_query->the_post(); ?>
-            <li>
-                <a class="left-home-link" href="<?php the_permalink(); ?>"><?php the_time('F j') ?> &ndash; <?php the_title() ?></a>
-            </li>
-<?php endwhile; ?>
-</ul>
-<br style="clear: both;" />
-</div>
-</div>
+				<?php
+				while ($my_query->have_posts()) : $my_query->the_post(); ?>
+					<li>
+						<a class="left-home-link" href="<?php the_permalink(); ?>"><?php the_time('F j') ?> &ndash; <?php the_title() ?></a>
+					</li>
+				<?php endwhile; ?>
+			</ul>
+		<br style="clear: both;" />
+		</div>
+	</div>
 <?php endif; wp_reset_postdata();
 if ($count == 1 ) {
 ?>
@@ -376,10 +372,11 @@ Currently no service alerts.
 				</div> <!-- #home-bottom-links-->
 
 			<br style="clear: both;">
-				<div id="bottom-hr" />
-				</div>
+			<div id="bottom-hr"></div>
 				<div id="home-mta-description">
-Mendocino County, California.  MTA’s service area encompasses about 2,800 square miles including the Mendocino Coast and Inland communities. The transit system includes a network of long distance, commute and local fixed routes, plus Dial-A-Ride services in Ukiah and Ft. Bragg.  MTA provides service throughout the county, including the communities of Albion, Anchor Bay, Bodega, Bodega Bay, Boonville, Calpella, Caspar, Elk, Fort Bragg, Fort Ross, Freestone, Gualala, Hopland, Jenner, Manchester, Mendocino, Navarro, Philo, Point Arena, Redwood Valley, Santa Rosa, Sea Ranch, Stewarts Point, Ukiah, Willits, and Windsor.
+					Mendocino County, California.  MTA’s service area encompasses about 2,800 square miles including the Mendocino Coast and Inland communities. The transit system includes a network of long distance, commute and local fixed routes, plus Dial-A-Ride services in Ukiah and Ft. Bragg.  MTA provides service throughout the county, including the communities of Albion, Anchor Bay, Bodega, Bodega Bay, Boonville, Calpella, Caspar, Elk, Fort Bragg, Fort Ross, Freestone, Gualala, Hopland, Jenner, Manchester, Mendocino, Navarro, Philo, Point Arena, Redwood Valley, Santa Rosa, Sea Ranch, Stewarts Point, Ukiah, Willits, and Windsor.
 				</div>
+			</main>
+			
 <!-- test -->
 <?php get_footer(); ?>
