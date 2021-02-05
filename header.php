@@ -109,7 +109,7 @@
 		<a href="https://mendocinotransit.org/2020/03/18/alert-mta-reduces-bus-service-on-3-19/"><span style="text-transform: uppercase;">
 			Reduced Service Bus Schedules - 3/19/2020</span></a>
     </div>
-<header>
+
    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <defs>
     <symbol id="icon-facebook" viewBox="0 0 32 32">
@@ -145,7 +145,7 @@
 				<div id="language-link"><a href="/es">En espa&ntilde;ol</a></div>
 			</div> <!-- #top-right-number-and-spanish-->
 
-
+			<header>
 			<div id="top">
 			<?php
 			if(is_front_page()) : ?>
@@ -208,7 +208,7 @@
 			</div>
 
 		<?php } ?>
-	
+		</header>
 		<div id="top-curves-template"></div>
 		<div id="bg-strecher">
 			<div id="main-container">
