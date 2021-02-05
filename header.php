@@ -174,25 +174,25 @@
 					<ul>
 						<a href="/maps-and-schedules">
 							<li id="maps-and-schedules">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/clock.png" alt="icon-maps-and-schedules">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/clock.png" alt="">
 								<p>Maps & Schedules</p>
 							</li> <!-- #nav-maps-and-schedules-link -->
 						</a>
 						<a href="/fares">
 							<li id="fares">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/dollar.png" alt="icon-fares">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/dollar.png" alt="">
 							<p>Fares</p>
 							</li><!-- #nav-fares -->
 						</a>
 						<a href="/how-to-ride">
 							<li id="how-to-ride">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/information.png" alt="icon-how-to-ride">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/information.png" alt="">
 							<p>How to Ride</p>
 							</li><!-- nav-how-to-ride -->
 						</a>
 						<a href="/connections">
 							<li id="connections">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/direction.png" alt="icon-connections">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/direction.png" alt="">
 							<p>Connections</p>
 							</li><!-- #nav-connections-->
 						</a>
