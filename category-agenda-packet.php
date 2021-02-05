@@ -29,8 +29,5 @@ get_header(); ?>
                     the_content(); ?>
                 </div>
             </main>
-              
-
-
 </div> <!-- page-overlay -->
 <?php get_footer(); ?>

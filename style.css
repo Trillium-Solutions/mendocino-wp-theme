@@ -717,6 +717,7 @@ background: url('images/schedules-map/map-glow-7.jpg') no-repeat 340px 261px;
 float: left;
 margin-top: 140px;
 text-align: center;
+margin-left: 4em;
 }
 
 #nav ul {
@@ -729,11 +730,11 @@ text-align: center;
     text-decoration: none;
 }
 #nav ul li {
-    /*font-size: 12px;*/
+    margin-left: 8px;
 }
 #nav p {
     color: #fef1bc;
-    margin-right: 5px;
+    /*margin-right: 5px;*/
     font-size: 14px;
     text-transform: uppercase;
 }
@@ -743,18 +744,37 @@ text-align: center;
     width: 2.5em;
     /*display: block;*/
 }
-#maps-and-schedules {
-    margin-left: 6em;
-}
-
-
 
 
 #maps-and-schedules img:hover, #fares img:hover, #how-to-ride img:hover, #connections img:hover  {
-    cursor: pointer; 
+    cursor: pointer;
 }
 
+#maps-and-schedules:hover, #maps-and-schedules:focus {
+    border: 1px solid #fef1bc;
+    background-color: rgba(204, 204, 204, 0.1); 
+    border-radius:4px;
+    width: 100%;
+}
 
+#fares:hover, #fares:focus {
+    border: 1px solid #fef1bc;
+    background-color: rgba(204, 204, 204, 0.1); 
+    border-radius:4px;
+    width: 100%;
+}
+#how-to-ride:hover, #how-to-ride:focus {
+    border: 1px solid #fef1bc;
+    background-color: rgba(204, 204, 204, 0.1); 
+    border-radius:4px;
+    width: 100%;
+}
+#connections:hover, #connections:focus {
+    border: 1px solid #fef1bc;
+    background-color: rgba(204, 204, 204, 0.1); 
+    border-radius:4px;
+    width: 100%;
+}
 
 
     

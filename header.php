@@ -151,8 +151,8 @@
 			if(is_front_page()) : ?>
 				<div id="logo-left">
 						<a href="/">
-							<div id="mta-logo">
-							</div> <!-- #logo -->
+							<div id="mta-logo"></div> <!-- #logo -->
+							<h1 id="logo-text" class="screen-reader-text">Mendocino Transit Authority</h1>
 						</a>
 						<div>
 							<h1 id="logo-text">Mendocino Transit Authority</h1>
@@ -162,8 +162,7 @@
 				<?php else: ?>
 					<div id="logo-left">
 						<a href="/">
-							<div id="mta-logo">
-							</div> <!-- #logo -->
+							<div id="mta-logo"></div> <!-- #logo -->
 						</a>
 						<div id="logo-text">
 							Mendocino Transit Authority
