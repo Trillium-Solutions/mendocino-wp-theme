@@ -46,9 +46,9 @@ get_header();
 										<option name="dep">Leave at</option>
 										<option name="arrive">Arrive by</option>
 									</select>
-									<label for="fdate" class="obscure">Date</label>
+									<label for="fdate" class="screen-reader-text">Date</label>
 									<input type="text" id="fdate" maxlength="100" value="" name="date" size="5" id="fdate"/>
-									<label for="ftime" class="obscure">Time</label>
+									<label for="ftime" class="screen-reader-text">Time</label>
 									<input type="text" id="ftime" maxlength="100" value="" name="time" size="5" id="ftime"/>
 									<input type="hidden" value="42" name="agency"/>
 									<input type="hidden" name="sort" value="walk"/>

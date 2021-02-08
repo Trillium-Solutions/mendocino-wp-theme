@@ -745,16 +745,20 @@ margin-left: 4em;
     /*display: block;*/
 }
 
-
-#maps-and-schedules img:hover, #fares img:hover, #how-to-ride img:hover, #connections img:hover  {
-    cursor: pointer;
+#maps-and-schedules , #fares , #how-to-ride, #connections {
+    border: 1px solid transparent;
 }
 
-#maps-and-schedules:hover, #maps-and-schedules:focus {
+#nav a:hover {
+    text-decoration: none !important;
+}
+
+ #maps-and-schedules:hover, #maps-and-schedules:focus {
     border: 1px solid #fef1bc;
     background-color: rgba(204, 204, 204, 0.1); 
     border-radius:4px;
     width: 100%;
+    cursor: pointer;
 }
 
 #fares:hover, #fares:focus {
@@ -762,18 +766,21 @@ margin-left: 4em;
     background-color: rgba(204, 204, 204, 0.1); 
     border-radius:4px;
     width: 100%;
+    cursor: pointer;
 }
 #how-to-ride:hover, #how-to-ride:focus {
     border: 1px solid #fef1bc;
     background-color: rgba(204, 204, 204, 0.1); 
     border-radius:4px;
     width: 100%;
+    cursor: pointer;
 }
 #connections:hover, #connections:focus {
     border: 1px solid #fef1bc;
     background-color: rgba(204, 204, 204, 0.1); 
     border-radius:4px;
     width: 100%;
+    cursor: pointer;
 }
 
 
@@ -1389,7 +1396,7 @@ text-decoration: none;
     font-weight: bold;
     color: white;
     margin-left: 28px;
-    display: none;
+    /*display: none;*/
 }
 
 
