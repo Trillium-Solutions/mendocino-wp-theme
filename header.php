@@ -152,9 +152,9 @@
 				<div id="logo-left">
 						<a href="/">
 							<div id="mta-logo"></div> <!-- #logo -->
-							<h1 id="logo-text" class="screen-reader-text">Mendocino Transit Authority</h1>
+							<h1 class="screen-reader-text">Mendocino Transit Authority</h1>
 						</a>
-						<div id=logo-text>
+						<div class="logo-txt-mobile">
 							Mendocino Transit Authority
 						</div> <!-- #logo-text -->
 					</div> <!-- #logo-left-->
@@ -164,7 +164,7 @@
 						<a href="/">
 							<div id="mta-logo"></div> <!-- #logo -->
 						</a>
-						<div id="logo-text">
+						<div class="logo-txt-mobile">
 							Mendocino Transit Authority
 						</div> <!-- #logo-text -->
 					</div> <!-- #logo-left-->

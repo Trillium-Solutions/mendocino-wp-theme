@@ -1357,13 +1357,12 @@ text-decoration: none;
 **          Breakpoints               **
 ***************************************/
 
-#logo-text {
+.logo-txt-mobile {
     font-weight: bold;
     color: white;
     margin-left: 28px;
-    /*display: none;*/
+    display: none;
 }
-
 
 .mobile-only {
     display: none;
@@ -1429,7 +1428,7 @@ h1 {
         height: 100%;
     }
     
-    #logo-text {
+    .logo-txt-mobile {
         display: block;
         font-size: 1em;
     }
