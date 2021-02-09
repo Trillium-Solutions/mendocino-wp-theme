@@ -724,6 +724,7 @@ margin-left: 4em;
     display: flex;
     list-style: none;
     margin-top: 10px;
+    justify-content: space-around;
 }
 #nav a {
     margin-right: 12px;
@@ -731,7 +732,7 @@ margin-left: 4em;
 }
 #nav ul li {
     /*margin-left: 8px;*/
-    padding-right: 4px;
+    padding-right: 4px; 
     padding-left: 4px;
 }
 #nav p {
@@ -759,7 +760,6 @@ margin-left: 4em;
     border: 1px solid #fef1bc;
     background-color: rgba(204, 204, 204, 0.1); 
     border-radius:4px;
-    /*width: 100%;*/
     cursor: pointer;
 }
 
@@ -767,57 +767,20 @@ margin-left: 4em;
     border: 1px solid #fef1bc;
     background-color: rgba(204, 204, 204, 0.1); 
     border-radius:4px;
-    /*width: 100%;*/
     cursor: pointer;
 }
 #how-to-ride:hover, #how-to-ride:focus {
     border: 1px solid #fef1bc;
     background-color: rgba(204, 204, 204, 0.1); 
     border-radius:4px;
-    /*width: 100%;*/
     cursor: pointer;
 }
 #connections:hover, #connections:focus {
     border: 1px solid #fef1bc;
     background-color: rgba(204, 204, 204, 0.1); 
     border-radius:4px;
-    /*width: 100%;*/
     cursor: pointer;
 }
-
-
-    
-
-/*#nav-fares {
-float: left;
-width: 30px;
-height: 30px;
-
-}
-
-
-
-#nav-how-to-ride {
-/*float: left;
-width: 30px;
-height: 30px;
-}*/
-
-
-/*#nav-connections {
-float: left;
-width: 30px;
-height: 30px;
-}*/
-
-
-/*#nav-maps-and-schedules {
-float: left;
-width: 30px;
-height: 30px
-}
-
-
 
 
 
@@ -1706,6 +1669,9 @@ h1 {
         transition: height 0.25s ease-in;
         visibility: visible;
     }
+    #nav ul {
+        padding-left: 0;
+    }
     #mobile-nav-button {
         display: block;
     }
@@ -1994,7 +1960,6 @@ h1 {
     #nav a {
         display: block;
         color: #fdf0bc;
-        padding: 15px;
         border-bottom: 1px solid rgba(253,250,188,0.8);
         margin-top: 0;
     }
