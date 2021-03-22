@@ -10,19 +10,23 @@
 ?>
 
 	<article <?php post_class(); ?>>
-		
+
 			<header id="route-header">
+				<!-- TODO: replace route circles -->
 				<div id="route-circle-icon-20" class="route-circle-icon"></div>
 					<h1 id="route-title">
 						<?php the_title(); ?>
 					</h1>
+				<!-- TODO: ensure routes come from TCP - either tcp_list_routes() or
+				a custom WP_Query -->
 				<?php do_action('route_select'); ?>
 
 			</header><!-- #route-header -->
 
 
+		<!-- TODO: replace with tcp_do_alerts() (double check this is the fn name) -->
 		<?php do_action('mendo_route_alert', '20'); ?>
-
+		<!-- TODO: remove main -->
 		<main>
 			<div id="route-two-col-wrap">
 			<div id="route-col-left">
@@ -46,6 +50,11 @@
 					</div> <!-- end #days-of-week -->
 
 					<div id="schedule-buttons">
+						<!--
+							- wp_query to grab all timetables for the route
+							- use a loop to display a link to each timetable page
+							- the_permalink(), direction_label, etc
+						 -->
 						<a href="/routes/route-20/route-20-northbound/"  >
 							<div id="schedule-northbound-65" class="route-popup-button route-button-left route-button-first route-button-odd route-button-short" style="height:45px;">
 								<div class="popup-button-title">
@@ -86,7 +95,7 @@
 						<div id="route-connections-container">
 							<div class="route-connection">
 								<?php
-								
+
 									while ( have_rows('connections') ):
 										the_row();
 								?>
@@ -133,7 +142,7 @@
 
 
 			<div id="route-map-image-col-wrap">
-				<div id="route-map-col-left">				
+				<div id="route-map-col-left">
 					<div class="route-detail-map-image-wrap">
 					<?php while ( have_rows('maps') ):
 						the_row();
@@ -189,8 +198,30 @@
 </main>
 
 
-	
+
 
 	</article>
+
+	<!--
+
+<div class="flex-group">
+<weird map markup>
+	<map stuff>Name</>
+	<image></>
+</>
+</div>
+
+flex-group {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.weird-map {
+	flex: 1 1 auto;
+	max-width: 50%;
+}
+
+
+-->
 	<?php
 	get_footer();
