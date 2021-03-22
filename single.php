@@ -15,20 +15,16 @@
 get_header(); ?>
 <div id="page-overlay">
 
-			<?php the_post(); ?>
-			<header>
-				<h1 class="entry-title main"><?php the_title(); ?></h1>
-			</header>
-			
-		<?php ////if(function_exists(simple_breadcrumb)) {simple_breadcrumb();} ?>
-			<br/>
-			<hr />
-			<br/>
-			<main>
-				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<?php the_content(); ?>
-				</div>
-			</main>	
-              
+	<main id="main" class="site-main">
+
+		<?php while ( have_posts() ) : the_post();
+
+		get_template_part( 'template-parts/content', get_post_type() );
+
+		endwhile; // End of the loop.
+		?>
+
+	</main><!-- #main -->
+				
 </div> <!-- page-overlay -->
 <?php get_footer(); ?>
