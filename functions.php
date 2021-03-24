@@ -52,6 +52,10 @@
 		</ul>
 	</div> <!-- end #service alert-inner-box -->
 </div> <!-- end #service alert-box -->
+
+
+
+
 <?php
 }
 }
@@ -60,21 +64,61 @@
 
 add_action('route_select', 'routeSelect');
 function routeSelect() {
-?><div id="route-dropdown" >
+	$q = array(
+		'post_type'			=> 'route',
+		'posts_per_page'	=> -1,
+		'meta_key'			=> 'route_sort_order',
+		'orderby'			=> 'meta_value_num',
+		'order'				=> 'ASC',
+	);
+	$rtes = new WP_Query($q);
+	if ($rtes->have_posts()) {
+		echo '<div id="route-dropdown">';
+		echo '<select id="route-select" class="route-drop-down">';
+		echo '<option selected="selected">';
+		printf('Select a Route');
+		echo '</option>';
+	while ($rtes->have_posts()) {
+			$rtes->the_post();
+			$name = get_post_meta(get_the_ID(), 'route_long_name', true);
+			$sname = get_post_meta(get_the_ID(), 'route_short_name', true);
+			echo '<option value="route-';
+			echo $sname;
+			echo '">';
+			printf('Rt. ');
+			printf($sname);
+			printf(' ');
+			printf($name);
+			echo '</option>';
+		}
+		echo '</select>';
+		echo '</div>';
+		wp_reset_postdata();
+	}
+}
+
+
+/*function routeSelect() {	
+?>
+<div id="route-dropdown" >
 		<select id="route-select" 	style="width: 180px; height: 35px; font-size: 18px; padding: 3px 0 0 10px; color: #666;">
 		  <option selected="selected" >Select a Route</option>
-		  <option value="1">Rt. 1 Willits</option>
+			<option value="<?php echo get_post_meta( get_the_ID()); ?>"><?php the_title(); ?></option>
+		  <!--<option value="1">Rt. 1 Willits</option>
 		  <option value="20">Rt. 20 Redwood Valley</option>
 		  <option value="7-9">Rts. 7 and 9 - Ukiah</option>
 		  <option value="5">Rt. 5 Ft. Bragg</option>
 		  <option value="60">Rt. 60 North Coast</option>
 		  <option value="65">Rt. 65 CC Rider</option>
 		  <option value="75">Rt. 75 South Coast/Ukiah</option>
-		  <option value="95">Rt. 95 South Coast/Santa Rosa</option>
+		  <option value="95">Rt. 95 South Coast/Santa Rosa</option>-->
+		  <!--<?php //endwhile; endif; wp_reset_postdata(); ?>-->
 		</select>
-	</div><!-- end #route-dropdown -->
-	<?php
-}
+	
+	</div><!-- end #route-dropdown -->*/
+
+	//<?php
+//}
 
 
 
@@ -96,6 +140,8 @@ function my_register_sidebars() {
 }
 
 ?>
+
+
 
 <?php 
 $labels = array(
@@ -133,6 +179,63 @@ $args = array(
     );
 
 register_post_type( 'news', $args );
+
+function mendo_custom_timetables() {
+	$route_id = get_post_meta(get_the_ID(), 'route_id', true);
+
+	$date = new DateTime();
+	$today = intval($date->format('Ymd'));
+
+	// Set a date 14 days in the future from today
+	$date->add(new DateInterval('P14D'));
+	$soon = intval($date->format('Ymd'));
+
+	$timetable_args = array(
+		'post_type'			=> 'timetable',
+		'posts_per_page' 	=> -1,
+		'meta_key'			=> 'direction_label',
+		'orderby'			=> 'meta_value',
+		'order'				=> 'DESC',
+		'meta_query'	=> array(
+			'relation'	=> 'AND',
+			array(
+				'key'	=> 'route_id',
+				'value'	=> $route_id,
+			),
+			array(
+				'key'	=> 'start_date',
+				'value'	=> $today,
+				'compare'	=> '<=',
+				'type'	=> 'NUMERIC',
+			)
+		)
+	);
+	$timetables = new WP_Query( $timetable_args );
+	if ( $timetables->have_posts() ) { ?>
+			
+		<div id="schedule-buttons">
+		<?php
+		while ( $timetables->have_posts() ) {
+			$timetables->the_post();
+			// Get timetable metadata
+			$permalink = get_permalink($post_id);
+			$dir = get_post_meta( get_the_ID(), 'direction_label', true);
+
+			printf('<a href="%s"" class="timetable-link">', $permalink);
+			echo '<div id="schedule-northbound-65" class="route-popup-button route-button-left route-button-first route-button-odd route-button-short">';
+			echo '<div class="popup-button-title">';
+			echo $dir;
+			echo '</div>';
+			echo '</div>';
+			printf ('</a>');
+		}
+		echo '<br style="clear: both;" />';
+		echo '</div>';
+		wp_reset_postdata();
+	} 
+}
+
+
 
 
 ?>

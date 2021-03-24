@@ -9,10 +9,10 @@ width: 55px;
 }
 
 .timetable-left-marg {
-margin-left: 40px;
+margin-left: 10px;
 }
 
-#timetable-banner {
+/*#timetable-banner {
 width: 100%;
 background: url('images/timetable/timetable-blue-strip.jpg') repeat-x;
 height: 271px; 
@@ -22,53 +22,24 @@ height: 271px;
 width: 1035px;
 height: 270px;
 background: url('images/logo-motto.png') no-repeat;
-}
+}*/
 
 #timetable-route-name {
 width: 100%;
 background-color: #E3E3E3;
-height: 75px;
-background-image: url('images/timetable/timetable-grey-shadow.jpg');
-background-position: bottom;
-background-repeat: repeat-x;
+height: 40px;
+padding: 15px;
 }
 
-#timetable-center-title {
-width: 1035px;
-}
+
 
 #timetable-route-name-part-1{
 font-size: 30px;
 margin: 11px 0 0 0px;
 float: left;
+line-height: unset !important;
 }
 
-#timetable-route-name-part-2 {
-font-size: 30px;
-margin: 11px 0 0 40px;
-float: left;
-}
-
-
-#timetable-content .breadcrumb{
-margin: 0 0 20px 0;
-font-size: .85em;
-padding-bottom: 8px;
-padding-top: 8px;
-border-bottom: 1px solid #ccc;
-border-top: 1px solid #ccc;
-}
-
-#timetable-links {
-height: 20px;
-}
-
-#time-table-backlink,
-#timetable-pdf-link  {
-float: left;
-margin: 10px 20px 0 0;
-font-size: 13px;
-}
 
 #timetable-content {
 width: 1035px;
@@ -78,41 +49,14 @@ margin-bottom: 20px;
 .div-table {
 margin: 0 0 20px 0;
 }
-/*table.timetable-66 {
-	cell-padding: 0;
-	border-collapse:collapse;
-}
 
-
-table.timetable-66 {
-	border: 1px solid grey;
-	caption {
-		background: #c27d92;
-	}	
-	
-}
-
-table.timetable-66 tr:first-of-type {
-	border-bottom: 2px solid grey;
-}
-table.timetable-66 td {
-		border-right: 1px solid grey !important;
-		border-left: 1px solid grey !important; 
-	}
-
-table.timetable-66 tr:nth-child(even) {
-	background: rgba(0,0,0,.1);
-}	
-table.timetable-66 td {
-	padding: 3px;
-	font-size: .9em !important;
-}
-
-table.timetable-66 .tt-row .tt-cell .tt-cell-text {
-	font-size: .9em;
-}*/
 
 /*New Timetable styling */
+
+.stop-name-container {
+	width: 200px;
+}
+
 .single-route .timetable-holder .timetable .table-container {
 	overflow: scroll;
 }
@@ -121,6 +65,21 @@ table.timetable-66 .tt-row .tt-cell .tt-cell-text {
     margin: 2em 0 4em 0;
     text-align: left;
     overflow-x: auto;
+	margin-bottom: 0;
+}
+
+.timetable .row {
+	clear: none;
+	border-bottom: none;	
+	float: none;
+}
+
+.timetable p {
+	margin: 0;
+}
+
+.timetable p:empty::before {
+	content: none;
 }
 
 .table {
@@ -148,7 +107,7 @@ a.symbol {
 	padding-right: 2px;
 }
 
-.stop-code, .excluded-dates, .sr-only, .description, .service-notes {
+.stop-code, .excluded-dates, .sr-only, .description, .service-notes, .stop-description, .timetable-bottom {
 	display: none;
 }
 

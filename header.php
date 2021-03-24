@@ -18,6 +18,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/reset.css" type="text/css">
 	<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/formalize.css" />
+	<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/timetable.css" />
+	<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/schedule-layout.css" />
 	<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/mendo-map.css" />
 
 	<style type="text/css">

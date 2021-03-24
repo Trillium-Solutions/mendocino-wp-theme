@@ -35,7 +35,7 @@ zoom: 1;
 #timetable-content {
 position: relative;
 display: inline-block;
-*display: inline;
+display: inline;
 zoom: 1;
 }
 
