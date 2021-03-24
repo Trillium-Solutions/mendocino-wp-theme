@@ -10,21 +10,25 @@
 ?>
 
 	<article <?php post_class(); ?>>
-		
+
 			<header id="route-header">
-				<!--<div><?php //get_route_circle();?></div>-->
-					
-						<?php the_route_title(); ?>
-					
+				<!-- TODO: replace route circles -->
+				<div id="route-circle-icon-20" class="route-circle-icon"></div>
+					<h1 id="route-title">
+						<?php the_title(); ?>
+					</h1>
+				<!-- TODO: ensure routes come from TCP - either tcp_list_routes() or
+				a custom WP_Query -->
 				<?php do_action('route_select'); ?>
 
 			</header><!-- #route-header -->
 
 
+		<!-- TODO: replace with tcp_do_alerts() (double check this is the fn name) -->
 		<?php do_action('mendo_route_alert', '20'); ?>
-
-		
-		<div id="route-two-col-wrap">
+		<!-- TODO: remove main -->
+		<main>
+			<div id="route-two-col-wrap">
 			<div id="route-col-left">
 				<div id="route-desc">
 
@@ -45,8 +49,35 @@
 						Monday through Friday
 					</div> <!-- end #days-of-week -->
 
-				<?php mendo_custom_timetables(); ?>
-					
+					<div id="schedule-buttons">
+						<!--
+							- wp_query to grab all timetables for the route
+							- use a loop to display a link to each timetable page
+							- the_permalink(), direction_label, etc
+						 -->
+						<a href="/routes/route-20/route-20-northbound/"  >
+							<div id="schedule-northbound-65" class="route-popup-button route-button-left route-button-first route-button-odd route-button-short" style="height:45px;">
+								<div class="popup-button-title">
+									Northbound<br/><span style="font-size:12px;"></span>
+								</div> <!-- end #popup-button-title -->
+								<div class="popup-button-desc" >
+
+								</div> <!-- end popup-button-desc -->
+							</div> <!-- end #schedule-northbound-65 -->
+						</a>
+						<a href="/routes/route-20/route-20-southbound/"  >
+							<div id="schedule-southbound-65" class="route-popup-button route-button-right route-button-last route-button-even route-button-short" style="height:45px;">
+								<div class="popup-button-title">
+									Southbound<br/><span style="font-size:12px;"></span>
+								</div> <!-- end #popup-button-title -->
+								<div class="popup-button-desc">
+
+								</div> <!-- end popup-button-desc -->
+							</div> <!-- end #schedule-southbound-65-->
+						</a>
+
+						<br style="clear: both;" />
+					</div> <!-- end #schedule-buttons -->
 
 					<div id="fare-table-link">
 						<a href="/fares/">See fare table for this route</a> >>
@@ -64,7 +95,7 @@
 						<div id="route-connections-container">
 							<div class="route-connection">
 								<?php
-								
+
 									while ( have_rows('connections') ):
 										the_row();
 								?>
@@ -109,27 +140,93 @@
 					</div> <!-- end #route-connections-box-title-text -->
 					<br style="clear: both;" />
 				</div> <!-- end #route-connections-box-title -->
-				<?php while ( have_rows('maps') ):
-								the_row();
-							?>
-					<div  id="route-map-col-left" class="masonry-layout__panel">
-						<div class="masonry-layout__panel-content route-detail-map-image-wrap">
-							<div class="map-detail-title-bar">
-								<div class="map-detail-title-text">
-									<?php the_sub_field('map_title')?>
-								</div> <!-- end map-detail-title-text -->
-								<br style="clear: both;" />
-							</div><!-- end map-detail-title-bar -->
-								<a href="/wp-content/images/detail_maps/ukiah-detail-11-big.jpg" data-lightbox="image-1"><img src="<?php the_sub_field('map_image'); ?>" /></a>
-						</div><!-- .masonry-layout__panel-content-->
-					</div><!--.masonry-layout__panel-->
+
+
+
+			<div id="route-map-image-col-wrap">
+				<div id="route-map-col-left">
+					<div class="route-detail-map-image-wrap">
+					<?php while ( have_rows('maps') ):
+						the_row();
+					?>
+						<div class="map-detail-title-bar">
+							<div class="map-detail-title-text">
+								<?php the_sub_field('map_title')?>	<!--Ukiah Detail-->
+							</div> <!-- end map-detail-title-text -->
+							<div class="map-detail-zoom-icon">
+							</div><!-- end .map-detail-zoom-icon -->
+							<br style="clear: both;" />
+						</div><!-- end map-detail-title-bar -->
+
+					<a href="/wp-content/images/detail_maps/ukiah-detail-11-big.jpg" data-lightbox="image-1"><img src="<?php the_sub_field('map_image'); ?>" /></a>
+				</div> <!-- end .route-detail-map-image-wrap -->
 				<?php endwhile; ?>
 				<?php endif; ?>
-				
-				<br style="clear: both;" />
+			</div> <!-- end #map-col-left -->
+			<div id="route-map-col-right">
+				<div class="route-detail-map-image-wrap">
+					<div class="map-detail-title-bar">
+						<div class="map-detail-title-text">
+							Willits Detail
+						</div> <!-- end map-detail-title-text -->
+						<div class="map-detail-zoom-icon">
+						</div><!-- end .map-detail-zoom-icon -->
+						<br style="clear: both;" />
+					</div><!-- end map-detail-title-bar -->
+
+					<a href="/wp-content/images/detail_maps/Willits-Detail-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Willits-Detail-sml.jpg" /></a>
+				</div> <!-- end .route-detail-map-image-wrap -->
+
+				<div class="route-detail-map-image-wrap">
+					<div class="map-detail-title-bar">
+						<div class="map-detail-title-text">
+							Ukiah Detail
+						</div> <!-- end map-detail-title-text -->
+						<div class="map-detail-zoom-icon">
+						</div><!-- end .map-detail-zoom-icon -->
+						<br style="clear: both;" />
+					</div><!-- end map-detail-title-bar -->
+
+					<a href="/wp-content/images/detail_maps/Ukiah_Inset_Detail-big.jpg" data-lightbox="image-1"><img src="/wp-content/images/detail_maps/Ukiah_Inset_Detail_sml.jpg" /></a>
+				</div> <!-- end .route-detail-map-image-wrap -->
+
+			</div> <!-- end #map-col-right -->
+		</div> <!-- end #route-map-image-col-wrap -->
+		<br style="clear: both;" />
+
+		</aside> <!-- end #route-col-right -->
+	<br style="clear: both;" />
+</div> <!-- end #route-two-col-wrap -->
+</main>
+
+
+
 
 			</aside> <!-- end #route-col-right -->
 			<br style="clear: both;" />
 		</div> <!-- end #route-two-col-wrap -->
 	</article>
-	
+
+	<!--
+
+<div class="flex-group">
+<weird map markup>
+	<map stuff>Name</>
+	<image></>
+</>
+</div>
+
+flex-group {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.weird-map {
+	flex: 1 1 auto;
+	max-width: 50%;
+}
+
+
+-->
+	<?php
+	get_footer();
