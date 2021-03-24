@@ -173,7 +173,7 @@ padding: 11px 0 10px 1.4112903225806%; /*7/496*/
 
 .route-popup-button  {
 color: #333333;
-width: 44.929032258065%; 247-22/496;
+width: 44.929032258065%;
 padding: 15px 0 18px 4.8709677419355%; /* 22/248 */
 float: left;
 }
@@ -417,4 +417,46 @@ background-color: #F0F8FF;
     width: 100%;
   }
 
+/*Alerts */
+  .tcp_alerts {
+    margin:0;
+    padding: 1em 0 0 0;
+
+  }
+
+   .tcp_alerts .container {
+     margin: 0;
+     padding: 0;
+  }
+
+  .tcp_panel {
+   padding: 0 0 15px 0;
+   background: #ffffff;
+   border: 1px solid #cecece;
+   border-width: thin;
+  }
+   
+   .tcp_panel h3 {
+     margin-top: 0;
+     padding: 15px;
+     background: #ffe781;
+     border-width: thin;
+   }
+
+    .panel_body a {
+        display: none;
+     }
+   
+
+   .panel_subheading,
+   .panel_description {
+     padding: 15px 15px 0px 15px;
+     margin: 0;
+     padding-top: 10px;
+   }
+
+   .panel_heading .route-circles {
+     margin-bottom: 5px;
+   }
+  
   

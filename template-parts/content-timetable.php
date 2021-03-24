@@ -10,7 +10,7 @@
 ?>
 
 <article <?php post_class(); ?>>
-	<header>
+	<header class="timetable-h">
 	<div id="timetable-route-name">
 		<div id="timetable-center-title" class="timetable-left-marg">
 			<h1 id="timetable-route-name-part-1">
