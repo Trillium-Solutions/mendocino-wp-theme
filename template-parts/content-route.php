@@ -93,7 +93,7 @@
 					<div class="route-inner-box">
 							<div id="route-pdf-icon"></div>
 								<div id="route-pdf-link">
-									<a href="<?php the_field('schedule_pdf'); ?>" target="_blank">Download PDF version of Route 5 timetable.</a>
+									<a href="<?php the_field('schedule_pdf'); ?>" target="_blank">Download PDF version of the timetable.</a>
 								</div> <!-- end #route-pdf-link -->
 							<br style="clear: both;" />
 					</div> <!-- end #route-inner-box" -->

@@ -63,13 +63,13 @@ get_header(); ?>
             	</div>
 				<div class="box-row box-row-item">
 					<div class="ms-circ">
-						<a href="/routes/routes-7-and-9">
+						<a href="/routes/route-7">
 							<img src="/images/mapsandschedules/maps-n-schedules-circ-7.png" alt=" Route 7">
 						</a>
 					</div>
 
 					<div class="ms-desc">
-            <a href="/routes/routes-7-and-9">Ukiah Jitney</a><br /> <span style="font-size: 11px;">A direct route connecting North and South Ukiah
+            <a href="/routes/route-7">Ukiah Jitney</a><br /> <span style="font-size: 11px;">A direct route connecting North and South Ukiah
 						<br /> Mon-Fri</span>
 					</div>
 				</div>
@@ -78,12 +78,12 @@ get_header(); ?>
       <div class="box-row">
 				<div class="box-row box-row-item">
           <div class="ms-circ">
-           	<a href="/routes/routes-7-and-9">
+           	<a href="/routes/route-9">
               <img src="/images/mapsandschedules/maps-n-schedules-circ-9.png" alt=" Route 9">
             </a>
           </div>
           <div class="ms-desc">
-            <a href="/routes/routes-7-and-9">Ukiah Local</a>
+            <a href="/routes/route-9">Ukiah Local</a>
             <br />
 						<span style="font-size: 11px;">Local route within Ukiah. Mon-Fri: 7a.m. to 11 p.m. Sat: 10 a.m. to 5 p.m.</span>
 					</div>
