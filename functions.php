@@ -180,6 +180,9 @@ $args = array(
 
 register_post_type( 'news', $args );
 
+
+
+
 function mendo_custom_timetables() {
 	$route_id = get_post_meta(get_the_ID(), 'route_id', true);
 

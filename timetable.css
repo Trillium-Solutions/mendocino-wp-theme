@@ -24,6 +24,10 @@ height: 270px;
 background: url('images/logo-motto.png') no-repeat;
 }*/
 
+.table-container {
+	overflow-x: auto;
+}
+
 #timetable-route-name {
 width: auto;
 background-color: #E3E3E3;

@@ -16,14 +16,13 @@ get_header(); ?>
     <div id="schedules-container" >
       <!-- Header -->
       <div class="header top guide">
-
         Click a route in the list below or in the map to get its schedule, detailed service maps, and connections.
       </div>
-
+    
       <!-- Left Column -->
       <div id="left-column" class="column left">
-
         <!-- Regional Routes -->
+     
         <div id="regional-routes" class="column-box boxed">
           <div class="box-header">
             Regional routes
@@ -39,7 +38,7 @@ get_header(); ?>
                   <img src="/images/mapsandschedules/maps-n-schedules-circ-65.png" alt="Route 65">
                 </a>
               </div>
-              <div class="ms-desc"><a href="/routes/route-65">CC Rider</a>
+              <div class="ms-desc"><a href="/routes/route-65"><?php the_title(); ?></a>
                 <br />
                 <span style="font-size: 10px;">7-days per week from Ft. Bragg to Willits, Ukiah and  Santa Rosa.</span>
               </div>
@@ -208,6 +207,7 @@ get_header(); ?>
         </div>
       </div>
 
+  
       <!-- Right Column -->
       <div id="right-column" class="column right">
         <!-- Map Container -->
