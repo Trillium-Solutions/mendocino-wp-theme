@@ -104,6 +104,8 @@ Template Name: route-1
 			<br style="clear: both;" />
 		</div> <!-- end #route-connections-box-title -->
 
+	
+
 
 
 			<div id="route-map-image-col-wrap">
