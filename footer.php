@@ -24,6 +24,7 @@
 	</div> <!-- end #coast-right-hill-wrapper -->
 </div><!-- coast-repeat-wrapper" -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
 <script>
     lightbox.option({
       'fitImagesInViewport': false

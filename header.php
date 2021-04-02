@@ -27,10 +27,13 @@
 	</style>
 
 
+
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>?v=4.3" />
 	<link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/homepage-hotfix.css?v2" />
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+	
 
+	
 
 	<title>Mendocino Transit Authority (MTA) | Public transportation for Mendocino County, California <?php wp_title(" : "); ?></title>
 	<?php wp_head(); ?>
@@ -106,6 +109,7 @@
 	gtag('js', new Date());
 	gtag('config', 'UA-34817997-1', {'anonymize_ip' : true});
 	</script>
+
 
 </head>
 <body>

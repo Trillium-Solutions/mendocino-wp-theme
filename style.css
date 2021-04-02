@@ -901,8 +901,8 @@ margin: 20px 0 0 0;
 padding: 20px 0 0 20px;
 }
 
-.hover, .odd.hover {
-background-color: #BFFFF9 !important;
+ .odd.hover {
+background-color: #BFFFF9;
 }
 
 .tt-header-text {
