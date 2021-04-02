@@ -38,7 +38,8 @@ get_header(); ?>
                   <img src="/images/mapsandschedules/maps-n-schedules-circ-65.png" alt="Route 65">
                 </a>
               </div>
-              <div class="ms-desc"><a href="/routes/route-65"><?php the_title(); ?></a>
+              <div class="ms-desc">
+                <a href="/routes/route-65"><?php the_title(); ?></a>
                 <br />
                 <span style="font-size: 10px;">7-days per week from Ft. Bragg to Willits, Ukiah and  Santa Rosa.</span>
               </div>
