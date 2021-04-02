@@ -12,12 +12,14 @@ if(selected == "1") {
 	window.location = "/routes/route-5";
 } else if (selected == "60") {
 	window.location = "/routes/route-60";
-}else if (selected == "7-9") {
-	window.location = "/routes/routes-7-and-9";
-} else if (selected == "65") {
-	window.location = "/routes/route-65";
+}else if (selected == "7") {
+	window.location = "/routes/routes-7";
+} else if (selected == "9") {
+	window.location = "/routes/route-9";
 }
-else if (selected == "75") {
+else if (selected == "65") {
+	window.location = "/routes/route-65";
+} else if (selected == "75") {
 	window.location = "/routes/route-75";
 } else if (selected == "95") {
 	window.location = "/routes/route-95";

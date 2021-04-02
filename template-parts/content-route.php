@@ -16,7 +16,7 @@
 					
 						<?php the_route_title(); ?>
 					
-				<?php do_action('route_select'); ?>
+				<?php routeSelect(); ?>
 
 			</header><!-- #route-header -->
 

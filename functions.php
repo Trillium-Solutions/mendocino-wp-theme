@@ -82,7 +82,7 @@ function routeSelect() {
 			$rtes->the_post();
 			$name = get_post_meta(get_the_ID(), 'route_long_name', true);
 			$sname = get_post_meta(get_the_ID(), 'route_short_name', true);
-			echo '<option value="route-';
+			echo '<option value="';
 			echo $sname;
 			echo '">';
 			printf('Rt. ');
@@ -246,7 +246,7 @@ function mendo_custom_timetables() {
 		echo '<br style="clear: both;" />';
 		echo '</div>';
 		wp_reset_postdata();
-		
+
 		echo '	<div id="fare-table-link">';
 		echo '<a href="/fares/">See fare table for this route</a> >>';
 		echo '	</div>';
