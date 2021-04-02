@@ -32,26 +32,13 @@
 					<?php wp_reset_postdata();
 					the_field('route-desc'); ?>
 				</div> <!-- end #route-desc -->
+
+			
 				<div id="route-schedule-box" class="route-box ">
 					<div id="route-schedule-box-title" class="route-title-box">
-						<div id="route-schedule-box-title-text" class="route-title-box-text">
-			 				Schedule
-			 			</div> <!-- end #route-schedule-box-title-text -->
-			 			<div id="route-schedule-popup-info-text">
-			 	 			(Click to pop-up a schedule for each route)
-			 			</div> <!-- end#route-schedule-popup-info-text -->
-			 			<br style="clear: both;" />
-					</div> <!-- end #route-schedule-box-title -->
-					<div id="route-days-of-week">
-						Monday through Friday
-					</div> <!-- end #days-of-week -->
 
-				<?php mendo_custom_timetables(); ?>
+					<?php mendo_custom_timetables(); ?>
 					
-
-					<div id="fare-table-link">
-						<a href="/fares/">See fare table for this route</a> >>
-					</div> <!-- end #fare-table-link -->
 				</div> <!-- end #route-schedule-box -->
 
 				<?php if ( have_rows('connections') ): ?>

@@ -216,7 +216,18 @@ function mendo_custom_timetables() {
 	$timetables = new WP_Query( $timetable_args );
 	if ( $timetables->have_posts() ) { ?>
 			
-		<div id="schedule-buttons">
+		<div id="route-schedule-box-title-text" class="route-title-box-text">
+			 		Schedule
+		</div> <!-- end #route-schedule-box-title-text -->
+			<div id="route-schedule-popup-info-text">
+			 	 	(Click to pop-up a schedule for each route)
+			</div> <!-- end#route-schedule-popup-info-text -->
+			 		<br style="clear: both;" />
+			</div> <!-- end #route-schedule-box-title -->
+				<div id="route-days-of-week">
+					Monday through Friday
+				</div> <!-- end #days-of-week -->	
+					<div id="schedule-buttons">
 		<?php
 		while ( $timetables->have_posts() ) {
 			$timetables->the_post();
@@ -235,11 +246,13 @@ function mendo_custom_timetables() {
 		echo '<br style="clear: both;" />';
 		echo '</div>';
 		wp_reset_postdata();
+		
+		echo '	<div id="fare-table-link">';
+		echo '<a href="/fares/">See fare table for this route</a> >>';
+		echo '	</div>';
+
 	} 
 }
-
-
-
 
 ?>
 
