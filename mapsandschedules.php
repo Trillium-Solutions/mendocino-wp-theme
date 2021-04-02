@@ -39,7 +39,7 @@ get_header(); ?>
                 </a>
               </div>
               <div class="ms-desc">
-                <a href="/routes/route-65"><?php the_title(); ?></a>
+                <a href="/routes/route-65">CC Rider</a>
                 <br />
                 <span style="font-size: 10px;">7-days per week from Ft. Bragg to Willits, Ukiah and  Santa Rosa.</span>
               </div>
@@ -69,7 +69,9 @@ get_header(); ?>
 					</div>
 
 					<div class="ms-desc">
-            <a href="/routes/route-7">Ukiah Jitney</a><br /> <span style="font-size: 11px;">A direct route connecting North and South Ukiah
+            <a href="/routes/route-7">Ukiah Jitney</a>
+            <br /> 
+            <span style="font-size: 11px;">A direct route connecting North and South Ukiah
 						<br /> Mon-Fri</span>
 					</div>
 				</div>
