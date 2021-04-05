@@ -57,6 +57,10 @@ margin: 0 0 20px 0;
 
 /*New Timetable styling */
 
+.timetable-page {
+	overflow: auto;
+}
+
 .stop-name-container {
 	width: 200px;
 }
