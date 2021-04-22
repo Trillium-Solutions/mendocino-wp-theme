@@ -21,7 +21,7 @@ get_header(); ?>
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <div id="page-title">
 
-                <form id="fare_zones" method="POST" action="https://applications.trilliumtransit.com/clients/mendocino/calculate_fare_result.php">
+                <form id="fare_zones" class="hidden" method="POST" action="https://applications.trilliumtransit.com/clients/mendocino/calculate_fare_result.php">
                     <fieldset class="calculator-title">
                         <legend>Fare Calculator</legend>
                         <label for="start_zone">Start:</label>
