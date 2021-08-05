@@ -107,8 +107,8 @@
 									<?php the_sub_field('map_title')?>
 								</div> <!-- end map-detail-title-text -->
 								<br style="clear: both;" />
-							</div><!-- end map-detail-title-bar -->
-								<a href="/wp-content/images/detail_maps/ukiah-detail-11-big.jpg" data-lightbox="image-1"><img src="<?php the_sub_field('map_image'); ?>" /></a>
+							</div><!-- end map-detail-title-bar -->	
+							<a href="<?php the_sub_field('map_image');?>" data-lightbox="image-1"><img src="<?php the_sub_field('map_image'); ?>" /></a>
 						</div><!-- .masonry-layout__panel-content-->
 					</div><!--.masonry-layout__panel-->
 				<?php endwhile; ?>
