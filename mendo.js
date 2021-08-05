@@ -13,7 +13,7 @@ if(selected == "1") {
 } else if (selected == "60") {
 	window.location = "/routes/route-60";
 }else if (selected == "7") {
-	window.location = "/routes/routes-7";
+	window.location = "/routes/route-7";
 } else if (selected == "9") {
 	window.location = "/routes/route-9";
 }
