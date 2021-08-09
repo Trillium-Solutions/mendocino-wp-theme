@@ -799,6 +799,63 @@ unvisited links
 #348fae
 */
 
+/******** BOARD MEETINGS **********/
+
+
+.wrapper.sm-max-width {
+    max-width: 768px;
+}
+
+.post-6051 .container {
+    margin-top:18px;
+}
+
+.post-6051 table {
+	margin: 0 0 23.2px;
+	width: 100%;
+}
+
+.post-6051 thead th {
+	/*background-color: #f9f9f9;*/
+	text-align: left;
+    font-weight: bold;
+
+	}
+
+	.table th, td {
+		padding: 8px;
+		font-size: 0.95rem;
+		text-align: left;
+	}
+
+
+.table-container {
+	max-width: 100%;
+	overflow-x: auto;
+}
+
+.board-meeting {
+    margin: 0 auto;
+    padding: 11.6px 23.2px;
+}
+
+.entry-meta {
+    margin-bottom: 23.2px;
+    margin-top: 23.2px;
+}
+
+.date {
+    margin-bottom: 11.6px;
+    font-size: .8em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.link-list {
+    display: block;
+    margin-bottom: 15.6px;
+}
 
 /******** PAGE **********/
 
