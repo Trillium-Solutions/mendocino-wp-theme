@@ -105,6 +105,7 @@ get_header();
 										<th>Meeting</th>
 										<th>Date</th>
 										<th>Agenda (PDF)</th>
+										<th>Packet (PDF)</th>
 										<th>Minutes (PDF)</th>
 									</tr>
 									</thead>
@@ -114,6 +115,7 @@ get_header();
 
 										<?php
 										$agenda = get_field('agenda') ? get_field('agenda') : null;
+										$packet = get_field('packet') ? get_field('packet') : null;
 										$minutes = get_field('minutes') ? get_field('minutes') : null;
 
 										?>
@@ -124,6 +126,12 @@ get_header();
 											<td>
 												<?php if ($agenda) : ?>
 													<a href="<?php echo $agenda ?> " target="_blank">Agenda</a>
+												<?php else: echo '&mdash;'; ?>
+												<?php endif; ?>
+											</td>
+											<td>
+												<?php if ($packet) : ?>
+													<a href="<?php echo $packet ?> " target="_blank">Packet</a>
 												<?php else: echo '&mdash;'; ?>
 												<?php endif; ?>
 											</td>
