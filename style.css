@@ -831,7 +831,7 @@ unvisited links
 
 .table-container {
 	max-width: 100%;
-	overflow-x: auto;
+	/*overflow-x: auto;*/
 }
 
 .board-meeting {
