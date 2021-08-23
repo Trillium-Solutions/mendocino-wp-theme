@@ -227,7 +227,7 @@ function mendo_custom_timetables() {
 			 		<br style="clear: both;" />
 			</div> <!-- end #route-schedule-box-title -->
 				<div id="route-days-of-week">
-					Monday through Friday
+					Weekday
 				</div> <!-- end #days-of-week -->	
 					<div id="schedule-buttons">
 					<?php
