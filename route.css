@@ -171,6 +171,14 @@ border-bottom: 1px solid  #cccccc;
 padding: 11px 0 10px 1.4112903225806%; /*7/496*/
 }
 
+.route-weekend {
+  color: #8a8987;
+  font-size: 12px;
+  width: 98.5887096774194%; /*100-1.4112903225806%*/
+  border-top: 1px solid  #cccccc;
+  padding: 11px 0 10px 1.4112903225806%; /*7/496*/
+  }
+
 .route-popup-button  {
 color: #333333;
 width: 44.929032258065%;

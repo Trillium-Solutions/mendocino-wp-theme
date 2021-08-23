@@ -230,13 +230,15 @@ function mendo_custom_timetables() {
 					Monday through Friday
 				</div> <!-- end #days-of-week -->	
 					<div id="schedule-buttons">
-		<?php
+					<?php
 		while ( $timetables->have_posts() ) {
 			$timetables->the_post();
 			// Get timetable metadata
 			$permalink = get_permalink($post_id);
 			$dir = get_post_meta( get_the_ID(), 'direction_label', true);
+			$days = get_post_meta( get_the_ID(), 'days_of_week', true);
 
+			if ($days == 'Weekday' || $days == 'Mon-Sat' || $days == 'Mon-Fri') {
 			printf('<a href="%s"" class="timetable-link">', $permalink);
 			echo '<div id="schedule-northbound-65" class="route-popup-button route-button-left route-button-first route-button-odd route-button-short">';
 			echo '<div class="popup-button-title">';
@@ -244,10 +246,52 @@ function mendo_custom_timetables() {
 			echo '</div>';
 			echo '</div>';
 			printf ('</a>');
-		}
-		echo '<br style="clear: both;" />';
+		} 
+	}
+	echo '<br style="clear: both;" />';
 		echo '</div>';
+
+	
 		wp_reset_postdata();
+		
+		?>
+			<?php if ($days == 'Weekend' || $days == 'Saturday' || $days == 'Sunday') : ?>
+			<div id="route-days-of-week" class="route-weekend">
+				Weekend
+				</div> <!-- end #days-of-week -->	
+			
+				<?php endif; ?>
+				
+				<div id="schedule-buttons">
+		
+		
+		<?php while ( $timetables->have_posts() ) {
+			$timetables->the_post();
+			// Get timetable metadata
+			$permalink = get_permalink($post_id);
+			$dir = get_post_meta( get_the_ID(), 'direction_label', true);
+			$days = get_post_meta( get_the_ID(), 'days_of_week', true);
+
+		
+		
+		if ($days == 'Weekend' || $days == 'Saturday' || $days == 'Sunday') { 
+			
+			printf('<a href="%s"" class="timetable-link">', $permalink);
+			echo '<div id="schedule-northbound-65" class="route-popup-button route-button-left route-button-first route-button-odd route-button-short">';
+			echo '<div class="popup-button-title">';
+			echo $dir;
+			echo '</div>';
+			echo '</div>';
+			printf ('</a>');
+		}	
+	}
+	echo '<br style="clear: both;" />';
+		echo '</div>';
+
+	
+		wp_reset_postdata();
+
+
 
 		echo '	<div id="fare-table-link">';
 		echo '<a href="/fares/">See fare table for this route</a> >>';
