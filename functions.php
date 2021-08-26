@@ -1,5 +1,37 @@
 <?php
 
+/**
+ * Enqueue scripts and styles.
+ */
+
+function mendocino_scripts() {
+
+   
+	
+
+	wp_enqueue_style( 'jquery-ui.css', 'https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css',  array(),'20210821', true ); 
+
+	wp_enqueue_script('mendo-js', get_theme_file_uri('/js/mendo.js'), array('jquery'));
+	
+	
+	//wp_enqueue_style( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js');
+	//wp_enqueue_style( 'jquery-ui-min', 'https://code.jquery.com/ui/1.11.1/jquery-ui.min.js');
+
+	//wp_enqueue_script('jquery-formalize', get_theme_file_uri('/js//jquery.formalize.js'), array());
+	//wp_enqueue_script('jquery-formalize', get_theme_file_uri('/js/jquery.formalize.js'), array());
+	//wp_enqueue_script('jquery-cookie', get_theme_file_uri('/js/jquery.cookie.js'), array());
+	wp_enqueue_script('mendo-map', get_theme_file_uri('/js/mendo-map.js'), array());
+	wp_enqueue_script('home-left', get_theme_file_uri('/js/home-left.js?v2'), array());
+
+    
+}
+add_action( 'wp_enqueue_scripts', 'mendocino_scripts' );
+
+
+
+
+
+
   add_action('mendo_route_alert', 'make_route_alert');
   
   register_nav_menus( array(
@@ -96,29 +128,6 @@ function routeSelect() {
 		wp_reset_postdata();
 	}
 }
-
-
-/*function routeSelect() {	
-?>
-<div id="route-dropdown" >
-		<select id="route-select" 	style="width: 180px; height: 35px; font-size: 18px; padding: 3px 0 0 10px; color: #666;">
-		  <option selected="selected" >Select a Route</option>
-			<option value="<?php echo get_post_meta( get_the_ID()); ?>"><?php the_title(); ?></option>
-		  <!--<option value="1">Rt. 1 Willits</option>
-		  <option value="20">Rt. 20 Redwood Valley</option>
-		  <option value="7-9">Rts. 7 and 9 - Ukiah</option>
-		  <option value="5">Rt. 5 Ft. Bragg</option>
-		  <option value="60">Rt. 60 North Coast</option>
-		  <option value="65">Rt. 65 CC Rider</option>
-		  <option value="75">Rt. 75 South Coast/Ukiah</option>
-		  <option value="95">Rt. 95 South Coast/Santa Rosa</option>-->
-		  <!--<?php //endwhile; endif; wp_reset_postdata(); ?>-->
-		</select>
-	
-	</div><!-- end #route-dropdown -->*/
-
-	//<?php
-//}
 
 
 

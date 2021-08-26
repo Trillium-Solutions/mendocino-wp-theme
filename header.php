@@ -19,60 +19,39 @@
 	<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/reset.css" type="text/css">
 	<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/formalize.css" />
 	<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/timetable.css" />
-	<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/schedule-layout.css" />
-	<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/mendo-map.css" />
-
-	<style type="text/css">
-	#ui-datepicker-div {font-size:65%;}
-	</style>
-
-
-
+	
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>?v=4.3" />
 	<link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/homepage-hotfix.css?v2" />
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
 	
-
 	
-
 	<title>Mendocino Transit Authority (MTA) | Public transportation for Mendocino County, California <?php wp_title(" : "); ?></title>
 	<?php wp_head(); ?>
 	<meta name="description" content="Mendocino County, California. MTA’s service area encompasses about 2,800 square miles including the Mendocino Coast and Inland communities. The transit system includes a network of long distance, commute and local fixed routes, plus Dial-A-Ride services in Ukiah and Ft. Bragg. MTA provides service throughout the county, including the communities of Albion, Anchor Bay, Bodega, Bodega Bay, Boonville, Calpella, Caspar, Elk, Fort Bragg, Fort Ross, Freestone, Gualala, Hopland, Jenner, Manchester, Mendocino, Navarro, Philo, Point Arena, Redwood Valley, Santa Rosa, Sea Ranch, Stewarts Point, Ukiah, Willits, and Windsor." />
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-	<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
-
-	<script src="<?php echo get_bloginfo('template_directory'); ?>/jquery.formalize.js"></script>
-	<script src="<?php echo get_bloginfo('template_directory'); ?>/mendo.js"></script>
-	<script src="<?php echo get_bloginfo('template_directory'); ?>/js/jquery.cookie.js"></script>
-	<script src="<?php echo get_bloginfo('template_directory'); ?>/schedule-tables.js"></script>
-	<script src="<?php echo get_bloginfo('template_directory'); ?>/mendo-map.js"></script>
-	<script src="<?php echo get_bloginfo('template_directory'); ?>/js/home-left.js?v2"></script>
 	
-
 	<!--[if IE]>
 	<link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/ie.css" />
 	<![endif]-->
 	<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico" />
 
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css" rel="stylesheet" />
-	<script language="javascript" type="text/javascript">
+	<!--<script language="javascript" type="text/javascript">
 
-		<!--
+	
 		function popitup(url) {
 			newwindow=window.open(url,'name','height=800,width=1200');
 			if (window.focus) {newwindow.focus()}
 			return false;
 		}
 
-	// -->
-	</script>
+	
+	</script>-->
 
 
 <!-- THE FOLLOWING SCRIPT ENABLES AUTOCOMPLETE IN THE TRIP PLANNER FORM -->
 
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArmkiHTwuavMkb6WV_AjZgjv9zQ7wYoSY&libraries=places"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArmkiHTwuavMkb6WV_AjZgjv9zQ7wYoSY&libraries=places"></script>
 
 	<script>
 

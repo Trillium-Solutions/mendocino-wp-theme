@@ -48,6 +48,7 @@ line-height: unset !important;
 #timetable-content {
 width: 1035px;
 margin-bottom: 20px;
+display: inline;
 }
 
 .div-table {

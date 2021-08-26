@@ -167,7 +167,6 @@ get_header();
 
 
 				});
-
 				</script>
 
 					<div id="home-google-transit-link">
@@ -261,15 +260,15 @@ get_header();
  the_post();
 
 $args = array(
-    'category_name' => 'agenda-packet',
     'posts_per_page' => 3,
+	'post_type'		=> array('board-meeting'),
 );
 $my_query = new WP_Query($args);
 if ($my_query->have_posts()) : ?>
     <div id="home-agendas" class="left-links-sec">
         <div class="left-sec-internal">
             <div id="home-agendas-title" class="left-link-title">
-				<a href="/board-of-directors">Public Meetings</a>
+				<a href="/board-meetings">Board Meetings</a>
 			</div>
             <ul class="left-link-list">
 				<?php
