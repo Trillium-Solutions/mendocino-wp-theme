@@ -261,7 +261,9 @@ get_header();
 
 $args = array(
     'posts_per_page' => 3,
-	'post_type'		=> array('board-meeting'),
+	'post_type'		=> 'board-meeting',
+	'order_by' => 'publish_date',
+	'order' => 'ASC'
 );
 $my_query = new WP_Query($args);
 if ($my_query->have_posts()) : ?>

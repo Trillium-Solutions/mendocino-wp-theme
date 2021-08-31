@@ -357,7 +357,7 @@ clear: left;
 
 #home-route-planner-inner {
 margin: 21px 0 0 23px;
-float: left;
+/*float: left;*/
 }
 
 #home-google-transit-link {
@@ -1390,7 +1390,7 @@ text-decoration: none;
 }
 
 #home-route-planner {
-	height: 396px;
+	height: 420px;
 }
 #home-google-transit-link {
 	margin-top: 10px;
