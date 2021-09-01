@@ -278,7 +278,7 @@ if ($my_query->have_posts()) : ?>
 				<?php
 				while ($my_query->have_posts()) : $my_query->the_post(); ?>
 					<li>
-						<a class="left-home-link" href="<?php the_permalink(); ?>"><?php the_time('F j') ?> &ndash; <?php the_title() ?></a>
+						<a class="left-home-link" href="<?php the_permalink(); ?>"><?php the_title() ?></a>
 					</li>
 				<?php endwhile; ?>
 			</ul>
