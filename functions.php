@@ -10,16 +10,7 @@ function mendocino_scripts() {
 	
 
 	wp_enqueue_style( 'jquery-ui.css', 'https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css',  array(),'20210821', true ); 
-
 	wp_enqueue_script('mendo-js', get_theme_file_uri('/js/mendo.js'), array('jquery'));
-	
-	
-	//wp_enqueue_style( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js');
-	//wp_enqueue_style( 'jquery-ui-min', 'https://code.jquery.com/ui/1.11.1/jquery-ui.min.js');
-
-	//wp_enqueue_script('jquery-formalize', get_theme_file_uri('/js//jquery.formalize.js'), array());
-	//wp_enqueue_script('jquery-formalize', get_theme_file_uri('/js/jquery.formalize.js'), array());
-	//wp_enqueue_script('jquery-cookie', get_theme_file_uri('/js/jquery.cookie.js'), array());
 	wp_enqueue_script('mendo-map', get_theme_file_uri('/js/mendo-map.js'), array());
 	wp_enqueue_script('home-left', get_theme_file_uri('/js/home-left.js?v2'), array());
 
@@ -225,55 +216,59 @@ function mendo_custom_timetables() {
 		)
 	);
 	$timetables = new WP_Query( $timetable_args );
-	if ( $timetables->have_posts() ) { ?>
-			
-		<div id="route-schedule-box-title-text" class="route-title-box-text">
-			 		Schedule
-		</div> <!-- end #route-schedule-box-title-text -->
-			<div id="route-schedule-popup-info-text">
-			 	 	(Click to pop-up a schedule for each route)
-			</div> <!-- end#route-schedule-popup-info-text -->
-			 		<br style="clear: both;" />
-			</div> <!-- end #route-schedule-box-title -->
-				<div id="route-days-of-week">
-					Weekday
-				</div> <!-- end #days-of-week -->	
-					<div id="schedule-buttons">
-					<?php
-		while ( $timetables->have_posts() ) {
-			$timetables->the_post();
-			// Get timetable metadata
-			$permalink = get_permalink($post_id);
-			$dir = get_post_meta( get_the_ID(), 'direction_label', true);
-			$days = get_post_meta( get_the_ID(), 'days_of_week', true);
+	if ( $timetables->have_posts() ) { 
+	$weekdayTt = get_field('weekday_timetable_label'); 
+	$weekendTt = get_field('weekend_timetable_label'); ?>
 
-			if ($days == 'Weekday' || $days == 'Mon-Sat' || $days == 'Mon-Fri') {
-			printf('<a href="%s"" class="timetable-link">', $permalink);
-			echo '<div id="schedule-northbound-65" class="route-popup-button route-button-left route-button-first route-button-odd route-button-short">';
-			echo '<div class="popup-button-title">';
-			echo $dir;
-			echo '</div>';
-			echo '</div>';
-			printf ('</a>');
-		} 
-	}
-	echo '<br style="clear: both;" />';
-		echo '</div>';
-
+	<div id="route-schedule-box-title-text" class="route-title-box-text">
+		Schedule
+	</div> <!-- #route-schedule-box-title-text -->
+	 	<div id="route-schedule-popup-info-text">	
+	 		(Click to pop-up a schedule for each route)
+	 	</div> <!-- end #route-schedule-popup-info-text -->
+		 <br style="clear: both;" />
+	</div>
+	 	<div id="route-days-of-week">
+			 <?php the_field('weekday_timetable_label'); ?>
+		 </div><!-- end #days-of-week -->	
 	
-		wp_reset_postdata();
+	<div id="schedule-buttons">
+		<?php
+			while ( $timetables->have_posts() ) {
+				$timetables->the_post();
+				// Get timetable metadata
+				$permalink = get_permalink($post_id);
+				$dir = get_post_meta( get_the_ID(), 'direction_label', true);
+				$days = get_post_meta( get_the_ID(), 'days_of_week', true);
+
+				if ($days == 'Weekday' || $days == 'Mon-Sat' || $days == 'Mon-Fri') {
+				printf('<a href="%s"" class="timetable-link">', $permalink);
+				echo '<div id="schedule-northbound-65" class="route-popup-button route-button-left route-button-first route-button-odd route-button-short">';
+				echo '<div class="popup-button-title">';
+				echo $dir;
+				echo '</div>';
+				echo '</div>';
+				printf ('</a>');
+			} 
+		}
+		echo '<br style="clear: both;" />';
+			echo '</div>';
+
 		
-		?>
-			<?php if ($days == 'Weekend' || $days == 'Saturday' || $days == 'Sunday') : ?>
-			<div id="route-days-of-week" class="route-weekend">
-				Weekend
-				</div> <!-- end #days-of-week -->	
+			wp_reset_postdata();
 			
-				<?php endif; ?>
-				
-				<div id="schedule-buttons">
-		
-		
+			?>
+
+<?php if ($days == 'Weekend' || $days == 'Saturday' || $days == 'Sunday') : ?>
+
+<div id="route-days-of-week" class="route-weekend">
+<?php the_field('weekend_timetable_label'); ?>
+	</div> <!-- end #days-of-week -->	
+
+	<?php endif; ?>
+	
+	<div id="schedule-buttons">
+			
 		<?php while ( $timetables->have_posts() ) {
 			$timetables->the_post();
 			// Get timetable metadata
