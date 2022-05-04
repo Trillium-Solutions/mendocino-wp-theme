@@ -388,7 +388,7 @@ background: url('images/planner-bg.png') no-repeat;
 font-size: 20px;
 }
 
-#home-alerts {
+#home-alerts, #system-alert-bar {
     text-align: center;
     border: 2px solid #FFFF00;
     background-color: #FFFF00;

@@ -93,10 +93,21 @@
 </head>
 <body>
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'mendocino' ); ?></a>
-	<div id="home-alerts">
-		<a href="https://mendocinotransit.org/2020/03/18/alert-mta-reduces-bus-service-on-3-19/"><span style="text-transform: uppercase;">
-			Reduced Service Bus Schedules - 3/19/2020</span></a>
-    </div>
+
+	<?php
+	$system_alert = new WP_Query( array(
+		'post_type' 		=> 'alert',
+		'posts_per_page' 	=> 1,
+		'meta_key'			=> 'system_alert',
+		'meta_value'		=> 1,
+	));
+	if ( $system_alert->have_posts() ) : while ( $system_alert->have_posts() ) :
+		$system_alert->the_post();
+	?>
+		<div id="system-alert-bar">
+			System Alert: <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+		</div>
+	<?php endwhile; wp_reset_postdata(); endif; ?>
 
    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <defs>

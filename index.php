@@ -328,7 +328,7 @@ Currently no service alerts.
 		Click a route to see its schedule and detail map.
 		</div> <!-- end #home-map-caption" -->
 					<div id="home-map">
-				<?php include('home-map-01.svg'); ?>
+						<?php include('home-map-01.svg'); ?>
 					</div> <!-- #home-map -->
 				</div><!-- home-right-col -->
 				<br style="clear: both; width: 100%;" />

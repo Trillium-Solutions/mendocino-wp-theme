@@ -312,6 +312,7 @@ color: grey;
 
 .route-detail-map-image-wrap img {
 width: 213px;
+max-width: 213px !important;
 }
 
 #route-col-right .route-title-box {
