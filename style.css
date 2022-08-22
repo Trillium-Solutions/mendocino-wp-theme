@@ -2239,3 +2239,22 @@ h1 {
 #content[tabindex="-1"]:focus {
 	outline: 0;
 }
+
+
+/* Fixed timetable stop column */
+.timetable table.fixed-column {
+    background-color: #eeefe9;
+}
+
+.timetable thead {
+    height: 65px;
+}
+
+/* Alternating timetable row colors */
+.timetable table tr {
+    background-color: #eeefe9;
+}
+
+.timetable tr:nth-child(even) {
+    background-color: #dce2df;
+}
