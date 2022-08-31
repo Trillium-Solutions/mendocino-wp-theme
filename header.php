@@ -51,7 +51,7 @@
 
 <!-- THE FOLLOWING SCRIPT ENABLES AUTOCOMPLETE IN THE TRIP PLANNER FORM -->
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArmkiHTwuavMkb6WV_AjZgjv9zQ7wYoSY&libraries=places"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCywuUsZ3rroAFeNhlw3UDYOsuCeHhDuvo&libraries=places"></script>
 
 	<script>
 
