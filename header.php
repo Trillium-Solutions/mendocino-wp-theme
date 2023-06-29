@@ -29,7 +29,11 @@
 	<?php wp_head(); ?>
 	<meta name="description" content="Mendocino County, California. MTA’s service area encompasses about 2,800 square miles including the Mendocino Coast and Inland communities. The transit system includes a network of long distance, commute and local fixed routes, plus Dial-A-Ride services in Ukiah and Ft. Bragg. MTA provides service throughout the county, including the communities of Albion, Anchor Bay, Bodega, Bodega Bay, Boonville, Calpella, Caspar, Elk, Fort Bragg, Fort Ross, Freestone, Gualala, Hopland, Jenner, Manchester, Mendocino, Navarro, Philo, Point Arena, Redwood Valley, Santa Rosa, Sea Ranch, Stewarts Point, Ukiah, Willits, and Windsor." />
 
-	
+	<?php
+		wp_head();
+		/* google analytics - Add tracking code in the theme settings page */
+		get_template_part('template-parts/google-analytics');
+	?>
 	<!--[if IE]>
 	<link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/ie.css" />
 	<![endif]-->
